@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractDispatcher.cs" />
+    <Compile Include="DispatcherCallbacks.cs" />
     <Compile Include="IDispatcher.cs" />
     <Compile Include="IRun8.cs" />
     <Compile Include="Messages\AIRecrewTrainMessage.cs" />
