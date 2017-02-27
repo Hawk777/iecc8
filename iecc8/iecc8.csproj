@@ -40,6 +40,31 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Messages\AIRecrewTrainMessage.cs" />
+    <Compile Include="Messages\DispatcherPermissionMessage.cs" />
+    <Compile Include="Messages\DispatcherSignalMessage.cs" />
+    <Compile Include="Messages\DispatcherSwitchMessage.cs" />
+    <Compile Include="Messages\DTMFMessage.cs" />
+    <Compile Include="Messages\EDispatcherPermission.cs" />
+    <Compile Include="Messages\EDTMFType.cs" />
+    <Compile Include="Messages\EEngineerType.cs" />
+    <Compile Include="Messages\ESignalIndication.cs" />
+    <Compile Include="Messages\ESwitchState.cs" />
+    <Compile Include="Messages\HoldAITrainMessage.cs" />
+    <Compile Include="Messages\RadioTextMessage.cs" />
+    <Compile Include="Messages\RelinquishAITrainMessage.cs" />
+    <Compile Include="Messages\SignalsMessage.cs" />
+    <Compile Include="Messages\OccupiedSwitchesMessage.cs" />
+    <Compile Include="Messages\InterlockErrorSwitchesMessage.cs" />
+    <Compile Include="Messages\StopAITrain.cs" />
+    <Compile Include="Messages\TrainData.cs" />
+    <Compile Include="Messages\TrainDataMessage.cs" />
+    <Compile Include="Messages\TransportPlayerMessage.cs" />
+    <Compile Include="Messages\TransportPlayerToBlockMessage.cs" />
+    <Compile Include="Messages\UnlockedSwitchesMessage.cs" />
+    <Compile Include="Messages\ReversedSwitchesMessage.cs" />
+    <Compile Include="Messages\OccupiedBlocksMessage.cs" />
+    <Compile Include="Messages\SimulationStateMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
