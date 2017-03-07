@@ -40,6 +40,7 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractDispatcher.cs" />
     <Compile Include="IDispatcher.cs" />
     <Compile Include="IRun8.cs" />
     <Compile Include="Messages\AIRecrewTrainMessage.cs" />
