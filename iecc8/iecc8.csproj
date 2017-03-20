@@ -71,6 +71,19 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Run8Wrapper.cs" />
+    <Compile Include="Schema\AutomaticSignal.cs" />
+    <Compile Include="Schema\CALExemption.cs" />
+    <Compile Include="Schema\ControlledSignal.cs" />
+    <Compile Include="Schema\EDivergenceLookahead.cs" />
+    <Compile Include="Schema\Points.cs" />
+    <Compile Include="Schema\Region.cs" />
+    <Compile Include="Schema\RegionEntry.cs" />
+    <Compile Include="Schema\Regions.cs" />
+    <Compile Include="Schema\Route.cs" />
+    <Compile Include="Schema\RoutePointPosition.cs" />
+    <Compile Include="Schema\RouteTC.cs" />
+    <Compile Include="Schema\SubArea.cs" />
+    <Compile Include="Schema\TrackCircuit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
