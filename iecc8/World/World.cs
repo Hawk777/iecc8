@@ -6,6 +6,7 @@ using System.Threading;
 using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace Iecc8.World {
 	/// <summary>
@@ -62,6 +63,14 @@ namespace Iecc8.World {
 			private set {
 				SetProperty(ref SimulationTimeImpl, value);
 			}
+		}
+
+		/// <summary>
+		/// All trains in the world.
+		/// </summary>
+		public ObservableCollection<Train> Trains {
+			get;
+			private set;
 		}
 
 		/// <summary>
@@ -136,6 +145,22 @@ namespace Iecc8.World {
 
 		void IDispatcher.UpdateTrainData(TrainDataMessage pMessage) {
 			MessageReceived = true;
+			SyncContext.Post((object state) => {
+				// Try to find an existing train to update.
+				bool found = false;
+				for (int i = 0; i != Trains.Count; ++i) {
+					if (Trains[i].ID == pMessage.Train.TrainID) {
+						found = true;
+						Trains[i].UpdateFromRun8(pMessage.Train);
+						break;
+					}
+				}
+
+				// Add a new train if one was not found.
+				if (!found) {
+					Trains.Add(new Train(pMessage.Train, this));
+				}
+			}, null);
 		}
 		#endregion
 
@@ -157,6 +182,8 @@ namespace Iecc8.World {
 			Run8 = run8;
 			SyncContext = SynchronizationContext.Current;
 			PingTimer = new Timer(PingTimerTick, null, 0, 5000);
+			ClearExpiredTrainsTimer = new Timer(ClearExpiredTrainsTick, null, 0, 1000);
+			Trains = new ObservableCollection<Train>();
 			Regions regions = (Regions) Application.LoadComponent(new Uri("/iecc8;component/Region/Regions.xaml", UriKind.Relative));
 			Schema.Region region = null;
 			foreach (Schema.Region i in regions) {
@@ -213,6 +240,7 @@ namespace Iecc8.World {
 		private readonly Run8Wrapper Run8;
 		private readonly SynchronizationContext SyncContext;
 		private readonly Timer PingTimer;
+		private readonly Timer ClearExpiredTrainsTimer;
 
 		/// <summary>
 		/// Pings Run8 if no message has been received for a while.
@@ -228,6 +256,20 @@ namespace Iecc8.World {
 					SyncContext.Post((object param) => LinkError = true, null);
 				}
 			}
+		}
+
+		/// <summary>
+		/// Checks if any trains have expired and need to be removed from the train list.
+		/// </summary>
+		private void ClearExpiredTrainsTick(object state) {
+			SyncContext.Post((object param) => {
+				for (int i = 0; i != Trains.Count; ++i) {
+					if (Trains[i].Expired) {
+						Trains.RemoveAt(i);
+						--i;
+					}
+				}
+			}, null);
 		}
 		#endregion
 	}

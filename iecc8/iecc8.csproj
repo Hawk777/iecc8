@@ -142,6 +142,7 @@
     <Compile Include="World\SignalsArray.cs" />
     <Compile Include="World\SubArea.cs" />
     <Compile Include="World\TrackCircuit.cs" />
+    <Compile Include="World\Train.cs" />
     <Compile Include="World\World.cs" />
   </ItemGroup>
   <ItemGroup>
