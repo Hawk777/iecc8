@@ -34,6 +34,7 @@
 			</ListBox.ItemTemplate>
 		</ListBox>
 		<Rectangle Grid.Column="2" Fill="Red" Grid.Row="2"/>
+		<ui:TrainList Grid.RowSpan="3" Grid.ColumnSpan="3" Visibility="{Binding ShowTrainList, Converter={StaticResource ResourceKey=BoolToVis}}"/>
 		<Viewbox Grid.RowSpan="3" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<TextBlock Foreground="Red" Text="Link Down" FontSize="72" FontWeight="Bold"/>
 		</Viewbox>
@@ -56,7 +57,7 @@
 			<TextBlock Text="F1" TextAlignment="Center"/>
 			<Button Grid.Column="1" Content="OPTN" ToolTip="Show/Hide Options Window" AutomationProperties.AcceleratorKey="F1"/>
 			<TextBlock Grid.Column="2" Text="F2" TextAlignment="Center"/>
-			<Button Grid.Column="3" Content="TLST" ToolTip="Show/Hide Train List Window" AutomationProperties.AcceleratorKey="F2"/>
+			<Button Grid.Column="3" Content="TLST" ToolTip="Show/Hide Train List Window" AutomationProperties.AcceleratorKey="F2" Click="OnTrainListButtonClick"/>
 			<TextBlock Grid.Column="4" Text="F3" TextAlignment="Center"/>
 			<Button Grid.Column="5" Content="CHAN" ToolTip="Enable/Disable Radio Channels" AutomationProperties.AcceleratorKey="F3"/>
 			<TextBlock Grid.Column="6" Text="F4" TextAlignment="Center"/>

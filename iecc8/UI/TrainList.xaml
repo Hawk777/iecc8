@@ -1,0 +1,47 @@
+﻿<ListView xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:ui="clr-namespace:Iecc8.UI"
+		x:Class="Iecc8.UI.TrainList"
+		ItemsSource="{Binding World.Trains}">
+	<ListView.Resources>
+		<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
+		<ui:EngineerTypeToFontStyle x:Key="EngineerTypeToFontStyle"/>
+	</ListView.Resources>
+	<ListView.View>
+		<GridView>
+			<GridView.Columns>
+				<GridViewColumn Header="Loco">
+					<GridViewColumn.DisplayMemberBinding>
+						<MultiBinding StringFormat="{}{0}{1}">
+							<Binding Path="Company" Mode="OneWay"/>
+							<Binding Path="LocoNumber" Mode="OneWay"/>
+						</MultiBinding>
+					</GridViewColumn.DisplayMemberBinding>
+				</GridViewColumn>
+				<GridViewColumn DisplayMemberBinding="{Binding Tag, Mode=OneWay}" Header="Tag"/>
+				<GridViewColumn Header="Location">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock FontStyle="{Binding LocationCurrent, Mode=OneWay, Converter={StaticResource LocationCurrentToFontStyle}}">
+								<TextBlock.Text>
+									<MultiBinding StringFormat="{}{0} : {1}">
+										<Binding Path="SubArea" Mode="OneWay"/>
+										<Binding Path="Location" Mode="OneWay"/>
+									</MultiBinding>
+								</TextBlock.Text>
+							</TextBlock>
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn DisplayMemberBinding="{Binding Speed, Mode=OneWay}" Header="Speed"/>
+				<GridViewColumn Header="Engineer">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock FontStyle="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToFontStyle}}" Text="{Binding EngineerName}"/>
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+			</GridView.Columns>
+		</GridView>
+	</ListView.View>
+</ListView>

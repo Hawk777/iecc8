@@ -44,6 +44,18 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// Whether the train list is currently visible.
+		/// </summary>
+		public bool ShowTrainList {
+			get {
+				return ShowTrainListImpl;
+			}
+			set {
+				SetProperty(ref ShowTrainListImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// Constructs a new MainViewModel.
 		/// </summary>
 		/// <param name="world">The world being interacted with.</param>
@@ -126,6 +138,7 @@ namespace Iecc8.UI {
 		private readonly World.World WorldImpl;
 		private readonly BlinkClockSource BlinkClockSourceImpl;
 		private ControlledSignal PendingEntranceImpl;
+		private bool ShowTrainListImpl;
 		private DateTime InhibitDeletingMessageUntil;
 
 		/// <summary>
