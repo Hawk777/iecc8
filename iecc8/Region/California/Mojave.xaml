@@ -1,0 +1,5 @@
+﻿<SubArea xmlns="clr-namespace:Iecc8.Schema"
+		xmlns:s="clr-namespace:System;assembly=mscorlib"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Name="Mojave">
+</SubArea>

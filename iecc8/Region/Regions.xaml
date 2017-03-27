@@ -2,4 +2,12 @@
 		xmlns:s="clr-namespace:System;assembly=mscorlib"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:c="clr-namespace:System.Collections.Generic;assembly=mscorlib">
+	<Region Name="California">
+		<Region.SubAreas>
+			<RegionEntry ID="100" Name="Mojave"/>
+			<RegionEntry ID="110" Name="Needles"/>
+			<RegionEntry ID="120" Name="Cajon"/>
+			<RegionEntry ID="150" Name="BarstowYermo"/>
+		</Region.SubAreas>
+	</Region>
 </Regions>

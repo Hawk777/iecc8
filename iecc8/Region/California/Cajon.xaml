@@ -1,0 +1,4980 @@
+﻿<SubArea xmlns="clr-namespace:Iecc8.Schema"
+		xmlns:s="clr-namespace:System;assembly=mscorlib"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Name="Cajon">
+	<SubArea.AutomaticSignals>
+		<!-- -1: Exit triangle BNSF to LA, WB main 1, near BNSF CP West Colton -->
+		<AutomaticSignal/>
+		<!-- -2: Exit triangle BNSF to LA, WB main 2, near BNSF CP West Colton -->
+		<AutomaticSignal/>
+		<!-- -3: Exit triangle UP Old Colton Yard and Yuma Sub from BNSF CP West Colton -->
+		<AutomaticSignal/>
+		<!-- -4: Exit triangle UP to Yuma Sub EB main 1 -->
+		<AutomaticSignal/>
+		<!-- -5: Exit triangle UP to Yuma Sub EB main 2 -->
+		<AutomaticSignal/>
+		<!-- -6: Riverside avenue EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="101" NextSignal="123"/>
+		<!-- -7: Riverside avenue WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="108" NextSignal="119" DivergenceLookahead="Long"/>
+		<!-- -8: Exit triangle UP to LA WB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -9: Ono EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="46" NextSignal="54"/>
+		<!-- -10: Ono EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="45" NextSignal="55"/>
+		<!-- -11: Ono WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="50" NextSignal="57" DivergenceLookahead="Long"/>
+		<!-- -12: Ono WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="49" NextSignal="56" DivergenceLookahead="Long"/>
+		<!-- -13: Devore EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="40" NextSignal="39"/>
+		<!-- -14: Devore EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="39" NextSignal="38"/>
+		<!-- -15: Devore WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="41" NextSignal="52"/>
+		<!-- -16: Devore WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="42" NextSignal="53"/>
+		<!-- -17: 68.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="19" NextSignal="-21"/>
+		<!-- -18: 68.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="20" NextSignal="-22"/>
+		<!-- -19: 68.1 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="23" NextSignal="36"/>
+		<!-- -20: 68.3 WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="24" NextSignal="37"/>
+		<!-- -21: 66.4 EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="17" NextSignal="35"/>
+		<!-- -22: 66.2 EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="18" NextSignal="34"/>
+		<!-- -23: 66.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="19" NextSignal="-19"/>
+		<!-- -24: 66.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="20" NextSignal="-20"/>
+		<!-- -25: 61.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="11" NextSignal="-27"/>
+		<!-- -26: 61.1 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="16" NextSignal="32"/>
+		<!-- -27: 59.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="10" NextSignal="-29"/>
+		<!-- -28: 59.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="11" NextSignal="-26"/>
+		<!-- -29: 57.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="12" NextSignal="30"/>
+		<!-- -30: 57.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="10" NextSignal="-28"/>
+		<!-- -31: 62.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="6" NextSignal="-33"/>
+		<!-- -32: 62.3 WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="15" NextSignal="33"/>
+		<!-- -33: 58.2 EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="7" NextSignal="20"/>
+		<!-- -34: 58.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="6" NextSignal="-32"/>
+		<!-- -35: CP Martinez EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="295" NextSignal="28"/>
+		<!-- -36: CP Martinez WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="2" NextSignal="21"/>
+		<!-- -37: 47.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="288" NextSignal="-41"/>
+		<!-- -38: 47.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="289" NextSignal="-42"/>
+		<!-- -39: 47.1 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="290" NextSignal="17" DivergenceLookahead="Long"/>
+		<!-- -40: 47.3 WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="291" NextSignal="18"/>
+		<!-- -41: 45.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="286" NextSignal="-45"/>
+		<!-- -42: 45.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="287" NextSignal="-46"/>
+		<!-- -43: 45.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="288" NextSignal="-39"/>
+		<!-- -44: 45.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="289" NextSignal="-40"/>
+		<!-- -45: 42.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="285" NextSignal="-49"/>
+		<!-- -46: 42.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="284" NextSignal="-50"/>
+		<!-- -47: 42.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="286" NextSignal="-43"/>
+		<!-- -48: 42.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="287" NextSignal="-44"/>
+		<!-- -49: Thorn EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="282" NextSignal="15" DivergenceLookahead="Long"/>
+		<!-- -50: Thorn EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="283" NextSignal="16"/>
+		<!-- -51: Thorn WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="285" NextSignal="-47"/>
+		<!-- -52: Thorn WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="284" NextSignal="-48"/>
+		<!-- -53: 32.4 EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="270" NextSignal="8"/>
+		<!-- -54: 32.2 EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="269" NextSignal="7"/>
+		<!-- -55: 32.1 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="271" NextSignal="4" DivergenceLookahead="Long"/>
+		<!-- -56: 32.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="272" NextSignal="3"/>
+		<!-- -57: 26.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="264" NextSignal="-61"/>
+		<!-- -58: 26.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="263" NextSignal="-62"/>
+		<!-- -59: 26.1 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="265" NextSignal="6"/>
+		<!-- -60: 26.3 WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="266" NextSignal="5"/>
+		<!-- -61: 22.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="262" NextSignal="-65"/>
+		<!-- -62: 22.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="261" NextSignal="-66"/>
+		<!-- -63: 22.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="264" NextSignal="-59"/>
+		<!-- -64: 22.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="263" NextSignal="-60"/>
+		<!-- -65: Helendale EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="260" NextSignal="-69"/>
+		<!-- -66: Helendale EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="259" NextSignal="-70"/>
+		<!-- -67: Helendale WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="262" NextSignal="-63"/>
+		<!-- -68: Helendale WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="261" NextSignal="-64"/>
+		<!-- -69: 18.4 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="258" NextSignal="-73"/>
+		<!-- -70: 18.2 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="257" NextSignal="-74"/>
+		<!-- -71: 18.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="260" NextSignal="-67"/>
+		<!-- -72: 18.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="259" NextSignal="-68"/>
+		<!-- -73: 15.4 EB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="255" NextSignal="12"/>
+		<!-- -74: 15.2 EB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="256" NextSignal="11"/>
+		<!-- -75: 15.1 WB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="258" NextSignal="-71"/>
+		<!-- -76: 15.3 WB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="257" NextSignal="-72"/>
+		<!-- -77: 11.6 EB main 1 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="249" NextSignal="-81"/>
+		<!-- -78: 11.6 EB main 2 -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="250" NextSignal="-82"/>
+		<!-- -79: 11.6 WB main 1 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="251" NextSignal="10"/>
+		<!-- -80: 11.6 WB main 2 -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="252" NextSignal="9"/>
+		<!-- -81: 8.9 EB main 1 -->
+		<AutomaticSignal HeadCount="2" DivergenceLookahead="Long"/>
+		<!-- -82: 8.9 EB main 2 -->
+		<AutomaticSignal HeadCount="2"/>
+		<!-- -83: 487.7 SB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="84" NextSignal="86"/>
+		<!-- -84: 487.8 NB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="85" NextSignal="-86"/>
+		<!-- -85: 485.9 SB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="85" NextSignal="-83"/>
+		<!-- -86: 486.0 NB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="86" NextSignal="-88"/>
+		<!-- -87: 483.9 SB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="86" NextSignal="-85"/>
+		<!-- -88: 484.0 NB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="87" NextSignal="85"/>
+		<!-- -89: 478.3 SB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="38" NextSignal="51"/>
+		<!-- -90: 478.4 NB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="36" NextSignal="-92"/>
+		<!-- -91: 476.7 SB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="36" NextSignal="-89"/>
+		<!-- -92: 476.6 NB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="35" NextSignal="-94"/>
+		<!-- -93: 475.1 SB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="35" NextSignal="-91"/>
+		<!-- -94: 475.2 NB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="34" NextSignal="-96"/>
+		<!-- -95: 473.3 SB Palmdale -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="34" NextSignal="-93"/>
+		<!-- -96: 473.2 NB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="30" NextSignal="46"/>
+		<!-- -97: 467.5 SB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="29" NextSignal="43"/>
+		<!-- -98: 467.4 NB Palmdale -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="26" NextSignal="40" DivergenceLookahead="Long"/>
+		<!-- -99: Unidentified signal WB between Kaiser and Guasti -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="130" NextSignal="138"/>
+		<!-- -100: Unidentified signal EB between Kaiser and Guasti -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="131" NextSignal="-101"/>
+		<!-- -101: Unidentified signal WB between Kaiser and Guasti -->
+		<AutomaticSignal HeadCount="2" ProtectedTC="126" NextSignal="133" DivergenceLookahead="Long"/>
+		<!-- -102: Unidentified signal EB between Kaiser and Guasti -->
+		<AutomaticSignal HeadCount="1" ProtectedTC="131" NextSignal="-99"/>
+		<!-- -103: Exit triangle East Victorville WB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -104: Exit triangle BNSF Intermodal and A Yard EB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -105: Exit triangle BNSF East B Yard WB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -106: Exit triangle BNSF East B Yard EB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -107: Exit triangle GM Auto Yard WB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -108: Exit triangle GM Auto Yard EB -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -109: Exit triangle UP West Colton departure yard WB from lead -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -110: Exit triangle UP West Colton departure yard EB from Riverside -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -111: Exit triangle UP West Colton classification yard EB from Cedar -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -112: Exit triangle UP West Colton receiving yard WB from Cedar -->
+		<AutomaticSignal HeadCount="0"/>
+		<!-- -113: Exit triangle UP West Colton receiving yard EB from Sierra -->
+		<AutomaticSignal HeadCount="0"/>
+	</SubArea.AutomaticSignals>
+
+	<SubArea.ControlledSignals>
+		<!-- 0: CP East Victorville EB yard exit -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-54">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+						<RoutePointPosition Points="5" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="e"/>
+						<RouteTC TC="272" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-53" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="True"/>
+						<RoutePointPosition Points="5" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="e"/>
+						<RouteTC TC="274" Direction="e"/>
+						<RouteTC TC="271" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 1: CP East Victorville EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-54">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+						<RoutePointPosition Points="5" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="e"/>
+						<RouteTC TC="272" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-53" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="True"/>
+						<RoutePointPosition Points="5" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="e"/>
+						<RouteTC TC="274" Direction="e"/>
+						<RouteTC TC="271" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 2: CP East Victorville EB main 1 -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-53">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="274" Direction="e"/>
+						<RouteTC TC="271" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 3: CP East Victorville WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="14">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+						<RoutePointPosition Points="5" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="w"/>
+						<RouteTC TC="275" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-103" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+						<RoutePointPosition Points="5" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="273" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 4: CP East Victorville WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="13">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="274" Direction="w"/>
+						<RouteTC TC="276" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="14" Divergence="1" DivergenceDistanceStraightOnly="True">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="True"/>
+						<RoutePointPosition Points="5" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="274" Direction="w"/>
+						<RouteTC TC="273" Direction="w"/>
+						<RouteTC TC="275" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-103" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="4" Reversed="True"/>
+						<RoutePointPosition Points="5" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="274" Direction="w"/>
+						<RouteTC TC="273" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 5: CP East Oro Grande WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-56">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="267" Direction="w"/>
+						<RouteTC TC="269" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-55" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="267" Direction="w"/>
+						<RouteTC TC="268" Direction="w"/>
+						<RouteTC TC="270" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 6: CP East Oro Grande WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-55">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="268" Direction="w"/>
+						<RouteTC TC="270" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-56" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="True"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="268" Direction="w"/>
+						<RouteTC TC="267" Direction="w"/>
+						<RouteTC TC="269" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 7: CP East Oro Grande EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-58">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="267" Direction="e"/>
+						<RouteTC TC="266" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-57" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="True"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="267" Direction="e"/>
+						<RouteTC TC="268" Direction="e"/>
+						<RouteTC TC="265" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 8: CP East Oro Grande EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-57">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="268" Direction="e"/>
+						<RouteTC TC="265" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-58" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="2" Reversed="False"/>
+						<RoutePointPosition Points="3" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="268" Direction="e"/>
+						<RouteTC TC="267" Direction="e"/>
+						<RouteTC TC="266" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 9: CP Hodge WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-76">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="254" Direction="w"/>
+						<RouteTC TC="256" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-75" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="254" Direction="w"/>
+						<RouteTC TC="253" Direction="w"/>
+						<RouteTC TC="255" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 10: CP Hodge WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-75">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="253" Direction="w"/>
+						<RouteTC TC="255" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-76" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="True"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="253" Direction="w"/>
+						<RouteTC TC="254" Direction="w"/>
+						<RouteTC TC="256" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 11: CP Hodge EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-78">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="254" Direction="e"/>
+						<RouteTC TC="252" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-77" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="True"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="254" Direction="e"/>
+						<RouteTC TC="253" Direction="e"/>
+						<RouteTC TC="251" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 12: CP Hodge EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-77">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="253" Direction="e"/>
+						<RouteTC TC="251" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-78" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="0" Reversed="False"/>
+						<RoutePointPosition Points="1" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="253" Direction="e"/>
+						<RouteTC TC="254" Direction="e"/>
+						<RouteTC TC="252" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 13: CP Frost WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-52">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="281" Direction="w"/>
+						<RouteTC TC="283" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-51" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="True"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="281" Direction="w"/>
+						<RouteTC TC="280" Direction="w"/>
+						<RouteTC TC="282" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 14: CP Frost WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-51">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="280" Direction="w"/>
+						<RouteTC TC="282" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-52" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="280" Direction="w"/>
+						<RouteTC TC="281" Direction="w"/>
+						<RouteTC TC="283" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 15: CP Frost EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="1">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="280" Direction="e"/>
+						<RouteTC TC="275" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="2" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="True"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="280" Direction="e"/>
+						<RouteTC TC="281" Direction="e"/>
+						<RouteTC TC="276" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 16: CP Frost EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="2">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="281" Direction="e"/>
+						<RouteTC TC="276" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="1" Divergence="1" DivergenceDistanceStraightOnly="True">
+					<Route.Points>
+						<RoutePointPosition Points="6" Reversed="False"/>
+						<RoutePointPosition Points="7" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="281" Direction="e"/>
+						<RouteTC TC="280" Direction="e"/>
+						<RouteTC TC="275" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 17: CP Lugo WB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="26">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="292" Direction="w"/>
+						<RouteTC TC="294" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-36" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="True"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="292" Direction="w"/>
+						<RouteTC TC="293" Direction="w"/>
+						<RouteTC TC="295" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 18: CP Lugo WB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="-36">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="293" Direction="w"/>
+						<RouteTC TC="295" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="26" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="293" Direction="w"/>
+						<RouteTC TC="292" Direction="w"/>
+						<RouteTC TC="294" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 19: CP Summit EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="25">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="False"/>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="e"/>
+						<RouteTC TC="3" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="24" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="True"/>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="e"/>
+						<RouteTC TC="4" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-35" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="e"/>
+						<RouteTC TC="0" Direction="e"/>
+						<RouteTC TC="2" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 20: CP Summit EB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="-35">
+					<Route.Points>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="0" Direction="e"/>
+						<RouteTC TC="2" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="25" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="False"/>
+						<RoutePointPosition Points="12" Reversed="True"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="0" Direction="e"/>
+						<RouteTC TC="1" Direction="e"/>
+						<RouteTC TC="3" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="24" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="True"/>
+						<RoutePointPosition Points="12" Reversed="True"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="0" Direction="e"/>
+						<RouteTC TC="1" Direction="e"/>
+						<RouteTC TC="4" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 21: CP Summit WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-34">
+					<Route.Points>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="0" Direction="w"/>
+						<RouteTC TC="7" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="29" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="0" Direction="w"/>
+						<RouteTC TC="1" Direction="w"/>
+						<RouteTC TC="8" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 22: CP Summit WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="29">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="False"/>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="w"/>
+						<RouteTC TC="8" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-34" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="False"/>
+						<RoutePointPosition Points="12" Reversed="True"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="w"/>
+						<RouteTC TC="0" Direction="w"/>
+						<RouteTC TC="7" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 23: CP Summit WB siding -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="29">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="True"/>
+						<RoutePointPosition Points="12" Reversed="False"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="w"/>
+						<RouteTC TC="8" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-34" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="11" Reversed="True"/>
+						<RoutePointPosition Points="12" Reversed="True"/>
+						<RoutePointPosition Points="13" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="1" Direction="w"/>
+						<RouteTC TC="0" Direction="w"/>
+						<RouteTC TC="7" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 24: CP Martinez EB siding -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="27">
+					<Route.Points>
+						<RoutePointPosition Points="10" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="5" Direction="e"/>
+						<RouteTC TC="294" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 25: CP Martinez EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="27">
+					<Route.Points>
+						<RoutePointPosition Points="10" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="5" Direction="e"/>
+						<RouteTC TC="294" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 26: CP Martinez WB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="22">
+					<Route.Points>
+						<RoutePointPosition Points="10" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="5" Direction="w"/>
+						<RouteTC TC="3" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="23" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="10" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="5" Direction="w"/>
+						<RouteTC TC="4" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 27: CP Lugo EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-37">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="292" Direction="e"/>
+						<RouteTC TC="290" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-38" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="292" Direction="e"/>
+						<RouteTC TC="293" Direction="e"/>
+						<RouteTC TC="291" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 28: CP Lugo EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-38">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="False"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="293" Direction="e"/>
+						<RouteTC TC="291" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-37" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="8" Reversed="True"/>
+						<RoutePointPosition Points="9" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="293" Direction="e"/>
+						<RouteTC TC="292" Direction="e"/>
+						<RouteTC TC="290" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 29: BNSF CP Silverwood WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-30">
+					<Route.Points>
+						<RoutePointPosition Points="14" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="9" Direction="w"/>
+						<RouteTC TC="12" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="41" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="14" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="9" Direction="w"/>
+						<RouteTC TC="27" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 30: BNSF CP Silverwood EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="19">
+					<Route.Points>
+						<RoutePointPosition Points="14" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="9" Direction="e"/>
+						<RouteTC TC="8" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 31: BNSF CP Silverwood EB from UP -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="19">
+					<Route.Points>
+						<RoutePointPosition Points="14" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="9" Direction="e"/>
+						<RouteTC TC="8" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 32: CP Cajon WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-23">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="13" Direction="w"/>
+						<RouteTC TC="17" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-24" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="True"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="13" Direction="w"/>
+						<RouteTC TC="14" Direction="w"/>
+						<RouteTC TC="18" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 33: CP Cajon WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-24">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="14" Direction="w"/>
+						<RouteTC TC="18" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-23" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="14" Direction="w"/>
+						<RouteTC TC="13" Direction="w"/>
+						<RouteTC TC="17" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 34: CP Cajon EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-31">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="14" Direction="e"/>
+						<RouteTC TC="15" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-25" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="True"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="14" Direction="e"/>
+						<RouteTC TC="13" Direction="e"/>
+						<RouteTC TC="16" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 35: CP Cajon EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-25">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="13" Direction="e"/>
+						<RouteTC TC="16" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-31" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="15" Reversed="False"/>
+						<RoutePointPosition Points="16" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="13" Direction="e"/>
+						<RouteTC TC="14" Direction="e"/>
+						<RouteTC TC="15" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 36: CP Keenbrook WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-15">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="40" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-16" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="True"/>
+						<RoutePointPosition Points="18" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="22" Direction="w"/>
+						<RouteTC TC="39" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 37: CP Keenbrook WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-16">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="22" Direction="w"/>
+						<RouteTC TC="39" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-15" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="22" Direction="w"/>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="40" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 38: CP Keenbrook EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-18">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="22" Direction="e"/>
+						<RouteTC TC="24" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-17" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="22" Direction="w"/>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="23" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 39: CP Keenbrook EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-17">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="23" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-18" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="17" Reversed="False"/>
+						<RoutePointPosition Points="18" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="21" Direction="w"/>
+						<RouteTC TC="22" Direction="w"/>
+						<RouteTC TC="24" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 40: UP Silverwood NB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="31" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="19" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="25" Direction="n"/>
+						<RouteTC TC="27" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 41: UP Silverwood SB from BNSF -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-97">
+					<Route.Points>
+						<RoutePointPosition Points="19" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="25" Direction="s"/>
+						<RouteTC TC="26" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 42: UP Silverwood SB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-97">
+					<Route.Points>
+						<RoutePointPosition Points="19" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="25" Direction="s"/>
+						<RouteTC TC="26" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 43: Canyon north end SB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="47">
+					<Route.Points>
+						<RoutePointPosition Points="20" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="28" Direction="s"/>
+						<RouteTC TC="31" Direction="s"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="48" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="20" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="28" Direction="s"/>
+						<RouteTC TC="32" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 44: Canyon north end NB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-98">
+					<Route.Points>
+						<RoutePointPosition Points="20" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="28" Direction="n"/>
+						<RouteTC TC="29" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 45: Canyon north end NB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-98">
+					<Route.Points>
+						<RoutePointPosition Points="20" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="28" Direction="n"/>
+						<RouteTC TC="29" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 46: Canyon south end NB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="44">
+					<Route.Points>
+						<RoutePointPosition Points="21" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="33" Direction="n"/>
+						<RouteTC TC="31" Direction="n"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="45" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="21" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="33" Direction="n"/>
+						<RouteTC TC="32" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 47: Canyon south end SB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-95">
+					<Route.Points>
+						<RoutePointPosition Points="21" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="33" Direction="s"/>
+						<RouteTC TC="30" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 48: Canyon south end SB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-95">
+					<Route.Points>
+						<RoutePointPosition Points="21" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="33" Direction="s"/>
+						<RouteTC TC="30" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 49: Dike north end NB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-90">
+					<Route.Points>
+						<RoutePointPosition Points="22" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="37" Direction="n"/>
+						<RouteTC TC="38" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 50: Dike north end NB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-90">
+					<Route.Points>
+						<RoutePointPosition Points="22" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="37" Direction="n"/>
+						<RouteTC TC="38" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 51: Dike north end SB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="83">
+					<Route.Points>
+						<RoutePointPosition Points="22" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="37" Direction="s"/>
+						<RouteTC TC="69" Direction="s"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="84" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="22" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="37" Direction="s"/>
+						<RouteTC TC="70" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 52: CP Verdemont WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-11">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="43" Direction="w"/>
+						<RouteTC TC="46" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-12" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="True"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="43" Direction="w"/>
+						<RouteTC TC="44" Direction="w"/>
+						<RouteTC TC="45" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 53: CP Verdemont WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-12">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="44" Direction="w"/>
+						<RouteTC TC="45" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-11" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="44" Direction="w"/>
+						<RouteTC TC="43" Direction="w"/>
+						<RouteTC TC="46" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 54: CP Verdemont EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-13">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="43" Direction="e"/>
+						<RouteTC TC="41" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-14" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="43" Direction="e"/>
+						<RouteTC TC="44" Direction="e"/>
+						<RouteTC TC="42" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 55: CP Verdemont EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-14">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="False"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="44" Direction="e"/>
+						<RouteTC TC="42" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-13" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="23" Reversed="True"/>
+						<RoutePointPosition Points="24" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="44" Direction="e"/>
+						<RouteTC TC="43" Direction="e"/>
+						<RouteTC TC="41" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 56: CP Baseline WB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="65">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="47" Direction="w"/>
+						<RouteTC TC="52" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="66" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="47" Direction="w"/>
+						<RouteTC TC="48" Direction="w"/>
+						<RouteTC TC="51" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 57: CP Baseline WB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="66">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="48" Direction="w"/>
+						<RouteTC TC="51" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="65" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="True"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="48" Direction="w"/>
+						<RouteTC TC="47" Direction="w"/>
+						<RouteTC TC="52" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 58: CP Baseline EB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="-9">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="48" Direction="e"/>
+						<RouteTC TC="50" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-10" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="48" Direction="e"/>
+						<RouteTC TC="47" Direction="e"/>
+						<RouteTC TC="49" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 59: CP Baseline EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-10">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="False"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="47" Direction="e"/>
+						<RouteTC TC="49" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-9" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="25" Reversed="True"/>
+						<RoutePointPosition Points="26" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="47" Direction="e"/>
+						<RouteTC TC="48" Direction="e"/>
+						<RouteTC TC="50" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 60: CP 7th Street EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="58">
+					<Route.Points>
+						<RoutePointPosition Points="28" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="53" Direction="e"/>
+						<RouteTC TC="51" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 61: CP 7th Street EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="58">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="False"/>
+						<RoutePointPosition Points="28" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="55" Direction="e"/>
+						<RouteTC TC="53" Direction="e"/>
+						<RouteTC TC="51" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="59" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="55" Direction="e"/>
+						<RouteTC TC="54" Direction="e"/>
+						<RouteTC TC="52" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 62: CP 7th Street EB main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="59">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="54" Direction="e"/>
+						<RouteTC TC="52" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 63: CP San Bernardino WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="69">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="59" Direction="w"/>
+						<RouteTC TC="63" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="68" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="True"/>
+						<RoutePointPosition Points="31" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="59" Direction="w"/>
+						<RouteTC TC="60" Direction="w"/>
+						<RouteTC TC="62" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-107" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="True"/>
+						<RoutePointPosition Points="31" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="59" Direction="w"/>
+						<RouteTC TC="60" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 64: CP San Bernardino WB main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="68">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+						<RoutePointPosition Points="31" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="w"/>
+						<RouteTC TC="62" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="69" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="True"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="w"/>
+						<RouteTC TC="59" Direction="w"/>
+						<RouteTC TC="63" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-107" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+						<RoutePointPosition Points="31" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 65: CP 7th Street WB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="64">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="54" Direction="w"/>
+						<RouteTC TC="58" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="63" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="54" Direction="w"/>
+						<RouteTC TC="55" Direction="w"/>
+						<RouteTC TC="57" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 66: CP 7th Street WB main 1
+
+		This signal has unusual behaviour. If a diverging route is set onto main 1, then there will be three hand points along the route in track circuit 56. If either of the first two hand points are reversed (yielding a route into BNSF Intermodal yard), signal 66 on the ground shows a restricted diverging indication instead of a stop indication. If the first two hand points are normal but the third hand points are reversed (yielding a route into BNSF A Yard), signal 66 on the ground shows a diverging approach (red over yellow) indication instead of a stop indication. It is not possible to accurately replicate the aspects on the ground on the signaller's display because Run8 doesn't tell us which hand points are in which positions, only whether any hand points are reversed or not on a whole-track-circuit granularity. -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="63">
+					<Route.Points>
+						<RoutePointPosition Points="27" Reversed="False"/>
+						<RoutePointPosition Points="28" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="53" Direction="w"/>
+						<RouteTC TC="55" Direction="w"/>
+						<RouteTC TC="57" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="67" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="28" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="53" Direction="w"/>
+						<RouteTC TC="56" Direction="w"/>
+						<RouteTC TC="61" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 67: CP San Bernardino WB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="70">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="False"/>
+						<RoutePointPosition Points="33" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="w"/>
+						<RouteTC TC="64" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-105" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="True"/>
+						<RoutePointPosition Points="33" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 68: CP Rana WB main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="111">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="80" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="108" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="81" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="95" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="82" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 69: CP Rana WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="108">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="81" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="111" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="80" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="95" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="82" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 70: CP Rana WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="95">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="82" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="108" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="81" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="111" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="80" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 71: CP San Bernardino EB main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="62">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+						<RoutePointPosition Points="31" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="e"/>
+						<RouteTC TC="58" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="61" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="True"/>
+						<RoutePointPosition Points="31" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="e"/>
+						<RouteTC TC="59" Direction="e"/>
+						<RouteTC TC="57" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 72: CP San Bernardino EB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="61">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="59" Direction="e"/>
+						<RouteTC TC="57" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="62" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="True"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="59" Direction="e"/>
+						<RouteTC TC="60" Direction="e"/>
+						<RouteTC TC="58" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 73: CP San Bernardino EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="74">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="False"/>
+						<RoutePointPosition Points="33" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="e"/>
+						<RouteTC TC="61" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-104" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="False"/>
+						<RoutePointPosition Points="33" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 74: Between CP 7th Street and CP San Bernardino EB main 1 -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="60">
+					<Route.TCs>
+						<RouteTC TC="56" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 75: CP San Bernardino WB yard exit
+
+		This signal is actually two signals on the ground, one controlling exit from BNSF Intermodal Yard and the other controlling exit from BNSF A Yard. Hand points select between the two yards and cause one signal to show the appropriate indication while the other is fixed at stop. The signaller does not pay attention to this fact and treats them as one signal. -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="70">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="False"/>
+						<RoutePointPosition Points="33" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="w"/>
+						<RouteTC TC="64" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-105" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="True"/>
+						<RoutePointPosition Points="33" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 76: CP San Bernardino EB GM Auto Yard exit
+
+		This signal is actually three signals on the ground, one controlling exit from tracks 671 and 672, the second from tracks 673 and 674, and the third from tracks 675 and 676. Hand points select between these three groups of tracks and cause one signal to show the appropriate indication while the other two are fixed at stop. The signaller does not pay attention to this fact and treats them as one signal. -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="62">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="False"/>
+						<RoutePointPosition Points="31" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="e"/>
+						<RouteTC TC="58" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="61" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="29" Reversed="False"/>
+						<RoutePointPosition Points="30" Reversed="True"/>
+						<RoutePointPosition Points="31" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="60" Direction="e"/>
+						<RouteTC TC="59" Direction="e"/>
+						<RouteTC TC="57" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 77: CP San Bernardino EB BNSF East B Yard exit -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="74">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="True"/>
+						<RoutePointPosition Points="33" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="e"/>
+						<RouteTC TC="61" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-104" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="32" Reversed="True"/>
+						<RoutePointPosition Points="33" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="65" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 78: CP Rana EB main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="71">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="62" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="72" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="63" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="73" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="64" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-106" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="68" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-108" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 79: CP Rana EB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Short">
+			<ControlledSignal.Routes>
+				<Route Exit="72">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="63" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="71" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="62" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="73" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="64" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-106" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="68" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-108" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="66" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 80: CP Rana EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="73">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="64" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="72" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="63" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="71" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="False"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="66" Direction="e"/>
+						<RouteTC TC="62" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-106" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-108" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="e"/>
+						<RouteTC TC="67" Direction="e"/>
+						<RouteTC TC="66" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 81: CP Rana WB BNSF East B Yard exit -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="95">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="82" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="108" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="81" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="111" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="34" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="True"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="80" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 82: CP Rana WB GM Auto Yard exit -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="111">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="80" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="108" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="False"/>
+						<RoutePointPosition Points="39" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="81" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="95" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="35" Reversed="True"/>
+						<RoutePointPosition Points="36" Reversed="True"/>
+						<RoutePointPosition Points="37" Reversed="False"/>
+						<RoutePointPosition Points="38" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="66" Direction="w"/>
+						<RouteTC TC="67" Direction="w"/>
+						<RouteTC TC="68" Direction="w"/>
+						<RouteTC TC="82" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 83: Dike south end SB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-87">
+					<Route.Points>
+						<RoutePointPosition Points="40" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="71" Direction="s"/>
+						<RouteTC TC="87" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 84: Dike south end SB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-87">
+					<Route.Points>
+						<RoutePointPosition Points="40" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="71" Direction="s"/>
+						<RouteTC TC="87" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 85: Dike south end NB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="49">
+					<Route.Points>
+						<RoutePointPosition Points="40" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="71" Direction="n"/>
+						<RouteTC TC="69" Direction="n"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="50" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="40" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="71" Direction="n"/>
+						<RouteTC TC="70" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 86: Slover north end SB -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Short">
+			<ControlledSignal.Routes>
+				<Route Exit="89">
+					<Route.Points>
+						<RoutePointPosition Points="52" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="83" Direction="s"/>
+						<RouteTC TC="72" Direction="s"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="90" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="52" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="83" Direction="s"/>
+						<RouteTC TC="73" Direction="s"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 87: Slover north end NB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-84">
+					<Route.Points>
+						<RoutePointPosition Points="52" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="83" Direction="n"/>
+						<RouteTC TC="84" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 88: Slover north end NB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-84">
+					<Route.Points>
+						<RoutePointPosition Points="52" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="83" Direction="n"/>
+						<RouteTC TC="84" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 89: Slover south end SB main -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="101">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="False"/>
+						<RoutePointPosition Points="51" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="s"/>
+						<RouteTC TC="89" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="98" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="True"/>
+						<RoutePointPosition Points="51" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="s"/>
+						<RouteTC TC="90" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 90: Slover south end SB siding -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="101">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="False"/>
+						<RoutePointPosition Points="51" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="s"/>
+						<RouteTC TC="89" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="98" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="True"/>
+						<RoutePointPosition Points="51" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="s"/>
+						<RouteTC TC="90" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 91: Colton Crossing WB UP main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Short">
+			<ControlledSignal.Routes>
+				<Route Exit="122">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="76" Direction="w"/>
+						<RouteTC TC="78" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+				<Route Exit="102" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="76" Direction="w"/>
+						<RouteTC TC="78" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="92" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+				<Route Exit="115" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="76" Direction="w"/>
+						<RouteTC TC="78" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="102" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 92: Colton Crossing WB UP main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="102">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="77" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="92" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+				<Route Exit="122" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="77" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="78" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+				<Route Exit="115" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="77" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="102" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 93: Colton Crossing EB UP main 2 -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-5">
+					<Route.TCs>
+						<RouteTC TC="77" Direction="e"/>
+						<RouteTC TC="114" Direction="e"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 94: Colton Crossing EB UP main 1 -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-4">
+					<Route.TCs>
+						<RouteTC TC="76" Direction="e"/>
+						<RouteTC TC="115" Direction="e"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>74</s:UInt16>
+						<s:UInt16>75</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 95: Colton Crossing WB BNSF main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Short">
+			<ControlledSignal.Routes>
+				<Route Exit="122">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="78" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="102" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="78" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="92" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="115" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="78" Direction="w"/>
+						<RouteTC TC="79" Direction="w"/>
+						<RouteTC TC="102" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 96: Rancho EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="93">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="94" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="80" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="False"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="82" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 97: Rancho EB UP West Colton yard lead -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="93">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="94" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="80" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="41" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="True"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="79" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="82" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 98: East Wye Bypass EB from Slover -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="94">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+						<RoutePointPosition Points="45" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="93" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="45" Reversed="True"/>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="79" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="80" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+						<RoutePointPosition Points="45" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="82" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 99: Slover NB from Colton Crossing -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="87">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="True"/>
+						<RoutePointPosition Points="51" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="n"/>
+						<RouteTC TC="72" Direction="n"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="88" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="True"/>
+						<RoutePointPosition Points="51" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="n"/>
+						<RouteTC TC="73" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 100: Slover NB from UP West Colton Yard -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="87">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="False"/>
+						<RoutePointPosition Points="51" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="n"/>
+						<RouteTC TC="72" Direction="n"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="88" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="46" Reversed="False"/>
+						<RoutePointPosition Points="51" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="88" Direction="n"/>
+						<RouteTC TC="73" Direction="n"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 101: Unnamed junction near UP West Colton WB from Slover to main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="118">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="False"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="134" Direction="w"/>
+						<RouteTC TC="100" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-109" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="False"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="116" Direction="w"/>
+						<RouteTC TC="103" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 102: Unnamed junction near UP West Colton WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="118">
+					<Route.Points>
+						<RoutePointPosition Points="48" Reversed="False"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="134" Direction="w"/>
+						<RouteTC TC="100" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-109" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="48" Reversed="False"/>
+						<RoutePointPosition Points="49" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="116" Direction="w"/>
+						<RouteTC TC="103" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 103: Colton Crossing EB BNSF main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="78">
+					<Route.TCs>
+						<RouteTC TC="75" Direction="e"/>
+						<RouteTC TC="80" Direction="e"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>76</s:UInt16>
+						<s:UInt16>77</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 104: Colton Crossing EB BNSF main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="79">
+					<Route.TCs>
+						<RouteTC TC="74" Direction="e"/>
+						<RouteTC TC="81" Direction="e"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>76</s:UInt16>
+						<s:UInt16>77</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 105: BNSF West Colton EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="104">
+					<Route.Points>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="94" Direction="e"/>
+						<RouteTC TC="95" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="103" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="False"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="94" Direction="e"/>
+						<RouteTC TC="93" Direction="e"/>
+						<RouteTC TC="96" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-3" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="True"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="94" Direction="e"/>
+						<RouteTC TC="93" Direction="e"/>
+						<RouteTC TC="97" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 106: BNSF West Colton EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="103">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="False"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="e"/>
+						<RouteTC TC="96" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="104" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="54" Reversed="True"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="e"/>
+						<RouteTC TC="94" Direction="e"/>
+						<RouteTC TC="95" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-3" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="True"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="e"/>
+						<RouteTC TC="97" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 107: BNSF West Colton WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-1">
+					<Route.Points>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="94" Direction="w"/>
+						<RouteTC TC="98" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-2" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="54" Reversed="True"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="94" Direction="w"/>
+						<RouteTC TC="93" Direction="w"/>
+						<RouteTC TC="99" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 108: Colton Crossing WB BNSF main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="107">
+					<Route.TCs>
+						<RouteTC TC="74" Direction="w"/>
+						<RouteTC TC="95" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>76</s:UInt16>
+						<s:UInt16>77</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 109: BNSF West Colton WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-2">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="False"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="w"/>
+						<RouteTC TC="99" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-1" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="False"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="w"/>
+						<RouteTC TC="94" Direction="w"/>
+						<RouteTC TC="98" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 110: BNSF West Colton WB from UP Old Colton Yard and Yuma Sub -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-2">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="True"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="w"/>
+						<RouteTC TC="99" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-1" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="53" Reversed="True"/>
+						<RoutePointPosition Points="54" Reversed="False"/>
+						<RoutePointPosition Points="55" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="93" Direction="w"/>
+						<RouteTC TC="94" Direction="w"/>
+						<RouteTC TC="98" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 111: Colton Crossing WB BNSF main 3 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="109">
+					<Route.TCs>
+						<RouteTC TC="75" Direction="w"/>
+						<RouteTC TC="96" Direction="w"/>
+					</Route.TCs>
+					<Route.FreeTCs>
+						<s:UInt16>76</s:UInt16>
+						<s:UInt16>77</s:UInt16>
+					</Route.FreeTCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 112: Unnamed junction near UP West Colton EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="96">
+					<Route.Points>
+						<RoutePointPosition Points="48" Reversed="False"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="134" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="92" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="100" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="False"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="134" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="89" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="113" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="134" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="105" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="116" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="56" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="134" Direction="e"/>
+						<RouteTC TC="105" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 113: Unnamed junction near UP West Colton WB balloon track (Riverside end) -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="118">
+					<Route.Points>
+						<RoutePointPosition Points="56" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="134" Direction="w"/>
+						<RouteTC TC="100" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 114: Unnamed junction near UP West Colton EB UP West Colton yard lead -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Short">
+			<ControlledSignal.Routes>
+				<Route Exit="97">
+					<Route.Points>
+						<RoutePointPosition Points="49" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="116" Direction="e"/>
+						<RouteTC TC="102" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="96" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="49" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="116" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="92" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="100" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="49" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="47" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="116" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="89" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="113" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="49" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="47" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="116" Direction="e"/>
+						<RouteTC TC="104" Direction="e"/>
+						<RouteTC TC="105" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 115: Unnamed junction near UP West Colton WB UP West Colton yard lead -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-109" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="49" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="116" Direction="w"/>
+						<RouteTC TC="103" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 116: Unnamed junction near UP West Colton WB balloon track (Rancho end) -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="118">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="False"/>
+						<RoutePointPosition Points="56" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="134" Direction="w"/>
+						<RouteTC TC="100" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-109" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="47" Reversed="True"/>
+						<RoutePointPosition Points="48" Reversed="True"/>
+						<RoutePointPosition Points="49" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="104" Direction="w"/>
+						<RouteTC TC="116" Direction="w"/>
+						<RouteTC TC="103" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 117: Riverside Avenue EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="112">
+					<Route.Points>
+						<RoutePointPosition Points="64" Reversed="False"/>
+						<RoutePointPosition Points="89" Reversed="True" IgnoredForAspectCalculation="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="106" Direction="e"/>
+						<RouteTC TC="100" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-110" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="64" Reversed="True"/>
+						<RoutePointPosition Points="89" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="106" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 118: Riverside Avenue WB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="120">
+					<Route.Points>
+						<RoutePointPosition Points="64" Reversed="False"/>
+						<RoutePointPosition Points="89" Reversed="True" IgnoredForAspectCalculation="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="106" Direction="w"/>
+						<RouteTC TC="107" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 119: Cedar WB main 1 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="126">
+					<Route.Points>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="w"/>
+						<RouteTC TC="111" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="127" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="True"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="w"/>
+						<RouteTC TC="110" Direction="w"/>
+						<RouteTC TC="112" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-112" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="True"/>
+						<RoutePointPosition Points="60" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="w"/>
+						<RouteTC TC="110" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 120: Cedar WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="127">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="False"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+						<RouteTC TC="112" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="126" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="False"/>
+						<RoutePointPosition Points="58" Reversed="True"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<!-- Not part of route, but allows yard traffic on track 114 to move while locked by TC 110 -->
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+						<RouteTC TC="109" Direction="w"/>
+						<RouteTC TC="111" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-112" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="False"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 121: Cedar WB UP West Colton Yard exit -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="127">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="True"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+						<RouteTC TC="112" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="126" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="True"/>
+						<RoutePointPosition Points="58" Reversed="True"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<!-- Not part of route, but allows yard traffic on track 114 to move while locked by TC 110 -->
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+						<RouteTC TC="109" Direction="w"/>
+						<RouteTC TC="111" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-112" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="True"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 122: East Wye Bypass WB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-7">
+					<Route.Points>
+						<RoutePointPosition Points="45" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="w"/>
+						<RouteTC TC="101" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="99" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="45" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="w"/>
+						<RouteTC TC="90" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 123: East Wye Bypass EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="94">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="False"/>
+						<RoutePointPosition Points="45" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="93" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="True"/>
+						<RoutePointPosition Points="45" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="79" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="80" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="42" Reversed="False"/>
+						<RoutePointPosition Points="43" Reversed="False"/>
+						<RoutePointPosition Points="44" Reversed="True"/>
+						<RoutePointPosition Points="45" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="113" Direction="e"/>
+						<RouteTC TC="78" Direction="e"/>
+						<RouteTC TC="82" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 124: Cedar EB main 2 -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="117">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="False"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="e"/>
+						<RouteTC TC="107" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-6" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="True"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="e"/>
+						<RouteTC TC="109" Direction="e"/>
+						<RouteTC TC="108" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-111" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="True"/>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="110" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 125: Cedar EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="-6">
+					<Route.Points>
+						<RoutePointPosition Points="58" Reversed="False"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="e"/>
+						<RouteTC TC="108" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="117" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="False"/>
+						<RoutePointPosition Points="58" Reversed="True"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<!-- Not part of route, but allows yard traffic on track 114 to move while locked by TC 110 -->
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="e"/>
+						<RouteTC TC="110" Direction="e"/>
+						<RouteTC TC="107" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-111" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="57" Reversed="True"/>
+						<RoutePointPosition Points="58" Reversed="True"/>
+						<RoutePointPosition Points="59" Reversed="False"/>
+						<!-- Not part of route, but allows yard traffic on track 114 to move while locked by TC 110 -->
+						<RoutePointPosition Points="60" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="109" Direction="e"/>
+						<RouteTC TC="110" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 126: Sierra WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="130">
+					<Route.Points>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="125" Direction="w"/>
+						<RouteTC TC="119" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="129" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="62" Reversed="True"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="125" Direction="w"/>
+						<RouteTC TC="124" Direction="w"/>
+						<RouteTC TC="120" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 127: Sierra WB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="129">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="False"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="124" Direction="w"/>
+						<RouteTC TC="120" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="130" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="False"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="124" Direction="w"/>
+						<RouteTC TC="125" Direction="w"/>
+						<RouteTC TC="119" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 128: Riverside Avenue WB UP West Colton Yard exit -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="120">
+					<Route.Points>
+						<RoutePointPosition Points="64" Reversed="True"/>
+						<RoutePointPosition Points="89" Reversed="False" IgnoredForAspectCalculation="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="106" Direction="w"/>
+						<RouteTC TC="107" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 129: South Fontana WB main 2 -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="134">
+					<Route.Points>
+						<RoutePointPosition Points="114" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="118" Direction="w"/>
+						<RouteTC TC="121" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 130: South Fontana WB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="134">
+					<Route.Points>
+						<RoutePointPosition Points="113" Reversed="False"/>
+						<RoutePointPosition Points="114" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="117" Direction="w"/>
+						<RouteTC TC="118" Direction="w"/>
+						<RouteTC TC="121" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="135" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="113" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="117" Direction="w"/>
+						<RouteTC TC="122" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 131: South Fontana EB siding -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="137">
+					<Route.Points>
+						<RoutePointPosition Points="113" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="117" Direction="e"/>
+						<RouteTC TC="119" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 132: South Fontana EB main -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="137">
+					<Route.Points>
+						<RoutePointPosition Points="113" Reversed="False"/>
+						<RoutePointPosition Points="114" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="118" Direction="e"/>
+						<RouteTC TC="117" Direction="e"/>
+						<RouteTC TC="119" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="136" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="114" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="118" Direction="e"/>
+						<RouteTC TC="120" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 133: AL529/Kaiser EB -->
+		<ControlledSignal HeadCount="2" DivergenceLookahead="Long">
+			<ControlledSignal.Routes>
+				<Route Exit="132">
+					<Route.Points>
+						<RoutePointPosition Points="115" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="123" Direction="e"/>
+						<RouteTC TC="121" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="131" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="115" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="123" Direction="e"/>
+						<RouteTC TC="122" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 134: AL529/Kaiser WB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-102">
+					<Route.Points>
+						<RoutePointPosition Points="115" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="123" Direction="w"/>
+						<RouteTC TC="126" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 135: AL529/Kaiser WB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-102">
+					<Route.Points>
+						<RoutePointPosition Points="115" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="123" Direction="w"/>
+						<RouteTC TC="126" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 136: Sierra EB main 2 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="124">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="False"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="124" Direction="e"/>
+						<RouteTC TC="112" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="125" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="62" Reversed="True"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="124" Direction="e"/>
+						<RouteTC TC="125" Direction="e"/>
+						<RouteTC TC="111" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-113" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="True"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="124" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 137: Sierra EB main 1 -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="125">
+					<Route.Points>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="125" Direction="e"/>
+						<RouteTC TC="111" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="124" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="False"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="125" Direction="e"/>
+						<RouteTC TC="124" Direction="e"/>
+						<RouteTC TC="112" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="-113" Divergence="1" Restricting="True">
+					<Route.Points>
+						<RoutePointPosition Points="61" Reversed="True"/>
+						<RoutePointPosition Points="62" Reversed="False"/>
+						<RoutePointPosition Points="63" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="125" Direction="e"/>
+						<RouteTC TC="124" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 138: Guasti east end WB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="142">
+					<Route.Points>
+						<RoutePointPosition Points="116" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="127" Direction="w"/>
+						<RouteTC TC="128" Direction="w"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="141" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="116" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="127" Direction="w"/>
+						<RouteTC TC="129" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 139: Guasti east end EB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-100">
+					<Route.Points>
+						<RoutePointPosition Points="116" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="127" Direction="e"/>
+						<RouteTC TC="130" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 140: Guasti east end EB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-100">
+					<Route.Points>
+						<RoutePointPosition Points="116" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="127" Direction="e"/>
+						<RouteTC TC="130" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 141: Guasti west end WB siding -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-8">
+					<Route.Points>
+						<RoutePointPosition Points="117" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="132" Direction="w"/>
+						<RouteTC TC="133" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 142: Guasti west end WB main -->
+		<ControlledSignal HeadCount="1">
+			<ControlledSignal.Routes>
+				<Route Exit="-8">
+					<Route.Points>
+						<RoutePointPosition Points="117" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="132" Direction="w"/>
+						<RouteTC TC="133" Direction="w"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+		<!-- 143: Guasti west end EB -->
+		<ControlledSignal HeadCount="2">
+			<ControlledSignal.Routes>
+				<Route Exit="139">
+					<Route.Points>
+						<RoutePointPosition Points="117" Reversed="False"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="132" Direction="e"/>
+						<RouteTC TC="128" Direction="e"/>
+					</Route.TCs>
+				</Route>
+				<Route Exit="140" Divergence="1">
+					<Route.Points>
+						<RoutePointPosition Points="117" Reversed="True"/>
+					</Route.Points>
+					<Route.TCs>
+						<RouteTC TC="132" Direction="e"/>
+						<RouteTC TC="129" Direction="e"/>
+					</Route.TCs>
+				</Route>
+			</ControlledSignal.Routes>
+		</ControlledSignal>
+	</SubArea.ControlledSignals>
+
+	<SubArea.TrackCircuits>
+		<!-- CP Summit, main 2 -->
+		<TrackCircuit ID="0" LocationName="Summit"/>
+		<!-- CP Summit, main 1 -->
+		<TrackCircuit ID="1" LocationName="Summit"/>
+		<!-- CP Martinez, main 2 -->
+		<TrackCircuit ID="2" LocationName="Martinez"/>
+		<!-- CP Martinez, main 1 -->
+		<TrackCircuit ID="3" LocationName="Martinez"/>
+		<!-- CP Martinez, siding -->
+		<TrackCircuit ID="4" LocationName="Martinez"/>
+		<!-- CP Martinez, east siding turnout -->
+		<TrackCircuit ID="5" LocationName="Martinez"/>
+		<!-- Between BNSF Silverwood and Cajon, main 2 -->
+		<TrackCircuit ID="6" LocationName="BNSF Silverwood"/>
+		<!-- Abeam BNSF Silverwood, main 2 -->
+		<TrackCircuit ID="7" LocationName="BNSF Silverwood"/>
+		<!-- Between Summit and BNSF Silverwood, main 1 -->
+		<TrackCircuit ID="8" LocationName="Summit"/>
+		<!-- BNSF Silverwood, main 1 -->
+		<TrackCircuit ID="9" LocationName="BNSF Silverwood"/>
+		<!-- Between BNSF Silverwood and Cajon, main 1 -->
+		<TrackCircuit ID="10" LocationName="BNSF Silverwood"/>
+		<!-- Between BNSF Silverwood and Cajon, main 1 -->
+		<TrackCircuit ID="11" LocationName="BNSF Silverwood"/>
+		<!-- Between BNSF Silverwood and Cajon, main 1 -->
+		<TrackCircuit ID="12" LocationName="BNSF Silverwood"/>
+		<!-- CP Cajon, main 1 -->
+		<TrackCircuit ID="13" LocationName="Cajon"/>
+		<!-- CP Cajon, main 2 -->
+		<TrackCircuit ID="14" LocationName="Cajon"/>
+		<!-- Between BNSF Silverwood and Cajon, main 2 -->
+		<TrackCircuit ID="15" LocationName="Cajon"/>
+		<!-- Between BNSF Silverwood and Cajon, main 1 -->
+		<TrackCircuit ID="16" LocationName="Cajon"/>
+		<!-- Between Cajon and Keenbrook, main 1 -->
+		<TrackCircuit ID="17" LocationName="Cajon"/>
+		<!-- Between Cajon and Keenbrook, main 2 -->
+		<TrackCircuit ID="18" LocationName="Cajon"/>
+		<!-- Between Cajon and Keenbrook, main 1 -->
+		<TrackCircuit ID="19" LocationName="Cajon"/>
+		<!-- Between Cajon and Keenbrook, main 2 -->
+		<TrackCircuit ID="20" LocationName="Cajon"/>
+		<!-- CP Keenbrook, main 1 -->
+		<TrackCircuit ID="21" LocationName="Keenbrook"/>
+		<!-- CP Keenbrook, main 2 -->
+		<TrackCircuit ID="22" LocationName="Keenbrook"/>
+		<!-- Between Cajon and Keenbrook, main 1 -->
+		<TrackCircuit ID="23" LocationName="Keenbrook"/>
+		<!-- Between Cajon and Keenbrook, main 2 -->
+		<TrackCircuit ID="24" LocationName="Keenbrook"/>
+		<!-- UP Silverwood -->
+		<TrackCircuit ID="25" LocationName="UP Silverwood"/>
+		<!-- Between UP Silverwood and Canyon -->
+		<TrackCircuit ID="26" LocationName="UP Silverwood"/>
+		<!-- Between UP Silverwood and BNSF Silverwood -->
+		<TrackCircuit ID="27" LocationName="Silverwood"/>
+		<!-- Canyon north end turnout -->
+		<TrackCircuit ID="28" LocationName="Canyon"/>
+		<!-- Between UP Silverwood and Canyon -->
+		<TrackCircuit ID="29" LocationName="Canyon"/>
+		<!-- Between Canyon and Dike -->
+		<TrackCircuit ID="30" LocationName="Canyon"/>
+		<!-- Canyon mainline -->
+		<TrackCircuit ID="31" LocationName="Canyon"/>
+		<!-- Canyon siding -->
+		<TrackCircuit ID="32" LocationName="Canyon"/>
+		<!-- Canyon south end turnout -->
+		<TrackCircuit ID="33" LocationName="Canyon"/>
+		<!-- Between Canyon and Dike -->
+		<TrackCircuit ID="34" LocationName="Canyon"/>
+		<!-- Between Canyon and Dike -->
+		<TrackCircuit ID="35" LocationName="Dike"/>
+		<!-- Between Canyon and Dike -->
+		<TrackCircuit ID="36" LocationName="Dike"/>
+		<!-- Dike north end turnout -->
+		<TrackCircuit ID="37" LocationName="Dike"/>
+		<!-- Between Canyon and Dike -->
+		<TrackCircuit ID="38" LocationName="Dike"/>
+		<!-- Between Keenbrook and Verdemont, main 2 -->
+		<TrackCircuit ID="39" LocationName="Keenbrook"/>
+		<!-- Between Keenbrook and Verdemont, main 1 -->
+		<TrackCircuit ID="40" LocationName="Keenbrook"/>
+		<!-- Between Keenbrook and Verdemont, main 1 -->
+		<TrackCircuit ID="41" LocationName="Cargill"/>
+		<!-- Between Keenbrook and Verdemont, main 2 -->
+		<TrackCircuit ID="42" LocationName="Cargill"/>
+		<!-- CP Verdemont main 1 -->
+		<TrackCircuit ID="43" LocationName="Verdemont"/>
+		<!-- CP Verdemont main 2 -->
+		<TrackCircuit ID="44" LocationName="Verdemont"/>
+		<!-- Between Verdemont and Baseline, main 2 -->
+		<TrackCircuit ID="45" LocationName="Verdemont"/>
+		<!-- Between Verdemont and Baseline, main 1 -->
+		<TrackCircuit ID="46" LocationName="Verdemont"/>
+		<!-- CP Baseline, main 2 -->
+		<TrackCircuit ID="47" LocationName="Baseline"/>
+		<!-- CP Baseline, main 1 -->
+		<TrackCircuit ID="48" LocationName="Baseline"/>
+		<!-- Between Verdemont and Baseline, main 2 -->
+		<TrackCircuit ID="49" LocationName="Baseline"/>
+		<!-- Between Verdemont and Baseline, main 1 -->
+		<TrackCircuit ID="50" LocationName="Baseline"/>
+		<!-- Between Baseline and 7th Street, main 1 -->
+		<TrackCircuit ID="51" LocationName="Baseline"/>
+		<!-- Between Baseline and 7th Street, main 2 -->
+		<TrackCircuit ID="52" LocationName="Baseline"/>
+		<!-- CP 7th Street, main 1 -->
+		<TrackCircuit ID="53" LocationName="7th Street"/>
+		<!-- CP 7th Street, main 3 -->
+		<TrackCircuit ID="54" LocationName="7th Street"/>
+		<!-- CP 7th Street, main 2 -->
+		<TrackCircuit ID="55" LocationName="7th Street"/>
+		<!-- BNSF Intermodal and A Yard east end and San Bernardino Amtrak, main 1 -->
+		<TrackCircuit ID="56" LocationName="San Bernardino"/>
+		<!-- BNSF Intermodal and A Yard east end and San Bernardino Amtrak, main 2 -->
+		<TrackCircuit ID="57" LocationName="San Bernardino"/>
+		<!-- BNSF Intermodal and A Yard east end and San Bernardino Amtrak, main 3 -->
+		<TrackCircuit ID="58" LocationName="San Bernardino"/>
+		<!-- CP San Bernardino, main 2 -->
+		<TrackCircuit ID="59" LocationName="San Bernardino"/>
+		<!-- CP San Bernardino and GM yard east end, main 3
+
+		This is the east end of the General Motors yard. Two sets of hand points inside the yard are physically positioned between signal 76 and power points 31, and those hand points report on track circuit 60. However, they are safely tucked away behind power points 31, and full mainline routes can be set through the area (and normal proceed aspects obtained) regardless of the positions of the hand points, as long as power points 31 are normal. If power points 31 are reversed, the only possible routes are into the yard, and therefore the protecting signals show restricted aspects regardless of the positions of the hand points. So the hand points are completely irrelevant to the signaller and should not be displayed. -->
+		<TrackCircuit ID="60" LocationName="San Bernardino" IgnoreHandPoints="True"/>
+		<!-- CP San Bernardino, main 1 -->
+		<TrackCircuit ID="61" LocationName="San Bernardino"/>
+		<!-- BNSF East B Yard/GM Auto Yard, main 3 -->
+		<TrackCircuit ID="62" LocationName="San Bernardino"/>
+		<!-- BNSF East B Yard/GM Auto Yard, main 2 -->
+		<TrackCircuit ID="63" LocationName="San Bernardino"/>
+		<!-- BNSF East B Yard/GM Auto Yard, main 1 -->
+		<TrackCircuit ID="64" LocationName="San Bernardino"/>
+		<!-- BNSF East B Yard east end and Intermodal west end, main 1
+
+		This is the west end of the BNSF Intermodal and A yards. A set of hand points inside the yard are physically positioned between signals 75 and power points 33, and those hand points report on track circuit 65. However, they are safely tucked away behind power points 33, and full mainline routes can be set through the area (and normal proceed aspects obtained) regardless of the positions of these hand points, as long as power points 33 are normal. If power points 33 are reversed, the only possible routes are into the yard, and therefore the protecting signals show restricting aspects regardless of the positions of the hand points. So the hand points are completely irrelevant to the signaller and should not be displayed. -->
+		<TrackCircuit ID="65" LocationName="San Bernardino" IgnoreHandPoints="True"/>
+		<!-- CP Rana, main 3 -->
+		<TrackCircuit ID="66" LocationName="Rana"/>
+		<!-- CP Rana, main 2 -->
+		<TrackCircuit ID="67" LocationName="Rana"/>
+		<!-- CP Rana, main 1 -->
+		<TrackCircuit ID="68" LocationName="Rana"/>
+		<!-- Dike mainline -->
+		<TrackCircuit ID="69" LocationName="Dike"/>
+		<!-- Dike siding -->
+		<TrackCircuit ID="70" LocationName="Dike"/>
+		<!-- Dike south end turnout -->
+		<TrackCircuit ID="71" LocationName="Dike"/>
+		<!-- Slover mainline -->
+		<TrackCircuit ID="72" LocationName="Slover"/>
+		<!-- Slover siding -->
+		<TrackCircuit ID="73" LocationName="Slover"/>
+		<!-- Colton Crossing BNSF lines, main 2 -->
+		<TrackCircuit ID="74" LocationName="Colton Crossing"/>
+		<!-- Colton Crossing BNSF lines, main 3 -->
+		<TrackCircuit ID="75" LocationName="Colton Crossing"/>
+		<!-- Colton Crossing UP lines, main 1 -->
+		<TrackCircuit ID="76" LocationName="Colton Crossing"/>
+		<!-- Colton Crossing UP lines, main 2 -->
+		<TrackCircuit ID="77" LocationName="Colton Crossing"/>
+		<!-- Rancho, main 1 -->
+		<TrackCircuit ID="78" LocationName="Rancho"/>
+		<!-- Rancho, main 2 -->
+		<TrackCircuit ID="79" LocationName="Rancho"/>
+		<!-- Between Colton Crossing and CP Rana, main 3 -->
+		<TrackCircuit ID="80" LocationName="Colton Crossing"/>
+		<!-- Between Colton Crossing and CP Rana, main 2 -->
+		<TrackCircuit ID="81" LocationName="Colton Crossing"/>
+		<!-- Between Colton Crossing and CP Rana, main 1 -->
+		<TrackCircuit ID="82" LocationName="Colton Crossing"/>
+		<!-- Slover north end turnout -->
+		<TrackCircuit ID="83" LocationName="Slover"/>
+		<!-- Between Dike and Slover -->
+		<TrackCircuit ID="84" LocationName="Slover"/>
+		<!-- Between Dike and Slover -->
+		<TrackCircuit ID="85" LocationName="Slover"/>
+		<!-- Between Dike and Slover -->
+		<TrackCircuit ID="86" LocationName="Dike"/>
+		<!-- Between Dike and Slover -->
+		<TrackCircuit ID="87" LocationName="Dike"/>
+		<!-- Between Slover and UP West Colton -->
+		<TrackCircuit ID="88" LocationName="Slover"/>
+		<!-- Between Slover and UP West Colton -->
+		<TrackCircuit ID="89" LocationName="Slover"/>
+		<!-- Between Slover and Colton Crossing -->
+		<TrackCircuit ID="90" LocationName="Slover"/>
+		<!-- Track circuit 91 does not exist, though teleporting to it drops you on top of 78 -->
+		<!-- Between Rancho and Riverside Avenue, main 2 -->
+		<TrackCircuit ID="92" LocationName="Rancho"/>
+		<!-- BNSF West Colton, main 2 -->
+		<TrackCircuit ID="93" LocationName="BNSF West Colton"/>
+		<!-- BNSF West Colton, main 1 -->
+		<TrackCircuit ID="94" LocationName="BNSF West Colton"/>
+		<!-- Between BNSF West Colton and Colton Crossing, main 1 -->
+		<TrackCircuit ID="95" LocationName="Colton Crossing"/>
+		<!-- Between BNSF West Colton and Colton Crossing, main 2 -->
+		<TrackCircuit ID="96" LocationName="Colton Crossing"/>
+		<!-- Turnout BNSF West Colton to UP Old Colton Yard and Yuma Sub -->
+		<TrackCircuit ID="97" LocationName="UP Old Colton Yard"/>
+		<!-- West of BNSF West Colton, main 1 -->
+		<TrackCircuit ID="98" LocationName="BNSF West Colton"/>
+		<!-- West of BNSF West Colton, main 2 -->
+		<TrackCircuit ID="99" LocationName="BNSF West Colton"/>
+		<!-- Between Rancho and Riverside Avenue, main 2 -->
+		<TrackCircuit ID="100" LocationName="Riverside Avenue"/>
+		<!-- Between East Wye Bypass and Riverside Avenue, main 1 -->
+		<TrackCircuit ID="101" LocationName="East Wye Bypass"/>
+		<!-- UP West Colton Yard lead -->
+		<TrackCircuit ID="102" LocationName="UP West Colton"/>
+		<!-- UP West Colton Yard lead -->
+		<TrackCircuit ID="103" LocationName="UP West Colton"/>
+		<!-- Between Rancho and Riverside Avenue, main 2 -->
+		<TrackCircuit ID="104" LocationName="Riverside Avenue"/>
+		<!-- Between Rancho and Riverside Avenue, balloon track -->
+		<TrackCircuit ID="105" LocationName="Riverside Avenue"/>
+		<!-- Riverside Avenue, main 2 -->
+		<TrackCircuit ID="106" LocationName="Riverside Avenue"/>
+		<!-- Between Riverside Avenue and Cedar, main 2 -->
+		<TrackCircuit ID="107" LocationName="Cedar"/>
+		<!-- Between Riverside Avenue and Cedar, main 1 -->
+		<TrackCircuit ID="108" LocationName="Cedar"/>
+		<!-- Cedar, main 1 -->
+		<TrackCircuit ID="109" LocationName="Cedar"/>
+		<!-- Cedar, main 2 -->
+		<TrackCircuit ID="110" LocationName="Cedar"/>
+		<!-- Between Cedar and Sierra, main 1 -->
+		<TrackCircuit ID="111" LocationName="Sierra"/>
+		<!-- Between Cedar and Sierra, main 2 -->
+		<TrackCircuit ID="112" LocationName="Sierra"/>
+		<!-- East Wye Bypass -->
+		<TrackCircuit ID="113" LocationName="East Wye Bypass"/>
+		<!-- Between Colton Crossing and Yuma Sub, main 2 -->
+		<TrackCircuit ID="114" LocationName="UP to Yuma Sub"/>
+		<!-- Between Colton Crossing and Yuma Sub, main 1 -->
+		<TrackCircuit ID="115" LocationName="UP to Yuma Sub"/>
+		<!-- UP West Colton Yard lead -->
+		<TrackCircuit ID="116" LocationName="UP West Colton"/>
+		<!-- South Fontana siding turnout -->
+		<TrackCircuit ID="117" LocationName="South Fontana"/>
+		<!-- South Fontana main 2 turnout -->
+		<TrackCircuit ID="118" LocationName="South Fontana"/>
+		<!-- Between Sierra and South Fontana, main 1 -->
+		<TrackCircuit ID="119" LocationName="South Fontana"/>
+		<!-- Between Sierra and South Fontana, main 2 -->
+		<TrackCircuit ID="120" LocationName="South Fontana"/>
+		<!-- Between South Fontana and AL529/Kaiser, mainline -->
+		<TrackCircuit ID="121" LocationName="South Fontana"/>
+		<!-- Between South Fontana and AL529/Kaiser, siding -->
+		<TrackCircuit ID="122" LocationName="South Fontana"/>
+		<!-- AL529/Kaiser turnout -->
+		<TrackCircuit ID="123" LocationName="Kaiser"/>
+		<!-- Sierra, main 2 -->
+		<TrackCircuit ID="124" LocationName="Sierra"/>
+		<!-- Sierra, main 3 -->
+		<TrackCircuit ID="125" LocationName="Sierra"/>
+		<!-- Between AL529/Kaiser and Guasti -->
+		<TrackCircuit ID="126" LocationName="Kaiser"/>
+		<!-- Guasti east end turnout -->
+		<TrackCircuit ID="127" LocationName="Guasti"/>
+		<!-- Guasti mainline -->
+		<TrackCircuit ID="128" LocationName="Guasti"/>
+		<!-- Guasti siding -->
+		<TrackCircuit ID="129" LocationName="Guasti"/>
+		<!-- Between AL529/Kaiser and Guasti -->
+		<TrackCircuit ID="130" LocationName="Guasti"/>
+		<!-- Between AL529/Kaiser and Guasti -->
+		<TrackCircuit ID="131" LocationName="Kaiser"/>
+		<!-- Guasti west end turnout -->
+		<TrackCircuit ID="132" LocationName="Guasti"/>
+		<!-- Between Guasti and LA -->
+		<TrackCircuit ID="133" LocationName="Guasti"/>
+		<!-- Between Rancho and Riverside Avenue, main 2 -->
+		<TrackCircuit ID="134" LocationName="Riverside Avenue"/>
+		<!-- Track circuits 135 through 248 do not exist, though teleporting to 223 through 225 drop you on top of Hinkley in Mojave sub -->
+		<!-- Between Lenwood and Hodge, main 1 -->
+		<TrackCircuit ID="249" LocationName="Hodge"/>
+		<!-- Between Lenwood and Hodge, main 2 -->
+		<TrackCircuit ID="250" LocationName="Hodge"/>
+		<!-- Between Lenwood and Hodge, main 1 -->
+		<TrackCircuit ID="251" LocationName="Hodge"/>
+		<!-- Between Lenwood and Hodge, main 2 -->
+		<TrackCircuit ID="252" LocationName="Hodge"/>
+		<!-- CP Hodge, main 1 -->
+		<TrackCircuit ID="253" LocationName="Hodge"/>
+		<!-- CP Hodge, main 2 -->
+		<TrackCircuit ID="254" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="255" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="256" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="257" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="258" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="259" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="260" LocationName="Hodge"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="261" LocationName="East Oro Grande"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="262" LocationName="East Oro Grande"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="263" LocationName="East Oro Grande"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="264" LocationName="East Oro Grande"/>
+		<!-- Between Hodge and East Oro Grande, main 1 -->
+		<TrackCircuit ID="265" LocationName="East Oro Grande"/>
+		<!-- Between Hodge and East Oro Grande, main 2 -->
+		<TrackCircuit ID="266" LocationName="East Oro Grande"/>
+		<!-- CP East Oro Grande, main 2 -->
+		<TrackCircuit ID="267" LocationName="East Oro Grande"/>
+		<!-- CP East Oro Grande, main 1 -->
+		<TrackCircuit ID="268" LocationName="East Oro Grande"/>
+		<!-- Between East Oro Grande and East Victorville, main 2 -->
+		<TrackCircuit ID="269" LocationName="Oro Grande"/>
+		<!-- Between East Oro Grande and East Victorville, main 1 -->
+		<TrackCircuit ID="270" LocationName="Oro Grande"/>
+		<!-- Between East Oro Grande and East Victorville, main 1 -->
+		<TrackCircuit ID="271" LocationName="East Victorville"/>
+		<!-- Between East Oro Grande and East Victorville, main 2 -->
+		<TrackCircuit ID="272" LocationName="East Victorville"/>
+		<!-- CP East Victorville, main 2 -->
+		<TrackCircuit ID="273" LocationName="East Victorville"/>
+		<!-- CP East Victorville, main 1 -->
+		<TrackCircuit ID="274" LocationName="East Victorville"/>
+		<!-- Between East Victorville and Frost, main 2 -->
+		<TrackCircuit ID="275" LocationName="Victorville"/>
+		<!-- Between East Victorville and Frost, main 1 -->
+		<TrackCircuit ID="276" LocationName="Victorville"/>
+		<!-- Track circuits 277 through 279 do not exist -->
+		<!-- CP Frost, main 2 -->
+		<TrackCircuit ID="280" LocationName="Frost"/>
+		<!-- CP Frost, main 1 -->
+		<TrackCircuit ID="281" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 2/1 -->
+		<TrackCircuit ID="282" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 1/2 -->
+		<TrackCircuit ID="283" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 2 -->
+		<TrackCircuit ID="284" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 1 -->
+		<TrackCircuit ID="285" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 1 -->
+		<TrackCircuit ID="286" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 2 -->
+		<TrackCircuit ID="287" LocationName="Frost"/>
+		<!-- Between Frost and Lugo, main 1 -->
+		<TrackCircuit ID="288" LocationName="Lugo"/>
+		<!-- Between Frost and Lugo, main 2 -->
+		<TrackCircuit ID="289" LocationName="Lugo"/>
+		<!-- Between Frost and Lugo, main 1 -->
+		<TrackCircuit ID="290" LocationName="Lugo"/>
+		<!-- Between Frost and Lugo, main 2 -->
+		<TrackCircuit ID="291" LocationName="Lugo"/>
+		<!-- CP Lugo, main 1 -->
+		<TrackCircuit ID="292" LocationName="Lugo"/>
+		<!-- CP Lugo, main 2 -->
+		<TrackCircuit ID="293" LocationName="Lugo"/>
+		<!-- Between Lugo and Martinez, main 1 -->
+		<TrackCircuit ID="294" LocationName="Martinez"/>
+		<!-- CP Martinez, main 2 -->
+		<TrackCircuit ID="295" LocationName="Martinez"/>
+	</SubArea.TrackCircuits>
+
+	<SubArea.Points>
+		<!-- 0: CP Hodge east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>253</s:UInt16>
+				<s:UInt16>254</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 1: CP Hodge west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>253</s:UInt16>
+				<s:UInt16>254</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 2: CP East Oro Grande east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>267</s:UInt16>
+				<s:UInt16>268</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 3: CP East Oro Grande west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>267</s:UInt16>
+				<s:UInt16>268</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 4: CP East Victorville mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>273</s:UInt16>
+				<s:UInt16>274</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 5: CP East Victorville yard access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>273</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 6: CP Frost east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>280</s:UInt16>
+				<s:UInt16>281</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 7: CP Frost west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>280</s:UInt16>
+				<s:UInt16>281</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 8: CP Lugo east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>292</s:UInt16>
+				<s:UInt16>293</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 9: CP Lugo west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>292</s:UInt16>
+				<s:UInt16>293</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 10: CP Martinez -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>5</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 11: CP Summit siding turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>1</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 12: CP Summit east mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>0</s:UInt16>
+				<s:UInt16>1</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 13: CP Summit west mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>0</s:UInt16>
+				<s:UInt16>1</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 14: BNSF CP Silverwood turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>9</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 15: CP Cajon west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>13</s:UInt16>
+				<s:UInt16>14</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 16: CP Cajon east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>13</s:UInt16>
+				<s:UInt16>14</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 17: CP Keenbrook east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>21</s:UInt16>
+				<s:UInt16>22</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 18: CP Keenbrook west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>21</s:UInt16>
+				<s:UInt16>22</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 19: UP Silverwood turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>25</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 20: Canyon north turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>28</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 21: Canyon south turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>33</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 22: Dike north turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>37</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 23: CP Verdemont east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>43</s:UInt16>
+				<s:UInt16>44</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 24: CP Verdemont west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>43</s:UInt16>
+				<s:UInt16>44</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 25: CP Baseline east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>47</s:UInt16>
+				<s:UInt16>48</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 26: CP Baseline west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>47</s:UInt16>
+				<s:UInt16>48</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 27: CP Seventh Street main 2/3 crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>54</s:UInt16>
+				<s:UInt16>55</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 28: CP Seventh Street main 1/2 turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>53</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 29: CP San Bernardino east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>59</s:UInt16>
+				<s:UInt16>60</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 30: CP San Bernardino west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>59</s:UInt16>
+				<s:UInt16>60</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 31: GM Auto Yard east access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>60</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 32: BNSF East B Yard east access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>65</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 33: BNSF SBD/A Yard west access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>65</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 34: BNSF East B Yard west access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>68</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 35: GM Auto Yard west access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>66</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 36: CP Rana main 2/3 east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>66</s:UInt16>
+				<s:UInt16>67</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 37: CP Rana main 1/2 east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>67</s:UInt16>
+				<s:UInt16>68</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 38: CP Rana main 1/2 west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>67</s:UInt16>
+				<s:UInt16>68</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 39: CP Rana main 2/3 west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>66</s:UInt16>
+				<s:UInt16>67</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 40: Dike south siding turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>71</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 41: Rancho West Colton Yard access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>79</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 42: Rancho west mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>78</s:UInt16>
+				<s:UInt16>79</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 43: Rancho east mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>78</s:UInt16>
+				<s:UInt16>79</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 44: Colton Crossing BNSF main 1 to UP main 1 turnout (Rana to Rancho) -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>78</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 45: East Bypass Wye -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>113</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 46: Unnamed points beside the bridge to Slover, connecting Slover to either UP West Colton (N) or Colton Crossing (R) -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>88</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 47: Unnamed points connecting reverse end of points 48 to Slover (N) or the balloon (R)  -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>104</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 48: Unnamed points connecting main 2 eastbound near UP West Colton to either Colton Crossing (N) or Slover or the balloon (R) -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>104</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 49: Unnamed crossover between main 2 and UP West Colton Yard lead -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>104</s:UInt16>
+				<s:UInt16>116</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 50: UP West Colton Yard, departure yard, east ladder, to either 501, 502, 411-415 (N); or 435-439, 904, 905 (R) -->
+		<Points/>
+		<!-- 51: Slover south turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>88</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 52: Slover north turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>83</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 53: CP West Colton turnout to UP Old Colton Yard and Yuma Sub -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>93</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 54: CP West Colton east crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>93</s:UInt16>
+				<s:UInt16>94</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 55: CP West Colton west crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>93</s:UInt16>
+				<s:UInt16>94</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 56: Unnamed points connecting main 2 eastbound near UP West Colton to either further main 2 or the balloon -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>134</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 57: Cedar east UP West Colton Yard access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>110</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 58: Cedar east mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>109</s:UInt16>
+				<s:UInt16>110</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 59: Cedar west mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>109</s:UInt16>
+				<s:UInt16>110</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 60: Cedar west UP West Colton Yard access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>110</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 61: Sierra UP West Colton Yard access turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>124</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 62: Sierra east mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>124</s:UInt16>
+				<s:UInt16>125</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 63: Sierra west mainline crossover -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>124</s:UInt16>
+				<s:UInt16>125</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 64: Riverside Avenue turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>106</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 65: UP West Colton Yard, departure yard, east end inner micro-ladder, 415 to 414 (N) or 415 to 435 (R) -->
+		<Points/>
+		<!-- 66: UP West Colton Yard, departure yard, east end inner micro-ladder, micro-ladder to 415 (N) or 435 (R) -->
+		<Points/>
+		<!-- 67: UP West Colton Yard, classification yard, scissors between 203 and 204, crossover facing to eastbound movements on 203 -->
+		<Points/>
+		<!-- 68: UP West Colton Yard, classification yard, west crossover between 202 and 203 -->
+		<Points/>
+		<!-- 69: UP West Colton Yard, classification yard, west crossover between 204 and 210-215 ladder -->
+		<Points/>
+		<!-- 70: UP West Colton Yard, receiving yard, west crossover between 115 and 116 -->
+		<Points/>
+		<!-- 71: UP West Colton Yard, receiving yard, east crossover between 115 and 116 -->
+		<Points/>
+		<!-- 72: UP West Colton Yard, classification yard, scissors between 203 and 204, crossover facing to eastbound movements on 204 -->
+		<Points/>
+		<!-- 73: UP West Colton Yard, departure yard, east end inner micro-ladder, main ladder to 436 (N) or main ladder to micro-ladder (R) -->
+		<Points/>
+		<!-- 74: UP West Colton Yard, classification yard, east crossover between 204 and 210-215 ladder -->
+		<Points/>
+		<!-- 75: UP West Colton Yard, classification yard, east crossover between 202 and 203 -->
+		<Points/>
+		<!-- 76: UP West Colton Yard, departure yard, east main ladder to 436 -->
+		<Points/>
+		<!-- 77: UP West Colton Yard, classification yard, classification ladder bypass turnout from 215 to 414 -->
+		<Points/>
+		<!-- 78: UP West Colton Yard, departure yard, east main ladder to 904 -->
+		<Points/>
+		<!-- 79: UP West Colton Yard, departure yard, east end turnout 414 to 415 -->
+		<Points/>
+		<!-- 80: UP West Colton Yard, departure yard, east end turnout 436 to 437 -->
+		<Points/>
+		<!-- 81: UP West Colton Yard, departure yard, east main ladder to 438 -->
+		<Points/>
+		<!-- 82: UP West Colton Yard, departure yard, east main ladder to 439 -->
+		<Points/>
+		<!-- 83: UP West Colton Yard, departure yard, east main ladder to 414 -->
+		<Points/>
+		<!-- 84: UP West Colton Yard, departure yard, east main ladder to 413 -->
+		<Points/>
+		<!-- 85: UP West Colton Yard, departure yard, east main ladder to 412 -->
+		<Points/>
+		<!-- 86: UP West Colton Yard, departure yard, east main ladder to 411 -->
+		<Points/>
+		<!-- 87: UP West Colton Yard, departure yard, east main ladder to 502 -->
+		<Points/>
+		<!-- 88: UP West Colton Yard, departure yard, west end turnout 501 to 502 -->
+		<Points/>
+		<!-- 89: UP West Colton Yard, classification yard, east end turnout 501 to Riverside (N) or 201/202 (R) -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>106</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 90: UP West Colton Yard, classification yard, east end turnout 201/202 to 202 (N) or 201 (R) -->
+		<Points/>
+		<!-- 91: UP West Colton Yard, departure yard, west ladder to 415 -->
+		<Points/>
+		<!-- 92: UP West Colton Yard, departure yard, west ladder to 435 -->
+		<Points/>
+		<!-- 93: UP West Colton Yard, departure yard, west ladder to 436 -->
+		<Points/>
+		<!-- 94: UP West Colton Yard, departure yard, west ladder to 437 -->
+		<Points/>
+		<!-- 95: UP West Colton Yard, classification yard, east end crossover to departure yard 414 (N) or 415, 435-439, 904, 905 (R) -->
+		<Points/>
+		<!-- 96: UP West Colton Yard, classification yard, east end turnout 202 to 411 (N) or 501/502 (R) -->
+		<Points/>
+		<!-- 97: UP West Colton Yard, departure yard, west end turnout 905 to storage/service (N) or west ladder (R) -->
+		<Points/>
+		<!-- 98: UP West Colton Yard, departure yard, west ladder to 904 -->
+		<Points/>
+		<!-- 99: UP West Colton Yard, departure yard, west ladder to 439 -->
+		<Points/>
+		<!-- 100: UP West Colton Yard, departure yard, west ladder to 438 -->
+		<Points/>
+		<!-- 101: UP West Colton Yard, receiving yard, east crossover between 099 and 114 -->
+		<Points/>
+		<!-- 102: UP West Colton Yard, receiving yard, turnout from 099 to ladder (N) or 108 bypass (R) -->
+		<Points/>
+		<!-- 103: UP West Colton Yard, receiving yard, east ladder to 103/104 (N) or 105-109 (R) -->
+		<Points/>
+		<!-- 104: UP West Colton Yard, receiving yard, east ladder to 105 -->
+		<Points/>
+		<!-- 105: UP West Colton Yard, receiving yard, east ladder to 106 -->
+		<Points/>
+		<!-- 106: UP West Colton Yard, receiving yard, east ladder to 107 -->
+		<Points/>
+		<!-- 107: UP West Colton Yard, receiving yard, west crossover between 099 and 114 -->
+		<Points/>
+		<!-- 108: UP West Colton Yard, receiving yard, turnout from 103 to 104 -->
+		<Points/>
+		<!-- 109: UP West Colton Yard, receiving yard, east end ladder bypass from 108 to 099 (N) or 115 (R) -->
+		<Points/>
+		<!-- 110: UP West Colton Yard, receiving yard, east crossover between 099 and 115 -->
+		<Points/>
+		<!-- 111: UP West Colton Yard, receiving yard, crossover between 108 and 109 -->
+		<Points/>
+		<!-- 112: UP West Colton Yard, receiving yard, turnout from 108 to 108 ladder bypass (N) or east ladder (R) -->
+		<Points/>
+		<!-- 113: South Fontana siding turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>117</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 114: South Fontana main 2 turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>118</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 115: AL529/Kaiser turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>123</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 116: Guasti east turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>127</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+		<!-- 117: Guasti west turnout -->
+		<Points>
+			<Points.ProtectingTCs>
+				<s:UInt16>132</s:UInt16>
+			</Points.ProtectingTCs>
+		</Points>
+	</SubArea.Points>
+</SubArea>
