@@ -17,6 +17,18 @@ namespace Iecc8.World {
 	public class World : BindableBase, IDispatcher {
 		#region Signaller API
 		/// <summary>
+		/// Whether the communication link to Run8 has failed.
+		/// </summary>
+		public bool LinkError {
+			get {
+				return LinkErrorImpl;
+			}
+			private set {
+				SetProperty(ref LinkErrorImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// The permission level granted to the dispatcher.
 		/// </summary>
 		public EDispatcherPermission Permission {
@@ -62,9 +74,11 @@ namespace Iecc8.World {
 		// All functions in this region are called on the thread pool by WCF, so any touching of the Route objects, emitting of events, etc. must be posted to SyncContext.
 
 		void IDispatcher.DTMF(DTMFMessage pMessage) {
+			MessageReceived = true;
 		}
 
 		void IDispatcher.PermissionUpdate(DispatcherPermissionMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => {
 				Permission = pMessage.Permission;
 				AIPermission = pMessage.AIPermission;
@@ -72,45 +86,56 @@ namespace Iecc8.World {
 		}
 
 		void IDispatcher.Ping() {
+			MessageReceived = true;
 		}
 
 		void IDispatcher.RadioText(RadioTextMessage pMessage) {
+			MessageReceived = true;
 		}
 
 		void IDispatcher.SendSimulationState(SimulationStateMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => SimulationTime = pMessage.SimulationTime, null);
 		}
 
 		void IDispatcher.SetInterlockErrorSwitches(InterlockErrorSwitchesMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => Region.UpdateFromRun8(pMessage), null);
 		}
 
 		void IDispatcher.SetOccupiedBlocks(OccupiedBlocksMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => Region.UpdateFromRun8(pMessage), null);
 		}
 
 		void IDispatcher.SetOccupiedSwitches(OccupiedSwitchesMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => Region.UpdateFromRun8(pMessage), null);
 		}
 
 		void IDispatcher.SetReversedSwitches(ReversedSwitchesMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => Region.UpdateFromRun8(pMessage), null);
 		}
 
 		void IDispatcher.SetSignals(SignalsMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post(async (object state) => {
 				try {
 					await Region.UpdateFromRun8Async(pMessage);
 				} catch (CommunicationException) {
+					LinkError = true;
 				}
 			}, null);
 		}
 
 		void IDispatcher.SetUnlockedSwitches(UnlockedSwitchesMessage pMessage) {
+			MessageReceived = true;
 			SyncContext.Post((object state) => Region.UpdateFromRun8(pMessage), null);
 		}
 
 		void IDispatcher.UpdateTrainData(TrainDataMessage pMessage) {
+			MessageReceived = true;
 		}
 		#endregion
 
@@ -131,6 +156,7 @@ namespace Iecc8.World {
 			AIPermissionImpl = false;
 			Run8 = run8;
 			SyncContext = SynchronizationContext.Current;
+			PingTimer = new Timer(PingTimerTick, null, 0, 5000);
 			Regions regions = (Regions) Application.LoadComponent(new Uri("/iecc8;component/Region/Regions.xaml", UriKind.Relative));
 			Schema.Region region = null;
 			foreach (Schema.Region i in regions) {
@@ -159,6 +185,7 @@ namespace Iecc8.World {
 			try {
 				await Run8.ChangeSignalAsync(route, signal, indication);
 			} catch (CommunicationException) {
+				LinkError = true;
 			}
 		}
 
@@ -172,16 +199,36 @@ namespace Iecc8.World {
 			try {
 				await Run8.ThrowSwitchAsync(route, points, state);
 			} catch (CommunicationException) {
+				LinkError = true;
 			}
 		}
 		#endregion
 
 		#region Private Members
+		private bool LinkErrorImpl;
 		private EDispatcherPermission PermissionImpl;
 		private bool AIPermissionImpl;
 		private DateTime SimulationTimeImpl;
+		private volatile bool MessageReceived;
 		private readonly Run8Wrapper Run8;
 		private readonly SynchronizationContext SyncContext;
+		private readonly Timer PingTimer;
+
+		/// <summary>
+		/// Pings Run8 if no message has been received for a while.
+		/// </summary>
+		private void PingTimerTick(object state) {
+			bool shouldPing = !MessageReceived;
+			MessageReceived = false;
+			if (shouldPing) {
+				try {
+					Run8.PingAsync().Wait();
+				} catch (CommunicationException) {
+					PingTimer.Change(Timeout.Infinite, Timeout.Infinite);
+					SyncContext.Post((object param) => LinkError = true, null);
+				}
+			}
+		}
 		#endregion
 	}
 }
