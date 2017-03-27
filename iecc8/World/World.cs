@@ -41,6 +41,18 @@ namespace Iecc8.World {
 		}
 
 		/// <summary>
+		/// The current in-game date and time.
+		/// </summary>
+		public DateTime SimulationTime {
+			get {
+				return SimulationTimeImpl;
+			}
+			private set {
+				SetProperty(ref SimulationTimeImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// The region being communicated with.
 		/// </summary>
 		public readonly Region Region;
@@ -66,6 +78,7 @@ namespace Iecc8.World {
 		}
 
 		void IDispatcher.SendSimulationState(SimulationStateMessage pMessage) {
+			SyncContext.Post((object state) => SimulationTime = pMessage.SimulationTime, null);
 		}
 
 		void IDispatcher.SetInterlockErrorSwitches(InterlockErrorSwitchesMessage pMessage) {
@@ -166,6 +179,7 @@ namespace Iecc8.World {
 		#region Private Members
 		private EDispatcherPermission PermissionImpl;
 		private bool AIPermissionImpl;
+		private DateTime SimulationTimeImpl;
 		private readonly Run8Wrapper Run8;
 		private readonly SynchronizationContext SyncContext;
 		#endregion
