@@ -28,6 +28,9 @@
 		<Rectangle Fill="Blue" Grid.RowSpan="3"/>
 		<Rectangle Grid.Column="2" Fill="LightGreen"/>
 		<Rectangle Grid.Column="2" Fill="Red" Grid.Row="2"/>
+		<Viewbox Grid.RowSpan="3" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Converter={StaticResource ResourceKey=BoolToVis}}">
+			<TextBlock Foreground="Red" Text="Link Down" FontSize="72" FontWeight="Bold"/>
+		</Viewbox>
 		<Grid Grid.Row="3" Grid.ColumnSpan="3">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="Auto"/>
