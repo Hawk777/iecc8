@@ -38,6 +38,8 @@
 				<ColumnDefinition Width="Auto"/>
 				<ColumnDefinition Width="Auto"/>
 				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 			<Grid.RowDefinitions>
 				<RowDefinition/>
@@ -50,6 +52,7 @@
 			<Button Grid.Column="5" Content="CHAN" ToolTip="Enable/Disable Radio Channels" AutomationProperties.AcceleratorKey="F3"/>
 			<TextBlock Grid.Column="6" Text="F4" TextAlignment="Center"/>
 			<Button Grid.Column="7" Content="SEND" ToolTip="Send Radio Message" AutomationProperties.AcceleratorKey="F4"/>
+			<TextBlock Grid.Column="9" Text="{Binding World.SimulationTime}" TextAlignment="Center"/>
 			<Grid.Resources>
 				<Style TargetType="Button">
 					<Setter Property="Foreground" Value="{StaticResource BottomBarHighlightFG}"/>
