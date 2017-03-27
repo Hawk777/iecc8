@@ -90,12 +90,37 @@
     <Compile Include="Schema\RouteTC.cs" />
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
+    <Compile Include="UI\BlinkClockSource.cs" />
+    <Compile Include="UI\DiagonalSection.xaml.cs">
+      <DependentUpon>DiagonalSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExitTriangle.xaml.cs">
+      <DependentUpon>ExitTriangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HScrollViewer.cs" />
+    <Compile Include="UI\HSection.xaml.cs">
+      <DependentUpon>HSection.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\MainViewModel.cs" />
     <Compile Include="UI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\PermissionWaiter.cs" />
+    <Compile Include="UI\Points.xaml.cs">
+      <DependentUpon>Points.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SectionPointPosition.cs" />
+    <Compile Include="UI\SectionPointPositionResolved.cs" />
+    <Compile Include="UI\Signal.cs" />
+    <Compile Include="UI\SignalBase.cs" />
+    <Compile Include="UI\SignalHead.xaml.cs">
+      <DependentUpon>SignalHead.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SignalStem.xaml.cs">
+      <DependentUpon>SignalStem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\SubAreaNumberWaiter.cs" />
+    <Compile Include="UI\TrackSection.cs" />
     <Compile Include="UI\WelcomeWindow.xaml.cs">
       <DependentUpon>WelcomeWindow.xaml</DependentUpon>
     </Compile>
@@ -127,11 +152,35 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UI\DiagonalSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ExitTriangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Points.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SignalHead.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SignalStem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

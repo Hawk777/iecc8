@@ -11,4 +11,62 @@
 	<Window.Foreground>
 		<StaticResource ResourceKey="FG"/>
 	</Window.Foreground>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<GridSplitter Grid.Column="1" HorizontalAlignment="Center" Grid.RowSpan="3" Width="2"/>
+		<GridSplitter Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Center" Height="2"/>
+		<Rectangle Fill="Blue" Grid.RowSpan="3"/>
+		<Rectangle Grid.Column="2" Fill="LightGreen"/>
+		<Rectangle Grid.Column="2" Fill="Red" Grid.Row="2"/>
+		<Grid Grid.Row="3" Grid.ColumnSpan="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<TextBlock Text="F1" TextAlignment="Center"/>
+			<Button Grid.Column="1" Content="OPTN" ToolTip="Show/Hide Options Window" AutomationProperties.AcceleratorKey="F1"/>
+			<TextBlock Grid.Column="2" Text="F2" TextAlignment="Center"/>
+			<Button Grid.Column="3" Content="TLST" ToolTip="Show/Hide Train List Window" AutomationProperties.AcceleratorKey="F2"/>
+			<TextBlock Grid.Column="4" Text="F3" TextAlignment="Center"/>
+			<Button Grid.Column="5" Content="CHAN" ToolTip="Enable/Disable Radio Channels" AutomationProperties.AcceleratorKey="F3"/>
+			<TextBlock Grid.Column="6" Text="F4" TextAlignment="Center"/>
+			<Button Grid.Column="7" Content="SEND" ToolTip="Send Radio Message" AutomationProperties.AcceleratorKey="F4"/>
+			<Grid.Resources>
+				<Style TargetType="Button">
+					<Setter Property="Foreground" Value="{StaticResource BottomBarHighlightFG}"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Border Background="{StaticResource BottomBarHighlightBG}" BorderThickness="0" Padding="7, 0">
+									<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+								</Border>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<Style TargetType="TextBlock">
+					<Setter Property="Padding" Value="7, 0"/>
+				</Style>
+			</Grid.Resources>
+		</Grid>
+	</Grid>
 </Window>
