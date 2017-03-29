@@ -43,8 +43,8 @@ namespace Iecc8.Schema {
 		public SubArea() {
 			AutomaticSignals = new List<AutomaticSignal>();
 			ControlledSignals = new List<ControlledSignal>();
-			TrackCircuits = new List<Schema.TrackCircuit>();
-			Points = new List<Schema.Points>();
+			TrackCircuits = new List<TrackCircuit>();
+			Points = new List<Points>();
 		}
 	}
 }
