@@ -1,0 +1,14 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:ui="clr-namespace:Iecc8.UI"
+		x:Class="Iecc8.UI.MainWindow">
+	<Window.Resources>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Resources.xaml"/>
+	</Window.Resources>
+	<Window.Background>
+		<StaticResource ResourceKey="BG"/>
+	</Window.Background>
+	<Window.Foreground>
+		<StaticResource ResourceKey="FG"/>
+	</Window.Foreground>
+</Window>

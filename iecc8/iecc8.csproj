@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1559F74-B532-4A21-8898-92D594D61AFC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Iecc8</RootNamespace>
     <AssemblyName>iecc8</AssemblyName>
@@ -90,6 +90,16 @@
     <Compile Include="Schema\RouteTC.cs" />
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
+    <Compile Include="UI\MainViewModel.cs" />
+    <Compile Include="UI\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PermissionWaiter.cs" />
+    <Compile Include="UI\SubAreaNumberWaiter.cs" />
+    <Compile Include="UI\WelcomeWindow.xaml.cs">
+      <DependentUpon>WelcomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WelcomeWindowViewModel.cs" />
     <Compile Include="World\Aspects.cs" />
     <Compile Include="World\AutomaticSignal.cs" />
     <Compile Include="World\CALExemption.cs" />
@@ -114,6 +124,20 @@
     <Page Include="Region\Regions.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UI\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\WelcomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
