@@ -20,6 +20,17 @@ namespace Iecc8.UI {
 			if (e.Key == Key.F2) {
 				MainViewModel vm = (MainViewModel) DataContext;
 				vm.ShowTrainList = !vm.ShowTrainList;
+			} else if (e.Key == Key.F4) {
+				ShowHideRadioTransmitBar(this, e);
+			}
+		}
+
+		private void ShowHideRadioTransmitBar(object sender, RoutedEventArgs e) {
+			if (RadioTransmitter.Visibility == Visibility.Visible) {
+				RadioTransmitter.Visibility = Visibility.Collapsed;
+			} else {
+				RadioTransmitter.Visibility = Visibility.Visible;
+				RadioTransmitter.FocusMessageBox();
 			}
 		}
 

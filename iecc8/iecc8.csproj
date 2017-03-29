@@ -115,6 +115,10 @@
     <Compile Include="UI\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\RadioTransmitBar.xaml.cs">
+      <DependentUpon>RadioTransmitBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RadioTransmitViewModel.cs" />
     <Compile Include="UI\SectionPointPosition.cs" />
     <Compile Include="UI\SectionPointPositionResolved.cs" />
     <Compile Include="UI\Signal.cs" />
@@ -207,6 +211,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\WelcomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\RadioTransmitBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

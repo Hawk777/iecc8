@@ -34,6 +34,15 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// The view model for the radio transmit bar.
+		/// </summary>
+		public RadioTransmitViewModel RadioTransmitBarViewModel {
+			get {
+				return RadioTransmitBarViewModelImpl;
+			}
+		}
+
+		/// <summary>
 		/// The messages.
 		/// </summary>
 		public ObservableCollection<Message> Messages {
@@ -72,6 +81,7 @@ namespace Iecc8.UI {
 		public MainViewModel(World.World world) {
 			Debug.Assert(world != null);
 			WorldImpl = world;
+			RadioTransmitBarViewModelImpl = new RadioTransmitViewModel(world);
 			BlinkClockSourceImpl = new BlinkClockSource();
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
 			Messages = new ObservableCollection<Message>();
@@ -157,6 +167,7 @@ namespace Iecc8.UI {
 		private readonly World.World WorldImpl;
 		private readonly BlinkClockSource BlinkClockSourceImpl;
 		private readonly TrainDetailViewModel TrainDetailViewModelImpl;
+		private readonly RadioTransmitViewModel RadioTransmitBarViewModelImpl;
 		private ControlledSignal PendingEntranceImpl;
 		private bool ShowTrainListImpl;
 		private DateTime InhibitDeletingMessageUntil;
