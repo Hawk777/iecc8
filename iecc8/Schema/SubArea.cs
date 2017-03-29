@@ -38,6 +38,14 @@ namespace Iecc8.Schema {
 		}
 
 		/// <summary>
+		/// The name of this sub-area, for display purposes.
+		/// </summary>
+		public string Name {
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// Constructs a new sub-area.
 		/// </summary>
 		public SubArea() {

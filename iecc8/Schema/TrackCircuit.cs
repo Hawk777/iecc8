@@ -13,5 +13,16 @@
 			get;
 			set;
 		}
+
+		/// <summary>
+		/// The name of this location.
+		/// </summary>
+		/// <remarks>
+		/// This is used only for display when trying to locate a train. It need not be entirely unique across track circuits; a handful of track circuits in the same area can (and probably should) share a single location name. When displayed, it will be prefixed with the sub-area name.
+		/// </remarks>
+		public string LocationName {
+			get;
+			set;
+		}
 	}
 }
