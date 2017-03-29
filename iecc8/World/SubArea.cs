@@ -16,6 +16,11 @@ namespace Iecc8.World {
 		public readonly ushort ID;
 
 		/// <summary>
+		/// The name of this sub-area.
+		/// </summary>
+		public readonly string Name;
+
+		/// <summary>
 		/// The track circuits in this sub-area.
 		/// </summary>
 		/// <remarks>
@@ -59,6 +64,7 @@ namespace Iecc8.World {
 		/// <param name="world">The communication interface to Run8.</param>
 		public SubArea(Schema.SubArea schema, ushort id, World world) {
 			ID = id;
+			Name = schema.Name ?? string.Empty;
 
 			{
 				TrackCircuit[] trackCircuits = new TrackCircuit[schema.TrackCircuits.Count];

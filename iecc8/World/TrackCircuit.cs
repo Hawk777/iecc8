@@ -17,6 +17,11 @@ namespace Iecc8.World {
 		public readonly ushort ID;
 
 		/// <summary>
+		/// The name of the location of this track circuit.
+		/// </summary>
+		public readonly string LocationName;
+
+		/// <summary>
 		/// The name of this track circuit.
 		/// </summary>
 		public string Name {
@@ -115,6 +120,7 @@ namespace Iecc8.World {
 		public TrackCircuit(Schema.TrackCircuit schema, ushort subArea, ushort id) {
 			SubArea = subArea;
 			ID = id;
+			LocationName = string.IsNullOrEmpty(schema.LocationName) ? string.Empty : string.Intern(schema.LocationName);
 			IgnoreHandPoints = schema.IgnoreHandPoints;
 		}
 		#endregion
