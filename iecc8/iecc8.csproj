@@ -89,6 +89,22 @@
     <Compile Include="Schema\RouteTC.cs" />
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
+    <Compile Include="World\Aspects.cs" />
+    <Compile Include="World\AutomaticSignal.cs" />
+    <Compile Include="World\CALExemption.cs" />
+    <Compile Include="World\ControlledSignal.cs" />
+    <Compile Include="World\EAspect.cs" />
+    <Compile Include="World\EAspectsType.cs" />
+    <Compile Include="World\Points.cs" />
+    <Compile Include="World\Region.cs" />
+    <Compile Include="World\Route.cs" />
+    <Compile Include="World\RouteElement.cs" />
+    <Compile Include="World\RoutePointPosition.cs" />
+    <Compile Include="World\Signal.cs" />
+    <Compile Include="World\SignalsArray.cs" />
+    <Compile Include="World\SubArea.cs" />
+    <Compile Include="World\TrackCircuit.cs" />
+    <Compile Include="World\World.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
