@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:ui="clr-namespace:Iecc8.UI">
 	<SolidColorBrush x:Key="BG" Color="Black"/>
 	<SolidColorBrush x:Key="FG" Color="White"/>
 
@@ -125,4 +126,5 @@
 	<SolidColorBrush x:Key="BottomBarHighlightFG" Color="Black"/>
 
 	<BooleanToVisibilityConverter x:Key="BoolToVis"/>
+	<ui:MessageTypeToColour x:Key="MessageTypeToColour"/>
 </ResourceDictionary>

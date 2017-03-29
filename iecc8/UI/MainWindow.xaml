@@ -26,7 +26,13 @@
 		<GridSplitter Grid.Column="1" HorizontalAlignment="Center" Grid.RowSpan="3" Width="2"/>
 		<GridSplitter Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Center" Height="2"/>
 		<Rectangle Fill="Blue" Grid.RowSpan="3"/>
-		<Rectangle Grid.Column="2" Fill="LightGreen"/>
+		<ListBox Grid.Column="2" ItemsSource="{Binding Messages, Mode=OneWay}" Background="{StaticResource ResourceKey=BG}" PreviewMouseDown="MessageListPreviewMouseDown">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<TextBlock Text="{Binding Text, Mode=OneWay}" Foreground="{Binding Type, Converter={StaticResource ResourceKey=MessageTypeToColour}}"/>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 		<Rectangle Grid.Column="2" Fill="Red" Grid.Row="2"/>
 		<Viewbox Grid.RowSpan="3" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<TextBlock Foreground="Red" Text="Link Down" FontSize="72" FontWeight="Bold"/>

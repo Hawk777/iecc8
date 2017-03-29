@@ -105,6 +105,8 @@
     <Compile Include="UI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Message.cs" />
+    <Compile Include="UI\MessageTypeToColour.cs" />
     <Compile Include="UI\PermissionWaiter.cs" />
     <Compile Include="UI\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
