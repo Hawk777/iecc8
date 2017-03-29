@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="AbstractDispatcher.cs" />
     <Compile Include="BindableBase.cs" />
+    <Compile Include="DispatcherProxy.cs" />
     <Compile Include="IDispatcher.cs" />
     <Compile Include="IRun8.cs" />
     <Compile Include="Messages\AIRecrewTrainMessage.cs" />
