@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System.ComponentModel;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace Iecc8.UI {
 	/// <summary>
@@ -7,6 +9,34 @@ namespace Iecc8.UI {
 	public partial class TrainList : ListView {
 		public TrainList() {
 			InitializeComponent();
+		}
+
+		private void SortByLoco(object sender, RoutedEventArgs e) {
+			SortBy("Company", "LocoNumber");
+		}
+
+		private void SortByTag(object sender, RoutedEventArgs e) {
+			SortBy("Tag");
+		}
+
+		private void SortByLocation(object sender, RoutedEventArgs e) {
+			SortBy("SubArea", "Location");
+		}
+
+		private void SortBySpeed(object sender, RoutedEventArgs e) {
+			SortBy("Speed");
+		}
+
+		private void SortByEngineer(object sender, RoutedEventArgs e) {
+			SortBy("EngineerType", "EngineerName");
+		}
+
+		private void SortBy(params string[] keys) {
+			SortDescriptionCollection desc = Items.SortDescriptions;
+			desc.Clear();
+			foreach (string key in keys) {
+				desc.Add(new SortDescription(key, ListSortDirection.Ascending));
+			}
 		}
 	}
 }

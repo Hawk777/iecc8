@@ -10,16 +10,23 @@
 	<ListView.View>
 		<GridView>
 			<GridView.Columns>
-				<GridViewColumn Header="Loco">
+				<GridViewColumn>
 					<GridViewColumn.DisplayMemberBinding>
 						<MultiBinding StringFormat="{}{0}{1}">
 							<Binding Path="Company" Mode="OneWay"/>
 							<Binding Path="LocoNumber" Mode="OneWay"/>
 						</MultiBinding>
 					</GridViewColumn.DisplayMemberBinding>
+					<GridViewColumn.Header>
+						<GridViewColumnHeader Click="SortByLoco">Loco</GridViewColumnHeader>
+					</GridViewColumn.Header>
 				</GridViewColumn>
-				<GridViewColumn DisplayMemberBinding="{Binding Tag, Mode=OneWay}" Header="Tag"/>
-				<GridViewColumn Header="Location">
+				<GridViewColumn DisplayMemberBinding="{Binding Tag, Mode=OneWay}">
+					<GridViewColumn.Header>
+						<GridViewColumnHeader Click="SortByTag">Tag</GridViewColumnHeader>
+					</GridViewColumn.Header>
+				</GridViewColumn>
+				<GridViewColumn>
 					<GridViewColumn.CellTemplate>
 						<DataTemplate>
 							<TextBlock FontStyle="{Binding LocationCurrent, Mode=OneWay, Converter={StaticResource LocationCurrentToFontStyle}}">
@@ -32,14 +39,24 @@
 							</TextBlock>
 						</DataTemplate>
 					</GridViewColumn.CellTemplate>
+					<GridViewColumn.Header>
+						<GridViewColumnHeader Click="SortByLocation">Location</GridViewColumnHeader>
+					</GridViewColumn.Header>
 				</GridViewColumn>
-				<GridViewColumn DisplayMemberBinding="{Binding Speed, Mode=OneWay}" Header="Speed"/>
-				<GridViewColumn Header="Engineer">
+				<GridViewColumn DisplayMemberBinding="{Binding Speed, Mode=OneWay}">
+					<GridViewColumn.Header>
+						<GridViewColumnHeader Click="SortBySpeed">Speed</GridViewColumnHeader>
+					</GridViewColumn.Header>
+				</GridViewColumn>
+				<GridViewColumn>
 					<GridViewColumn.CellTemplate>
 						<DataTemplate>
 							<TextBlock FontStyle="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToFontStyle}}" Text="{Binding EngineerName}"/>
 						</DataTemplate>
 					</GridViewColumn.CellTemplate>
+					<GridViewColumn.Header>
+						<GridViewColumnHeader Click="SortByEngineer">Engineer</GridViewColumnHeader>
+					</GridViewColumn.Header>
 				</GridViewColumn>
 			</GridView.Columns>
 		</GridView>
