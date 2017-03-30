@@ -127,6 +127,9 @@
     </Compile>
     <Compile Include="UI\SubAreaNumberWaiter.cs" />
     <Compile Include="UI\TrackSection.cs" />
+    <Compile Include="UI\TrainDetail.xaml.cs">
+      <DependentUpon>TrainDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\TrainDetailViewModel.cs" />
     <Compile Include="UI\TrainList.xaml.cs">
       <DependentUpon>TrainList.xaml</DependentUpon>
@@ -194,6 +197,10 @@
     <Page Include="UI\SignalStem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\TrainDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UI\TrainList.xaml">
       <SubType>Designer</SubType>
