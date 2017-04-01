@@ -107,6 +107,8 @@ namespace Iecc8.UI {
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
 			ChannelMaskImpl = new ChannelMask();
 			Messages = new ObservableCollection<Message>();
+			world.RadioRX += OnRadioRX;
+			world.RadioTX += OnRadioTX;
 		}
 
 		/// <summary>
@@ -210,6 +212,25 @@ namespace Iecc8.UI {
 			if (spontaneous) {
 				InhibitDeletingMessageUntil = DateTime.UtcNow.AddSeconds(1);
 			}
+		}
+
+		/// <summary>
+		/// Handles a radio message arriving.
+		/// </summary>
+		/// <param name="radio">Information about the message.</param>
+		private void OnRadioRX(Messages.RadioTextMessage radio) {
+			if (ChannelMask[radio.Channel]) {
+				AddMessage(Message.EType.Radio, "[" + radio.Channel + "]< " + radio.Text, true);
+			}
+		}
+
+		/// <summary>
+		/// Handles a radio message being transmitted.
+		/// </summary>
+		/// <param name="radio">Information about the message.</param>
+		private void OnRadioTX(Messages.RadioTextMessage radio) {
+			ChannelMask[radio.Channel] = true;
+			AddMessage(Message.EType.Radio, "[" + radio.Channel + "]> " + radio.Text, false);
 		}
 	}
 }

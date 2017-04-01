@@ -8,6 +8,11 @@
 		/// </summary>
 		public enum EType {
 			/// <summary>
+			/// A radio text message.
+			/// </summary>
+			Radio,
+
+			/// <summary>
 			/// A miscellaneous system message.
 			/// </summary>
 			Miscellaneous,
