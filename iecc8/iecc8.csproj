@@ -95,6 +95,7 @@
       <DependentUpon>DiagonalSection.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\EngineerTypeToFontStyle.cs" />
+    <Compile Include="UI\EngineerTypeToIsAI.cs" />
     <Compile Include="UI\ExitTriangle.xaml.cs">
       <DependentUpon>ExitTriangle.xaml</DependentUpon>
     </Compile>
