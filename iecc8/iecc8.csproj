@@ -91,6 +91,7 @@
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
     <Compile Include="UI\BlinkClockSource.cs" />
+    <Compile Include="UI\ChannelMask.cs" />
     <Compile Include="UI\DiagonalSection.xaml.cs">
       <DependentUpon>DiagonalSection.xaml</DependentUpon>
     </Compile>
