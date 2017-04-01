@@ -147,6 +147,22 @@ namespace Iecc8.World {
 		public void Unkey() {
 			Keyed = false;
 		}
+
+		/// <summary>
+		/// Checks whether the points can be unlocked for hand cranking at this time.
+		/// </summary>
+		/// <returns><c>true</c> if it is safe to unlock the points, or <c>false</c> if not.</returns>
+		public bool CheckHandCrankingAvailable() {
+			if (Keyed) {
+				return false;
+			}
+			foreach (TrackCircuit i in ProtectingTCs) {
+				if (i.RouteLocked) {
+					return false;
+				}
+			}
+			return true;
+		}
 		#endregion
 
 		#region Run8 API

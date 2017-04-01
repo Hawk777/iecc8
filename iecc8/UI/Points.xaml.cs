@@ -159,7 +159,11 @@ namespace Iecc8.UI {
 					}
 				}
 			} else if (e.ChangedButton == MouseButton.Middle) {
-				PointsObject.HandCrankable = !PointsObject.HandCrankable;
+				if (PointsObject.HandCrankable) {
+					PointsObject.HandCrankable = false;
+				} else if (PointsObject.CheckHandCrankingAvailable()) {
+					PointsObject.HandCrankable = true;
+				}
 			}
 		}
 	}
