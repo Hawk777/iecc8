@@ -89,7 +89,7 @@ namespace Iecc8.World {
 		/// <remarks>
 		/// The signal must not have a route set.
 		/// </remarks>
-		public Task EnableFlagBy() {
+		public Task EnableFlagByAsync() {
 			Debug.Assert(CurrentRoute == null);
 			return World.ChangeSignalAsync(SubArea, ID, ESignalIndication.FlagBy);
 		}
@@ -97,7 +97,7 @@ namespace Iecc8.World {
 		/// <summary>
 		/// Cancels the route set from this signal, if any.
 		/// </summary>
-		public Task Cancel() {
+		public Task CancelAsync() {
 			// Consider applying approach locking. Apply it if a route is locked, approach locking isn't already in progress, the signal is off, and comprehensive approach locking doesn't exempt us.
 			if ((CurrentRoute != null) && !ApproachLocked && Aspects.Off) {
 				bool exempt = false;

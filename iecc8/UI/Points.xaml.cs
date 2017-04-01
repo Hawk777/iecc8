@@ -155,7 +155,7 @@ namespace Iecc8.UI {
 				} else {
 					bool reverse = e.ChangedButton == MouseButton.Right;
 					if (PointsObject.Movable || (reverse == PointsObject.Reversed)) {
-						await PointsObject.Key(reverse);
+						await PointsObject.KeyAsync(reverse);
 					}
 				}
 			}

@@ -137,7 +137,7 @@ namespace Iecc8.World {
 		/// Either Movable must be true, or Reversed must match the requested position.
 		/// </remarks>
 		/// <param name="reverse">The requested position of the points.</param>
-		public Task Key(bool reverse) {
+		public Task KeyAsync(bool reverse) {
 			Debug.Assert(Movable || (Reversed == reverse));
 			Keyed = true;
 			return SwingAsync(reverse);

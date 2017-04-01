@@ -107,13 +107,13 @@ namespace Iecc8.UI {
 		/// Handles the signaller cancelling a signal.
 		/// </summary>
 		/// <param name="signal">The signal.</param>
-		public void CancelSignal(World.Signal signal) {
+		public async void CancelSignal(World.Signal signal) {
 			if (PendingEntrance == signal) {
 				PendingEntrance = null;
 			} else {
 				ControlledSignal cs = signal as ControlledSignal;
 				if (cs != null) {
-					cs.Cancel();
+					await cs.CancelAsync();
 				}
 			}
 		}
@@ -122,11 +122,11 @@ namespace Iecc8.UI {
 		/// Handles the signaller asking to flag by a signal or cancel flag-by mode.
 		/// </summary>
 		/// <param name="signal">The signal.</param>
-		public void FlagBySignal(World.Signal signal) {
+		public async void FlagBySignal(World.Signal signal) {
 			ControlledSignal cs = signal as ControlledSignal;
 			if (cs != null) {
 				if (cs.CurrentRoute == null) {
-					cs.EnableFlagBy();
+					await cs.EnableFlagByAsync();
 				}
 			}
 		}
