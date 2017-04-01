@@ -20,6 +20,8 @@ namespace Iecc8.UI {
 			if (e.Key == Key.F2) {
 				MainViewModel vm = (MainViewModel) DataContext;
 				vm.ShowTrainList = !vm.ShowTrainList;
+			} else if (e.Key == Key.F3) {
+				ShowHideChannelGrid(this, e);
 			} else if (e.Key == Key.F4) {
 				ShowHideRadioTransmitBar(this, e);
 			}
@@ -32,6 +34,11 @@ namespace Iecc8.UI {
 				RadioTransmitter.Visibility = Visibility.Visible;
 				RadioTransmitter.FocusMessageBox();
 			}
+		}
+
+		private void ShowHideChannelGrid(object sender, RoutedEventArgs e) {
+			MainViewModel vm = (MainViewModel) DataContext;
+			vm.ShowChannelGrid = !vm.ShowChannelGrid;
 		}
 
 		private void MessageListPreviewMouseDown(object sender, MouseButtonEventArgs e) {

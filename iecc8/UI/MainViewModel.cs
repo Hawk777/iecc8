@@ -43,6 +43,15 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// The radio channel receive mask.
+		/// </summary>
+		public ChannelMask ChannelMask {
+			get {
+				return ChannelMaskImpl;
+			}
+		}
+
+		/// <summary>
 		/// The messages.
 		/// </summary>
 		public ObservableCollection<Message> Messages {
@@ -75,6 +84,18 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// Whether the channel grid is currently visible.
+		/// </summary>
+		public bool ShowChannelGrid {
+			get {
+				return ShowChannelGridImpl;
+			}
+			set {
+				SetProperty(ref ShowChannelGridImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// Constructs a new MainViewModel.
 		/// </summary>
 		/// <param name="world">The world being interacted with.</param>
@@ -84,6 +105,7 @@ namespace Iecc8.UI {
 			RadioTransmitBarViewModelImpl = new RadioTransmitViewModel(world);
 			BlinkClockSourceImpl = new BlinkClockSource();
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
+			ChannelMaskImpl = new ChannelMask();
 			Messages = new ObservableCollection<Message>();
 		}
 
@@ -168,8 +190,10 @@ namespace Iecc8.UI {
 		private readonly BlinkClockSource BlinkClockSourceImpl;
 		private readonly TrainDetailViewModel TrainDetailViewModelImpl;
 		private readonly RadioTransmitViewModel RadioTransmitBarViewModelImpl;
+		private readonly ChannelMask ChannelMaskImpl;
 		private ControlledSignal PendingEntranceImpl;
 		private bool ShowTrainListImpl;
+		private bool ShowChannelGridImpl;
 		private DateTime InhibitDeletingMessageUntil;
 
 		/// <summary>
