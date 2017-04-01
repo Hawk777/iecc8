@@ -91,6 +91,8 @@
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
     <Compile Include="UI\BlinkClockSource.cs" />
+    <Compile Include="UI\ChannelGrid.cs" />
+    <Compile Include="UI\ChannelMask.cs" />
     <Compile Include="UI\DiagonalSection.xaml.cs">
       <DependentUpon>DiagonalSection.xaml</DependentUpon>
     </Compile>
@@ -115,6 +117,10 @@
     <Compile Include="UI\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\RadioTransmitBar.xaml.cs">
+      <DependentUpon>RadioTransmitBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RadioTransmitViewModel.cs" />
     <Compile Include="UI\SectionPointPosition.cs" />
     <Compile Include="UI\SectionPointPositionResolved.cs" />
     <Compile Include="UI\Signal.cs" />
@@ -207,6 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\WelcomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\RadioTransmitBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

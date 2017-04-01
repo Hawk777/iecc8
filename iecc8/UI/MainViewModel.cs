@@ -34,6 +34,24 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// The view model for the radio transmit bar.
+		/// </summary>
+		public RadioTransmitViewModel RadioTransmitBarViewModel {
+			get {
+				return RadioTransmitBarViewModelImpl;
+			}
+		}
+
+		/// <summary>
+		/// The radio channel receive mask.
+		/// </summary>
+		public ChannelMask ChannelMask {
+			get {
+				return ChannelMaskImpl;
+			}
+		}
+
+		/// <summary>
 		/// The messages.
 		/// </summary>
 		public ObservableCollection<Message> Messages {
@@ -66,15 +84,31 @@ namespace Iecc8.UI {
 		}
 
 		/// <summary>
+		/// Whether the channel grid is currently visible.
+		/// </summary>
+		public bool ShowChannelGrid {
+			get {
+				return ShowChannelGridImpl;
+			}
+			set {
+				SetProperty(ref ShowChannelGridImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// Constructs a new MainViewModel.
 		/// </summary>
 		/// <param name="world">The world being interacted with.</param>
 		public MainViewModel(World.World world) {
 			Debug.Assert(world != null);
 			WorldImpl = world;
+			RadioTransmitBarViewModelImpl = new RadioTransmitViewModel(world);
 			BlinkClockSourceImpl = new BlinkClockSource();
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
+			ChannelMaskImpl = new ChannelMask();
 			Messages = new ObservableCollection<Message>();
+			world.RadioRX += OnRadioRX;
+			world.RadioTX += OnRadioTX;
 		}
 
 		/// <summary>
@@ -157,8 +191,11 @@ namespace Iecc8.UI {
 		private readonly World.World WorldImpl;
 		private readonly BlinkClockSource BlinkClockSourceImpl;
 		private readonly TrainDetailViewModel TrainDetailViewModelImpl;
+		private readonly RadioTransmitViewModel RadioTransmitBarViewModelImpl;
+		private readonly ChannelMask ChannelMaskImpl;
 		private ControlledSignal PendingEntranceImpl;
 		private bool ShowTrainListImpl;
+		private bool ShowChannelGridImpl;
 		private DateTime InhibitDeletingMessageUntil;
 
 		/// <summary>
@@ -175,6 +212,25 @@ namespace Iecc8.UI {
 			if (spontaneous) {
 				InhibitDeletingMessageUntil = DateTime.UtcNow.AddSeconds(1);
 			}
+		}
+
+		/// <summary>
+		/// Handles a radio message arriving.
+		/// </summary>
+		/// <param name="radio">Information about the message.</param>
+		private void OnRadioRX(Messages.RadioTextMessage radio) {
+			if (ChannelMask[radio.Channel]) {
+				AddMessage(Message.EType.Radio, "[" + radio.Channel + "]< " + radio.Text, true);
+			}
+		}
+
+		/// <summary>
+		/// Handles a radio message being transmitted.
+		/// </summary>
+		/// <param name="radio">Information about the message.</param>
+		private void OnRadioTX(Messages.RadioTextMessage radio) {
+			ChannelMask[radio.Channel] = true;
+			AddMessage(Message.EType.Radio, "[" + radio.Channel + "]> " + radio.Text, false);
 		}
 	}
 }

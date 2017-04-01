@@ -77,6 +77,39 @@ namespace Iecc8.World {
 		/// The region being communicated with.
 		/// </summary>
 		public readonly Region Region;
+
+		/// <summary>
+		/// The type of the Radio event.
+		/// </summary>
+		/// <param name="message">The message received.</param>
+		public delegate void RadioEvent(RadioTextMessage message);
+
+		/// <summary>
+		/// Issued when a radio message is received.
+		/// </summary>
+		public event RadioEvent RadioRX;
+
+		/// <summary>
+		/// Issued when the signaller sends a radio message.
+		/// </summary>
+		public event RadioEvent RadioTX;
+
+		/// <summary>
+		/// Sends a radio message to the network.
+		/// </summary>
+		/// <param name="channel">Which channel to transmit on.</param>
+		/// <param name="text">The message to send.</param>
+		public async void SendRadioMessage(uint channel, string text) {
+			try {
+				await Run8.RadioTextAsync((int) channel, text);
+				RadioTextMessage m;
+				m.Channel = (int) channel;
+				m.Text = text;
+				RadioTX(m);
+			} catch (CommunicationException) {
+				LinkError = true;
+			}
+		}
 		#endregion
 
 		#region Run8 API
@@ -100,6 +133,7 @@ namespace Iecc8.World {
 
 		void IDispatcher.RadioText(RadioTextMessage pMessage) {
 			MessageReceived = true;
+			SyncContext.Post((object state) => RadioRX(pMessage), null);
 		}
 
 		void IDispatcher.SendSimulationState(SimulationStateMessage pMessage) {

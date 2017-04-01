@@ -10,6 +10,8 @@ namespace Iecc8.UI {
 	public class MessageTypeToColour : IValueConverter {
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
 			switch ((Message.EType) value) {
+				case Message.EType.Radio:
+					return new SolidColorBrush(Colors.White);
 				case Message.EType.Miscellaneous:
 					return new SolidColorBrush(Colors.Cyan);
 			}
