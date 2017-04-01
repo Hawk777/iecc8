@@ -4,8 +4,7 @@
 		x:Class="Iecc8.UI.TrainList"
 		ItemsSource="{Binding World.Trains}">
 	<ListView.Resources>
-		<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
-		<ui:EngineerTypeToFontStyle x:Key="EngineerTypeToFontStyle"/>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Resources.xaml"/>
 	</ListView.Resources>
 	<ListView.View>
 		<GridView>

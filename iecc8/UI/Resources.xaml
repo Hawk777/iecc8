@@ -126,5 +126,7 @@
 	<SolidColorBrush x:Key="BottomBarHighlightFG" Color="Black"/>
 
 	<BooleanToVisibilityConverter x:Key="BoolToVis"/>
+	<ui:EngineerTypeToFontStyle x:Key="EngineerTypeToFontStyle"/>
+	<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
 	<ui:MessageTypeToColour x:Key="MessageTypeToColour"/>
 </ResourceDictionary>
