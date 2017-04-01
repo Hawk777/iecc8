@@ -62,6 +62,18 @@ namespace Iecc8.World {
 		}
 
 		/// <summary>
+		/// The speed limit, in miles per hour.
+		/// </summary>
+		public int SpeedLimit {
+			get {
+				return SpeedLimitImpl;
+			}
+			private set {
+				SetProperty(ref SpeedLimitImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// The last known sub-area.
 		/// </summary>
 		public string SubArea {
@@ -120,6 +132,42 @@ namespace Iecc8.World {
 				SetProperty(ref EngineerNameImpl, value);
 			}
 		}
+
+		/// <summary>
+		/// The length of the train, in feet.
+		/// </summary>
+		public int Length {
+			get {
+				return LengthImpl;
+			}
+			private set {
+				SetProperty(ref LengthImpl, value);
+			}
+		}
+
+		/// <summary>
+		/// The weight of the train, in tons.
+		/// </summary>
+		public int Weight {
+			get {
+				return WeightImpl;
+			}
+			private set {
+				SetProperty(ref WeightImpl, value);
+			}
+		}
+
+		/// <summary>
+		/// The horsepower per ton of the train.
+		/// </summary>
+		public float HPt {
+			get {
+				return HPtImpl;
+			}
+			private set {
+				SetProperty(ref HPtImpl, value);
+			}
+		}
 		#endregion
 
 		#region Data Initialization API
@@ -153,8 +201,12 @@ namespace Iecc8.World {
 			LocoNumber = data.LocoNumber;
 			Tag = data.TrainSymbol;
 			Speed = (int) data.TrainSpeedMph;
+			SpeedLimit = data.TrainSpeedLimitMPH;
 			EngineerType = data.EngineerType;
 			EngineerName = (EngineerType == EEngineerType.AI) ? "AI" : (EngineerType == EEngineerType.None) ? "No Driver" : data.EngineerName;
+			Length = data.TrainLengthFeet;
+			Weight = data.TrainWeightTons;
+			HPt = data.HpPerTon;
 
 			// Update location, keeping the old string if not available.
 			SubArea sub = null;
@@ -219,11 +271,15 @@ namespace Iecc8.World {
 		private int LocoNumberImpl;
 		private string TagImpl;
 		private int SpeedImpl;
+		private int SpeedLimitImpl;
 		private string SubAreaImpl;
 		private string LocationImpl;
 		private bool LocationCurrentImpl;
 		private EEngineerType EngineerTypeImpl;
 		private string EngineerNameImpl;
+		private int LengthImpl;
+		private int WeightImpl;
+		private float HPtImpl;
 		#endregion
 	}
 }
