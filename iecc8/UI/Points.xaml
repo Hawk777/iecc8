@@ -10,7 +10,7 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path x:Name="Polygon" Fill="{StaticResource ResourceKey=IdleGrey}">
+	<Path x:Name="Polygon" Fill="{StaticResource ResourceKey=IdleGrey}" StrokeThickness="0.125">
 		<Path.Data>
 			<PathGeometry>
 				<PathGeometry.Transform>
