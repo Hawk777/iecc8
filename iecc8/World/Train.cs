@@ -154,7 +154,7 @@ namespace Iecc8.World {
 			Tag = data.TrainSymbol;
 			Speed = (int) data.TrainSpeedMph;
 			EngineerType = data.EngineerType;
-			EngineerName = (EngineerType == EEngineerType.AI) ? "AI" : data.EngineerName;
+			EngineerName = (EngineerType == EEngineerType.AI) ? "AI" : (EngineerType == EEngineerType.None) ? "No Driver" : data.EngineerName;
 
 			// Update location, keeping the old string if not available.
 			SubArea sub = null;
