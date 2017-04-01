@@ -1,5 +1,6 @@
 ﻿using Iecc8.World;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 
@@ -20,6 +21,15 @@ namespace Iecc8.UI {
 		public BlinkClockSource BlinkClockSource {
 			get {
 				return BlinkClockSourceImpl;
+			}
+		}
+
+		/// <summary>
+		/// The view model used by the train detail area.
+		/// </summary>
+		public TrainDetailViewModel TrainDetailViewModel {
+			get {
+				return TrainDetailViewModelImpl;
 			}
 		}
 
@@ -63,6 +73,7 @@ namespace Iecc8.UI {
 			Debug.Assert(world != null);
 			WorldImpl = world;
 			BlinkClockSourceImpl = new BlinkClockSource();
+			TrainDetailViewModelImpl = new TrainDetailViewModel();
 			Messages = new ObservableCollection<Message>();
 		}
 
@@ -135,8 +146,17 @@ namespace Iecc8.UI {
 			}
 		}
 
+		/// <summary>
+		/// Sets which trains are shown in the train detail area.
+		/// </summary>
+		/// <param name="trains">The trains to show.</param>
+		public void SetDetailTrains(IReadOnlyList<Train> trains) {
+			TrainDetailViewModelImpl.SetTrains(trains);
+		}
+
 		private readonly World.World WorldImpl;
 		private readonly BlinkClockSource BlinkClockSourceImpl;
+		private readonly TrainDetailViewModel TrainDetailViewModelImpl;
 		private ControlledSignal PendingEntranceImpl;
 		private bool ShowTrainListImpl;
 		private DateTime InhibitDeletingMessageUntil;
