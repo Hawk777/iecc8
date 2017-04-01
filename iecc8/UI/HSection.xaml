@@ -10,7 +10,7 @@
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
 	<Canvas>
-		<Path x:Name="Rectangle" Fill="{StaticResource ResourceKey=IdleGrey}">
+		<Path x:Name="Rectangle" Fill="{StaticResource IdleGrey}">
 			<Path.Data>
 				<RectangleGeometry>
 					<Geometry.Transform>
@@ -22,7 +22,7 @@
 				</RectangleGeometry>
 			</Path.Data>
 		</Path>
-		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBLeft, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
+		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBLeft, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource BoolToVis}}">
 			<Path.Data>
 				<RectangleGeometry>
 					<Geometry.Transform>
@@ -34,7 +34,7 @@
 				</RectangleGeometry>
 			</Path.Data>
 		</Path>
-		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBRight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
+		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBRight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource BoolToVis}}">
 			<Path.Data>
 				<RectangleGeometry>
 					<Geometry.Transform>

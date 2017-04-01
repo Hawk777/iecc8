@@ -10,7 +10,7 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path Fill="{StaticResource ResourceKey=IdleGrey}" RenderOptions.EdgeMode="Aliased">
+	<Path Fill="{StaticResource IdleGrey}" RenderOptions.EdgeMode="Aliased">
 		<Path.Data>
 			<PathGeometry>
 				<Geometry.Transform>
