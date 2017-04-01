@@ -158,6 +158,8 @@ namespace Iecc8.UI {
 						await PointsObject.KeyAsync(reverse);
 					}
 				}
+			} else if (e.ChangedButton == MouseButton.Middle) {
+				PointsObject.HandCrankable = !PointsObject.HandCrankable;
 			}
 		}
 	}

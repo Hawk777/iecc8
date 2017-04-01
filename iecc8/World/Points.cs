@@ -54,10 +54,8 @@ namespace Iecc8.World {
 			get {
 				return HandCrankableImpl;
 			}
-			private set {
-				if (SetProperty(ref HandCrankableImpl, value)) {
-					EmitPropertyChanged(nameof(Movable));
-				}
+			set {
+				SetHandCrankable(value);
 			}
 		}
 
@@ -170,7 +168,10 @@ namespace Iecc8.World {
 		}
 
 		public void UpdateUnlockedFromRun8(bool unlocked) {
-			HandCrankable = unlocked;
+			// Update the impl directly because the property setter is used to actually lock or unlock the points by sending a packet to Run8.
+			if (SetProperty(ref HandCrankableImpl, unlocked, nameof(HandCrankable))) {
+				EmitPropertyChanged(nameof(Movable));
+			}
 		}
 		#endregion
 
@@ -250,6 +251,14 @@ namespace Iecc8.World {
 			if (e.PropertyName == nameof(TrackCircuit.RouteLock)) {
 				EmitPropertyChanged(nameof(Movable));
 			}
+		}
+
+		/// <summary>
+		/// Configures these points for hand or power operation.
+		/// </summary>
+		/// <param name="value"><c>true</c> to configure for hand operation, or <c>false</c> to configure for power operation.</param>
+		private async void SetHandCrankable(bool value) {
+			await World.ThrowSwitchAsync(SubArea, ID, value ? ESwitchState.Unlocked : ESwitchState.Locked);
 		}
 
 		private bool HandCrankableImpl;
