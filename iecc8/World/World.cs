@@ -229,6 +229,56 @@ namespace Iecc8.World {
 				LinkError = true;
 			}
 		}
+
+		/// <summary>
+		/// Orders an AI crew to board a train.
+		/// </summary>
+		/// <param name="train">The ID number of the train.</param>
+		public async Task AIRecrewAsync(int train) {
+			try {
+				await Run8.AIRecrewTrainAsync(train);
+			} catch (CommunicationException) {
+				LinkError = true;
+			}
+		}
+
+		/// <summary>
+		/// Instantly stops an AI train.
+		/// </summary>
+		/// <param name="train">The ID number of the train.</param>
+		public async Task StopAITrainAsync(int train) {
+			try {
+				await Run8.StopAITrainAsync(train);
+			} catch(CommunicationException) {
+				LinkError = true;
+			}
+		}
+
+		/// <summary>
+		/// Sets whether an AI driver should hold position.
+		/// </summary>
+		/// <param name="train">The ID number of the train.</param>
+		/// <param name="hold">Whether to hold position.</param>
+		public async Task HoldAITrainAsync(int train, bool hold) {
+			try {
+				await Run8.HoldAITrainAsync(train, hold);
+			} catch(CommunicationException) {
+				LinkError = true;
+			}
+		}
+
+		/// <summary>
+		/// Sets whether an AI driver should disembark once their train is stationary.
+		/// </summary>
+		/// <param name="train">The ID number of the train.</param>
+		/// <param name="hold">Whether to disembark.</param>
+		public async Task RelinquishAITrainAsync(int train, bool hold) {
+			try {
+				await Run8.RelinquishAITrainAsync(train, hold);
+			} catch (CommunicationException) {
+				LinkError = true;
+			}
+		}
 		#endregion
 
 		#region Private Members
