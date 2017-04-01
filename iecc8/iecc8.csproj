@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="UI\SubAreaNumberWaiter.cs" />
     <Compile Include="UI\TrackSection.cs" />
+    <Compile Include="UI\TrainDetailViewModel.cs" />
     <Compile Include="UI\TrainList.xaml.cs">
       <DependentUpon>TrainList.xaml</DependentUpon>
     </Compile>
