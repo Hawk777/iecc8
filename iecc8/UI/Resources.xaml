@@ -129,4 +129,6 @@
 	<ui:EngineerTypeToFontStyle x:Key="EngineerTypeToFontStyle"/>
 	<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
 	<ui:MessageTypeToColour x:Key="MessageTypeToColour"/>
+
+	<ui:NullCommand x:Key="NullCommand"/>
 </ResourceDictionary>

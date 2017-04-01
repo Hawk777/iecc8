@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="UI\Message.cs" />
     <Compile Include="UI\MessageTypeToColour.cs" />
+    <Compile Include="UI\NullCommand.cs" />
     <Compile Include="UI\PermissionWaiter.cs" />
     <Compile Include="UI\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
