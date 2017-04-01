@@ -78,6 +78,16 @@ namespace Iecc8.World {
 		/// </summary>
 		public readonly Region Region;
 
+		/// The type of the DTMF event.
+		/// </summary>
+		/// <param name="message">The message received.</param>
+		public delegate void DTMFEvent(DTMFMessage message);
+
+		/// <summary>
+		/// Issued when a tone is received.
+		/// </summary>
+		public event DTMFEvent DTMF;
+
 		/// <summary>
 		/// The type of the Radio event.
 		/// </summary>
@@ -117,6 +127,7 @@ namespace Iecc8.World {
 
 		void IDispatcher.DTMF(DTMFMessage pMessage) {
 			MessageReceived = true;
+			SyncContext.Post((object state) => DTMF(pMessage), null);
 		}
 
 		void IDispatcher.PermissionUpdate(DispatcherPermissionMessage pMessage) {
