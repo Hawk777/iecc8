@@ -10,7 +10,7 @@ namespace Iecc8.UI {
 	/// </summary>
 	public class EngineerTypeToFontStyle : IValueConverter {
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
-			return ((EEngineerType) value) == EEngineerType.AI ? FontStyles.Italic : FontStyles.Normal;
+			return ((EEngineerType) value) == EEngineerType.Player ? FontStyles.Normal : FontStyles.Italic;
 		}
 
 		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
