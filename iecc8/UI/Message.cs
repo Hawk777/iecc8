@@ -8,6 +8,16 @@
 		/// </summary>
 		public enum EType {
 			/// <summary>
+			/// A DTMF tone from a tower.
+			/// </summary>
+			DTMF,
+
+			/// <summary>
+			/// An emergency DTMF tone from a tower.
+			/// </summary>
+			DTMFEmergency,
+
+			/// <summary>
 			/// A radio text message.
 			/// </summary>
 			Radio,

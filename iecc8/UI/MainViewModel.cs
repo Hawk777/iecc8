@@ -107,6 +107,7 @@ namespace Iecc8.UI {
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
 			ChannelMaskImpl = new ChannelMask();
 			Messages = new ObservableCollection<Message>();
+			world.DTMF += OnDTMF;
 			world.RadioRX += OnRadioRX;
 			world.RadioTX += OnRadioTX;
 		}
@@ -212,6 +213,16 @@ namespace Iecc8.UI {
 			if (spontaneous) {
 				InhibitDeletingMessageUntil = DateTime.UtcNow.AddSeconds(1);
 			}
+		}
+
+		/// <summary>
+		/// Handles a DTMF tone arriving.
+		/// </summary>
+		/// <param name="dtmf">Information about the tone.</param>
+		private void OnDTMF(Messages.DTMFMessage dtmf) {
+			Message.EType type = (dtmf.DTMFType == Iecc8.Messages.EDTMFType.EmergencyTone) ? Message.EType.DTMFEmergency : Message.EType.DTMF;
+			string text = "[" + dtmf.Channel + "] Tone " + dtmf.Tone + " at " + dtmf.TowerDescription.Replace('_', ' ');
+			AddMessage(type, text, true);
 		}
 
 		/// <summary>
