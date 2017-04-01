@@ -69,14 +69,14 @@ namespace Iecc8.UI {
 				}
 				if (PointsObject.Reversed) {
 					fig.StartPoint = new Point(0.0, 0.3125);
-					fig.Segments.Add(new LineSegment(new Point(0.6875, 1.0), false));
-					fig.Segments.Add(new LineSegment(new Point(0.3125, 1.0), false));
-					fig.Segments.Add(new LineSegment(new Point(0.0, 0.6875), false));
+					fig.Segments.Add(new LineSegment(new Point(0.6875, 1.0), true));
+					fig.Segments.Add(new LineSegment(new Point(0.3125, 1.0), true));
+					fig.Segments.Add(new LineSegment(new Point(0.0, 0.6875), true));
 				} else {
 					fig.StartPoint = new Point(0.0, 0.3125);
-					fig.Segments.Add(new LineSegment(new Point(1.0, 0.3125), false));
-					fig.Segments.Add(new LineSegment(new Point(1.0, 0.6875), false));
-					fig.Segments.Add(new LineSegment(new Point(0.0, 0.6875), false));
+					fig.Segments.Add(new LineSegment(new Point(1.0, 0.3125), true));
+					fig.Segments.Add(new LineSegment(new Point(1.0, 0.6875), true));
+					fig.Segments.Add(new LineSegment(new Point(0.0, 0.6875), true));
 				}
 				PathGeometry geom = (PathGeometry) Polygon.Data;
 				geom.Figures.Clear();
