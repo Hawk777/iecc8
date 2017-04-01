@@ -22,7 +22,7 @@
 				</RectangleGeometry>
 			</Path.Data>
 		</Path>
-		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBLeft, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
+		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBLeft, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<Path.Data>
 				<RectangleGeometry>
 					<Geometry.Transform>
@@ -34,7 +34,7 @@
 				</RectangleGeometry>
 			</Path.Data>
 		</Path>
-		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBRight, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
+		<Path Fill="{StaticResource ResourceKey=BG}" Visibility="{Binding TCBRight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<Path.Data>
 				<RectangleGeometry>
 					<Geometry.Transform>

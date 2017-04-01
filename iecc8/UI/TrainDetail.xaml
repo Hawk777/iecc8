@@ -21,8 +21,8 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
-		<Button Content="&lt;" Padding="3" Command="{Binding PrevCommand, Mode=OneWay}"/>
-		<Button Content="&gt;" Grid.Column="2" Padding="3" Command="{Binding NextCommand, Mode=OneWay}"/>
+		<Button Content="&lt;" Padding="3" Command="{Binding PrevCommand, Mode=OneTime}"/>
+		<Button Content="&gt;" Grid.Column="2" Padding="3" Command="{Binding NextCommand, Mode=OneTime}"/>
 		<Grid Grid.Column="1" DataContext="{Binding SelectedTrain, Mode=OneWay}">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -45,8 +45,8 @@
 			<TextBlock Grid.ColumnSpan="4" TextAlignment="Center">
 				<TextBlock.Text>
 					<MultiBinding StringFormat="{}{0}{1}">
-						<Binding Path="Company" Mode="OneWay"/>
-						<Binding Path="LocoNumber" Mode="OneWay"/>
+						<Binding Path="Company" Mode="OneTime"/>
+						<Binding Path="LocoNumber" Mode="OneTime"/>
 					</MultiBinding>
 				</TextBlock.Text>
 			</TextBlock>
@@ -105,9 +105,9 @@
 						<ColumnDefinition Width="1*"/>
 						<ColumnDefinition Width="1*"/>
 					</Grid.ColumnDefinitions>
-					<Button Grid.Row="0" Grid.Column="0" Content="Recrew" Command="{Binding AIRecrew, Mode=OneWay, FallbackValue={StaticResource NullCommand}}" ToolTip="Order an AI crew to board the train"/>
+					<Button Grid.Row="0" Grid.Column="0" Content="Recrew" Command="{Binding AIRecrew, Mode=OneTime, FallbackValue={StaticResource NullCommand}}" ToolTip="Order an AI crew to board the train"/>
 					<CheckBox Grid.Row="0" Grid.Column="1" Content="Hold" IsChecked="{Binding AIHold, Mode=TwoWay}" IsEnabled="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToIsAI}, FallbackValue=False}" ToolTip="Order the AI crew to hold the train's position"/>
-					<Button Grid.Row="1" Grid.Column="0" Content="EStop" Command="{Binding AIEStop, Mode=OneWay, FallbackValue={StaticResource NullCommand}}" ToolTip="Instantly stop the train"/>
+					<Button Grid.Row="1" Grid.Column="0" Content="EStop" Command="{Binding AIEStop, Mode=OneTime, FallbackValue={StaticResource NullCommand}}" ToolTip="Instantly stop the train"/>
 					<CheckBox Grid.Row="1" Grid.Column="1" Content="Relinquish" IsChecked="{Binding AIRelinquish, Mode=TwoWay}" IsEnabled="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToIsAI}, FallbackValue=False}" ToolTip="Order the AI crew to disembark once the train is stationary"/>
 				</Grid>
 			</GroupBox>

@@ -2,7 +2,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:ui="clr-namespace:Iecc8.UI"
 		x:Class="Iecc8.UI.TrainList"
-		ItemsSource="{Binding World.Trains}"
+		ItemsSource="{Binding World.Trains, Mode=OneTime}"
 		MouseDoubleClick="OnDoubleClick">
 	<ListView.Resources>
 		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Resources.xaml"/>
@@ -13,8 +13,8 @@
 				<GridViewColumn>
 					<GridViewColumn.DisplayMemberBinding>
 						<MultiBinding StringFormat="{}{0}{1}">
-							<Binding Path="Company" Mode="OneWay"/>
-							<Binding Path="LocoNumber" Mode="OneWay"/>
+							<Binding Path="Company" Mode="OneTime"/>
+							<Binding Path="LocoNumber" Mode="OneTime"/>
 						</MultiBinding>
 					</GridViewColumn.DisplayMemberBinding>
 					<GridViewColumn.Header>
@@ -51,7 +51,7 @@
 				<GridViewColumn>
 					<GridViewColumn.CellTemplate>
 						<DataTemplate>
-							<TextBlock FontStyle="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToFontStyle}}" Text="{Binding EngineerName}"/>
+							<TextBlock FontStyle="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToFontStyle}}" Text="{Binding EngineerName, Mode=OneWay}"/>
 						</DataTemplate>
 					</GridViewColumn.CellTemplate>
 					<GridViewColumn.Header>

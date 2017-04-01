@@ -51,7 +51,7 @@
 						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
 					</PathGeometry.Transform>
 					<PathGeometry.Figures>
-						<PathFigure IsFilled="{Binding TCB, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:DiagonalSection}}}">
+						<PathFigure IsFilled="{Binding TCB, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:DiagonalSection}}}">
 							<PathFigure.StartPoint>
 								<Point X="0.875" Y="0"/>
 							</PathFigure.StartPoint>

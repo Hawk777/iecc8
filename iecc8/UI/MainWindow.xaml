@@ -27,19 +27,19 @@
 		<ListBox Grid.Column="2" ItemsSource="{Binding Messages, Mode=OneWay}" Background="{StaticResource ResourceKey=BG}" PreviewMouseDown="MessageListPreviewMouseDown">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<TextBlock Text="{Binding Text, Mode=OneWay}" Foreground="{Binding Type, Converter={StaticResource ResourceKey=MessageTypeToColour}}"/>
+					<TextBlock Text="{Binding Text, Mode=OneWay}" Foreground="{Binding Type, Mode=OneWay, Converter={StaticResource ResourceKey=MessageTypeToColour}}"/>
 				</DataTemplate>
 			</ListBox.ItemTemplate>
 		</ListBox>
-		<ui:TrainDetail x:Name="TrainDetail" Grid.Column="2" Grid.Row="1" DataContext="{Binding TrainDetailViewModel}"/>
-		<ui:TrainList Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding ShowTrainList, Converter={StaticResource ResourceKey=BoolToVis}}"/>
+		<ui:TrainDetail x:Name="TrainDetail" Grid.Column="2" Grid.Row="1" DataContext="{Binding TrainDetailViewModel, Mode=OneTime}"/>
+		<ui:TrainList Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding ShowTrainList, Mode=OneWay, Converter={StaticResource ResourceKey=BoolToVis}}"/>
 		<Border Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding ShowChannelGrid, Mode=OneWay, Converter={StaticResource BoolToVis}}" Background="{StaticResource {x:Static SystemColors.AppWorkspaceBrushKey}}" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="2">
 			<GroupBox Header="Radio Channels To Receive" Foreground="{StaticResource {x:Static SystemColors.ControlTextBrushKey}}">
 				<ui:ChannelGrid DataContext="{Binding ChannelMask, Mode=OneTime}"/>
 			</GroupBox>
 		</Border>
 		<ui:RadioTransmitBar x:Name="RadioTransmitter" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom" DataContext="{Binding RadioTransmitBarViewModel, Mode=OneTime}" Visibility="Collapsed"/>
-		<Viewbox Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Converter={StaticResource ResourceKey=BoolToVis}}">
+		<Viewbox Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Mode=OneWay, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<TextBlock Foreground="Red" Text="Link Down" FontSize="72" FontWeight="Bold"/>
 		</Viewbox>
 		<Grid Grid.Row="2" Grid.ColumnSpan="3">
@@ -66,7 +66,7 @@
 			<Button Grid.Column="5" Content="CHAN" ToolTip="Enable/Disable Radio Channels" AutomationProperties.AcceleratorKey="F3" Click="ShowHideChannelGrid"/>
 			<TextBlock Grid.Column="6" Text="F4" TextAlignment="Center"/>
 			<Button Grid.Column="7" Content="SEND" ToolTip="Send Radio Message" AutomationProperties.AcceleratorKey="F4" Click="ShowHideRadioTransmitBar"/>
-			<TextBlock Grid.Column="9" Text="{Binding World.SimulationTime}" TextAlignment="Center"/>
+			<TextBlock Grid.Column="9" Text="{Binding World.SimulationTime, Mode=OneWay}" TextAlignment="Center"/>
 			<Grid.Resources>
 				<Style TargetType="Button">
 					<Setter Property="Foreground" Value="{StaticResource BottomBarHighlightFG}"/>
