@@ -14,15 +14,6 @@ namespace Iecc8.World {
 		public readonly int ID;
 
 		/// <summary>
-		/// Whether this train has expired and probably left the region.
-		/// </summary>
-		public bool Expired {
-			get {
-				return (DateTime.UtcNow - DataLastUpdated).TotalSeconds > MaxAge;
-			}
-		}
-
-		/// <summary>
 		/// The name of the owning company of the locomotive.
 		/// </summary>
 		public string Company {
@@ -154,12 +145,8 @@ namespace Iecc8.World {
 			// Sanity check.
 			Debug.Assert(data.TrainID == ID);
 
-			// Timestamp the new arrival and update the expired status.
-			bool oldExpired = Expired;
+			// Timestamp the new arrival.
 			DataLastUpdated = DateTime.UtcNow;
-			if (oldExpired) {
-				EmitPropertyChanged(nameof(Expired));
-			}
 
 			// Update general properties.
 			Company = data.RailroadInitials;
@@ -195,6 +182,20 @@ namespace Iecc8.World {
 				Location = tc.LocationName;
 			}
 			LocationCurrent = tc != null;
+		}
+		#endregion
+
+		#region Interlocking API
+		/// <summary>
+		/// Checks whether this train has expired and probably left the area, updating it accordingly if so.
+		/// </summary>
+		/// <returns><c>true</c> if this train has expired, or <c>false</c> if it is still current.</returns>
+		public bool CheckExpired() {
+			bool expired = (DateTime.UtcNow - DataLastUpdated).TotalSeconds >= MaxAge;
+			if (expired) {
+				LocationCurrent = false;
+			}
+			return expired;
 		}
 		#endregion
 

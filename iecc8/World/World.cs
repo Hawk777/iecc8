@@ -264,7 +264,7 @@ namespace Iecc8.World {
 		private void ClearExpiredTrainsTick(object state) {
 			SyncContext.Post((object param) => {
 				for (int i = 0; i != Trains.Count; ++i) {
-					if (Trains[i].Expired) {
+					if (Trains[i].CheckExpired()) {
 						Trains.RemoveAt(i);
 						--i;
 					}
