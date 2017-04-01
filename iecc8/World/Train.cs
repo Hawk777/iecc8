@@ -1,6 +1,7 @@
 ﻿using Iecc8.Messages;
 using System;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace Iecc8.World {
 	/// <summary>
@@ -62,6 +63,18 @@ namespace Iecc8.World {
 		}
 
 		/// <summary>
+		/// The speed limit, in miles per hour.
+		/// </summary>
+		public int SpeedLimit {
+			get {
+				return SpeedLimitImpl;
+			}
+			private set {
+				SetProperty(ref SpeedLimitImpl, value);
+			}
+		}
+
+		/// <summary>
 		/// The last known sub-area.
 		/// </summary>
 		public string SubArea {
@@ -105,7 +118,10 @@ namespace Iecc8.World {
 				return EngineerTypeImpl;
 			}
 			private set {
-				SetProperty(ref EngineerTypeImpl, value);
+				if (SetProperty(ref EngineerTypeImpl, value)) {
+					AIRecrewImpl.EmitCanExecuteChanged();
+					AIEStopImpl.EmitCanExecuteChanged();
+				}
 			}
 		}
 
@@ -120,6 +136,84 @@ namespace Iecc8.World {
 				SetProperty(ref EngineerNameImpl, value);
 			}
 		}
+
+		/// <summary>
+		/// The length of the train, in feet.
+		/// </summary>
+		public int Length {
+			get {
+				return LengthImpl;
+			}
+			private set {
+				SetProperty(ref LengthImpl, value);
+			}
+		}
+
+		/// <summary>
+		/// The weight of the train, in tons.
+		/// </summary>
+		public int Weight {
+			get {
+				return WeightImpl;
+			}
+			private set {
+				SetProperty(ref WeightImpl, value);
+			}
+		}
+
+		/// <summary>
+		/// The horsepower per ton of the train.
+		/// </summary>
+		public float HPt {
+			get {
+				return HPtImpl;
+			}
+			private set {
+				SetProperty(ref HPtImpl, value);
+			}
+		}
+
+		/// <summary>
+		/// The command to order an AI crew aboard the train.
+		/// </summary>
+		public ICommand AIRecrew {
+			get {
+				return AIRecrewImpl;
+			}
+		}
+
+		/// <summary>
+		/// The command to instantly stop an AI train.
+		/// </summary>
+		public ICommand AIEStop {
+			get {
+				return AIEStopImpl;
+			}
+		}
+
+		/// <summary>
+		/// Whether the AI driver should hold its position.
+		/// </summary>
+		public bool AIHold {
+			get {
+				return AIHoldImpl;
+			}
+			set {
+				SetAIHold(value);
+			}
+		}
+
+		/// <summary>
+		/// Whether the AI driver should disembark once the train is stationary.
+		/// </summary>
+		public bool AIRelinquish {
+			get {
+				return AIRelinquishImpl;
+			}
+			set {
+				SetAIRelinquish(value);
+			}
+		}
 		#endregion
 
 		#region Data Initialization API
@@ -131,6 +225,8 @@ namespace Iecc8.World {
 		public Train(TrainData data, World world) {
 			ID = data.TrainID;
 			World = world;
+			AIRecrewImpl = new AIRecrewCommand(this);
+			AIEStopImpl = new AIEStopCommand(this);
 			LocationImpl = string.Empty;
 			UpdateFromRun8(data);
 		}
@@ -153,8 +249,16 @@ namespace Iecc8.World {
 			LocoNumber = data.LocoNumber;
 			Tag = data.TrainSymbol;
 			Speed = (int) data.TrainSpeedMph;
+			SpeedLimit = data.TrainSpeedLimitMPH;
 			EngineerType = data.EngineerType;
 			EngineerName = (EngineerType == EEngineerType.AI) ? "AI" : (EngineerType == EEngineerType.None) ? "No Driver" : data.EngineerName;
+			Length = data.TrainLengthFeet;
+			Weight = data.TrainWeightTons;
+			HPt = data.HpPerTon;
+
+			// Update AI hold/relinquish orders. We don't use the property setters here because the property setters send order packets to Run8, as they are intended for invocation by the signaller. Instead set the backing fields emit property change notifications directly.
+			SetProperty(ref AIHoldImpl, data.HoldingForDispatcher, nameof(AIHold));
+			SetProperty(ref AIRelinquishImpl, data.RelinquishWhenStopped, nameof(AIRelinquish));
 
 			// Update location, keeping the old string if not available.
 			SubArea sub = null;
@@ -215,15 +319,89 @@ namespace Iecc8.World {
 		/// </summary>
 		private DateTime DataLastUpdated;
 
+		private readonly AIRecrewCommand AIRecrewImpl;
+		private readonly AIEStopCommand AIEStopImpl;
 		private string CompanyImpl;
 		private int LocoNumberImpl;
 		private string TagImpl;
 		private int SpeedImpl;
+		private int SpeedLimitImpl;
 		private string SubAreaImpl;
 		private string LocationImpl;
 		private bool LocationCurrentImpl;
 		private EEngineerType EngineerTypeImpl;
 		private string EngineerNameImpl;
+		private int LengthImpl;
+		private int WeightImpl;
+		private float HPtImpl;
+		private bool AIHoldImpl;
+		private bool AIRelinquishImpl;
+
+		/// <summary>
+		/// The command to order an AI crew aboard a train.
+		/// </summary>
+		private class AIRecrewCommand : ICommand {
+			public event EventHandler CanExecuteChanged;
+
+			public AIRecrewCommand(Train train) {
+				Train = train;
+			}
+
+			public bool CanExecute(object parameter) {
+				return Train.EngineerType == EEngineerType.None;
+			}
+
+			public async void Execute(object parameter) {
+				await Train.World.AIRecrewAsync(Train.ID);
+			}
+
+			public void EmitCanExecuteChanged() {
+				CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+			}
+
+			private readonly Train Train;
+		}
+
+		/// <summary>
+		/// The command to immediately stop an AI train.
+		/// </summary>
+		private class AIEStopCommand : ICommand {
+			public event EventHandler CanExecuteChanged;
+
+			public AIEStopCommand(Train train) {
+				Train = train;
+			}
+
+			public bool CanExecute(object parameter) {
+				return Train.EngineerType == EEngineerType.AI;
+			}
+
+			public async void Execute(object parameter) {
+				await Train.World.StopAITrainAsync(Train.ID);
+			}
+
+			public void EmitCanExecuteChanged() {
+				CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+			}
+
+			private readonly Train Train;
+		}
+
+		/// <summary>
+		/// Sends to Run8 whether the AI driver should hold position.
+		/// </summary>
+		/// <param name="value">Whether to hold position.</param>
+		private async void SetAIHold(bool value) {
+			await World.HoldAITrainAsync(ID, value);
+		}
+
+		/// <summary>
+		/// Sends to Run8 whether the AI driver should disembark once their train is stationary.
+		/// </summary>
+		/// <param name="value">Whether to disembark.</param>
+		private async void SetAIRelinquish(bool value) {
+			await World.RelinquishAITrainAsync(ID, value);
+		}
 		#endregion
 	}
 }

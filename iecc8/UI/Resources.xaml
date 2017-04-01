@@ -127,6 +127,9 @@
 
 	<BooleanToVisibilityConverter x:Key="BoolToVis"/>
 	<ui:EngineerTypeToFontStyle x:Key="EngineerTypeToFontStyle"/>
+	<ui:EngineerTypeToIsAI x:Key="EngineerTypeToIsAI"/>
 	<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
 	<ui:MessageTypeToColour x:Key="MessageTypeToColour"/>
+
+	<ui:NullCommand x:Key="NullCommand"/>
 </ResourceDictionary>

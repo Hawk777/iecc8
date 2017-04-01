@@ -31,7 +31,7 @@
 				</DataTemplate>
 			</ListBox.ItemTemplate>
 		</ListBox>
-		<Rectangle Grid.Column="2" Fill="Red" Grid.Row="1"/>
+		<ui:TrainDetail x:Name="TrainDetail" Grid.Column="2" Grid.Row="1" DataContext="{Binding TrainDetailViewModel}"/>
 		<ui:TrainList Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding ShowTrainList, Converter={StaticResource ResourceKey=BoolToVis}}"/>
 		<Viewbox Grid.RowSpan="2" Grid.ColumnSpan="3" Visibility="{Binding World.LinkError, Converter={StaticResource ResourceKey=BoolToVis}}">
 			<TextBlock Foreground="Red" Text="Link Down" FontSize="72" FontWeight="Bold"/>

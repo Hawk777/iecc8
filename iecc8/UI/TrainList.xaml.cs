@@ -1,6 +1,9 @@
-﻿using System.ComponentModel;
+﻿using Iecc8.World;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Iecc8.UI {
 	/// <summary>
@@ -37,6 +40,14 @@ namespace Iecc8.UI {
 			foreach (string key in keys) {
 				desc.Add(new SortDescription(key, ListSortDirection.Ascending));
 			}
+		}
+
+		private void OnDoubleClick(object sender, MouseButtonEventArgs e) {
+			List<Train> trains = new List<Train>();
+			trains.Add((Train) SelectedItem);
+			MainViewModel vm = (MainViewModel) DataContext;
+			vm.ShowTrainList = false;
+			vm.SetDetailTrains(trains);
 		}
 	}
 }
