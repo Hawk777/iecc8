@@ -89,6 +89,8 @@ namespace Iecc8.UI {
 				} else {
 					VM.SetSelectedTrain(VM.SelectedTrainIndex + 1);
 				}
+				VM.PrevCommandImpl.EmitCanExecuteChanged();
+				VM.NextCommandImpl.EmitCanExecuteChanged();
 			}
 
 			/// <summary>
