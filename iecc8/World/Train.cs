@@ -286,6 +286,18 @@ namespace Iecc8.World {
 				Location = tc.LocationName;
 			}
 			LocationCurrent = tc != null;
+
+			// Fix up which track circuit we are in.
+			TrackCircuit berth = tc?.GetBerth();
+			if (berth != TrackCircuit) {
+				if (TrackCircuit != null) {
+					TrackCircuit.Trains.Remove(this);
+				}
+				TrackCircuit = berth;
+				if (TrackCircuit != null) {
+					TrackCircuit.Trains.Add(this);
+				}
+			}
 		}
 		#endregion
 
@@ -298,6 +310,10 @@ namespace Iecc8.World {
 			bool expired = (DateTime.UtcNow - DataLastUpdated).TotalSeconds >= MaxAge;
 			if (expired) {
 				LocationCurrent = false;
+				if (TrackCircuit != null) {
+					TrackCircuit.Trains.Remove(this);
+					TrackCircuit = null;
+				}
 			}
 			return expired;
 		}
@@ -329,6 +345,7 @@ namespace Iecc8.World {
 		private string SubAreaImpl;
 		private string LocationImpl;
 		private bool LocationCurrentImpl;
+		private TrackCircuit TrackCircuit;
 		private EEngineerType EngineerTypeImpl;
 		private string EngineerNameImpl;
 		private int LengthImpl;

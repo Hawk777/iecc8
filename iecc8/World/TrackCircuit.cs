@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace Iecc8.World {
 	/// <summary>
@@ -86,6 +87,18 @@ namespace Iecc8.World {
 				SetProperty(ref ReversedHandPointsImpl, value);
 			}
 		}
+
+		/// <summary>
+		/// The trains in this track circuit.
+		/// </summary>
+		/// <remarks>
+		/// This list also contains trains that are not yet occupying this circuit but are approaching along a route which ends here.
+		/// </remarks>
+		public ObservableCollection<Train> Trains {
+			get {
+				return TrainsImpl;
+			}
+		}
 		#endregion
 
 		#region Run8 API
@@ -122,6 +135,7 @@ namespace Iecc8.World {
 			ID = id;
 			LocationName = string.IsNullOrEmpty(schema.LocationName) ? string.Empty : string.Intern(schema.LocationName);
 			IgnoreHandPoints = schema.IgnoreHandPoints;
+			TrainsImpl = new ObservableCollection<Train>();
 		}
 		#endregion
 
@@ -167,6 +181,11 @@ namespace Iecc8.World {
 		/// Whether this track circuit ignores hand points.
 		/// </summary>
 		private readonly bool IgnoreHandPoints;
+
+		/// <summary>
+		/// Storage for the Trains property.
+		/// </summary>
+		private readonly ObservableCollection<Train> TrainsImpl;
 
 		/// <summary>
 		/// The next track circuit in the route, or <c>null</c> if this is the last track circuit or no route is set.
