@@ -72,7 +72,7 @@
 			<TextBlock Grid.Row="5" Grid.Column="1" Text="Weight:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="5" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0} T">
+					<MultiBinding StringFormat="{}{0}&#160;T">
 						<Binding Path="Weight" Mode="OneWay"/>
 					</MultiBinding>
 				</TextBlock.Text>
@@ -82,7 +82,7 @@
 			<TextBlock Grid.Row="7" Grid.Column="1" Text="Speed:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="7" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0} mph">
+					<MultiBinding StringFormat="{}{0}&#160;mph">
 						<Binding Path="Speed" Mode="OneWay"/>
 					</MultiBinding>
 				</TextBlock.Text>
@@ -90,7 +90,7 @@
 			<TextBlock Grid.Row="8" Grid.Column="1" Text="Limit:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="8" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0} mph">
+					<MultiBinding StringFormat="{}{0}&#160;mph">
 						<Binding Path="SpeedLimit" Mode="OneWay"/>
 					</MultiBinding>
 				</TextBlock.Text>
