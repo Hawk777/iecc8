@@ -122,6 +122,8 @@
 		</PathFigure>
 	</PathFigureCollection>
 
+	<SolidColorBrush x:Key="TD" Color="Cyan"/>
+
 	<SolidColorBrush x:Key="BottomBarHighlightBG" Color="Orange"/>
 	<SolidColorBrush x:Key="BottomBarHighlightFG" Color="Black"/>
 
@@ -130,6 +132,7 @@
 	<ui:EngineerTypeToIsAI x:Key="EngineerTypeToIsAI"/>
 	<ui:LocationCurrentToFontStyle x:Key="LocationCurrentToFontStyle"/>
 	<ui:MessageTypeToColour x:Key="MessageTypeToColour"/>
+	<ui:NonNullToVisibility x:Key="NonNullToVisibility"/>
 
 	<ui:NullCommand x:Key="NullCommand"/>
 </ResourceDictionary>
