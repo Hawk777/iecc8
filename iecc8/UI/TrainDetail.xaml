@@ -64,17 +64,13 @@
 			<TextBlock Grid.Row="4" Grid.Column="1" Text="Length:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="4" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0}′">
-						<Binding Path="Length" Mode="OneWay"/>
-					</MultiBinding>
+					<Binding Path="Length" Mode="OneWay" StringFormat="{}{0}′"/>
 				</TextBlock.Text>
 			</TextBlock>
 			<TextBlock Grid.Row="5" Grid.Column="1" Text="Weight:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="5" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0}&#160;T">
-						<Binding Path="Weight" Mode="OneWay"/>
-					</MultiBinding>
+					<Binding Path="Weight" Mode="OneWay" StringFormat="{}{0}&#160;T"/>
 				</TextBlock.Text>
 			</TextBlock>
 			<TextBlock Grid.Row="6" Grid.Column="1" Text="HP/t:" TextAlignment="Right"/>
@@ -82,17 +78,13 @@
 			<TextBlock Grid.Row="7" Grid.Column="1" Text="Speed:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="7" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0}&#160;mph">
-						<Binding Path="Speed" Mode="OneWay"/>
-					</MultiBinding>
+					<Binding Path="Speed" Mode="OneWay" StringFormat="{}{0}&#160;mph"/>
 				</TextBlock.Text>
 			</TextBlock>
 			<TextBlock Grid.Row="8" Grid.Column="1" Text="Limit:" TextAlignment="Right"/>
 			<TextBlock Grid.Row="8" Grid.Column="2">
 				<TextBlock.Text>
-					<MultiBinding StringFormat="{}{0}&#160;mph">
-						<Binding Path="SpeedLimit" Mode="OneWay"/>
-					</MultiBinding>
+					<Binding Path="SpeedLimit" Mode="OneWay" StringFormat="{}{0}&#160;mph"/>
 				</TextBlock.Text>
 			</TextBlock>
 			<GroupBox Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Header="AI">
