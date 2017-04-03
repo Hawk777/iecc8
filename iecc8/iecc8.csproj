@@ -112,6 +112,7 @@
     </Compile>
     <Compile Include="UI\Message.cs" />
     <Compile Include="UI\MessageTypeToColour.cs" />
+    <Compile Include="UI\NonNullToVisibility.cs" />
     <Compile Include="UI\NullCommand.cs" />
     <Compile Include="UI\PermissionWaiter.cs" />
     <Compile Include="UI\Points.xaml.cs">
@@ -132,6 +133,9 @@
       <DependentUpon>SignalStem.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\SubAreaNumberWaiter.cs" />
+    <Compile Include="UI\TDBerth.xaml.cs">
+      <DependentUpon>TDBerth.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\TrackSection.cs" />
     <Compile Include="UI\TrainDetail.xaml.cs">
       <DependentUpon>TrainDetail.xaml</DependentUpon>
@@ -201,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\SignalStem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\TDBerth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
