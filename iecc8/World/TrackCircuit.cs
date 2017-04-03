@@ -152,6 +152,14 @@ namespace Iecc8.World {
 			RouteLocked = true;
 			RouteLockCascaded = true;
 		}
+
+		/// <summary>
+		/// Finds the berth track circuit at the end of the route running through this circuit.
+		/// </summary>
+		/// <returns>The circuit at the end of the route, or this circuit if there is no route.</returns>
+		public TrackCircuit GetBerth() {
+			return (NextInRoute != null) ? NextInRoute.GetBerth() : this;
+		}
 		#endregion
 
 		#region Private Members
