@@ -90,9 +90,9 @@ namespace Iecc8.World {
 		public event TrainEnteredEvent TrainEntered;
 
 		/// <summary>
-		/// The type of the Radio event.
+		/// The type of the RadioTX and RadioRX events.
 		/// </summary>
-		/// <param name="message">The message received.</param>
+		/// <param name="message">The message sent or received.</param>
 		public delegate void RadioEvent(RadioTextMessage message);
 
 		/// <summary>
