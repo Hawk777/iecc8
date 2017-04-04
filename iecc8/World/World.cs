@@ -215,7 +215,7 @@ namespace Iecc8.World {
 			AIPermissionImpl = false;
 			Run8 = run8;
 			SyncContext = SynchronizationContext.Current;
-			PingTimer = new Timer(PingTimerTick, null, 0, 5000);
+			PingTimer = new Timer(PingTimerTick, null, 5000, 5000);
 			ClearExpiredTrainsTimer = new Timer(ClearExpiredTrainsTick, null, 0, 1000);
 			Trains = new ObservableCollection<Train>();
 			Regions regions = (Regions) Application.LoadComponent(new Uri("/iecc8;component/Region/Regions.xaml", UriKind.Relative));
