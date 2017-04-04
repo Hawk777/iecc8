@@ -107,6 +107,7 @@ namespace Iecc8.UI {
 			TrainDetailViewModelImpl = new TrainDetailViewModel();
 			ChannelMaskImpl = new ChannelMask();
 			Messages = new ObservableCollection<Message>();
+			world.TrainEntered += OnTrainEntered;
 			world.RadioRX += OnRadioRX;
 			world.RadioTX += OnRadioTX;
 		}
@@ -212,6 +213,14 @@ namespace Iecc8.UI {
 			if (spontaneous) {
 				InhibitDeletingMessageUntil = DateTime.UtcNow.AddSeconds(1);
 			}
+		}
+
+		/// <summary>
+		/// Handles a train entering the world.
+		/// </summary>
+		/// <param name="train">The new train.</param>
+		private void OnTrainEntered(Train train) {
+			AddMessage(Message.EType.Miscellaneous, string.Format("{0}{1} entered at {2} : {3}", train.Company, train.LocoNumber, train.SubArea, train.Location), true);
 		}
 
 		/// <summary>
