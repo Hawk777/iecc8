@@ -1,4 +1,5 @@
-﻿using Iecc8.World;
+﻿using Iecc8.Messages;
+using Iecc8.World;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -87,10 +88,22 @@ namespace Iecc8.UI {
 				TCObject = vm.World.Region.SubAreas[SubAreaID].TrackCircuits[TrackCircuitID];
 				TCObject.Trains.CollectionChanged += OnTrainsChanged;
 			}
+			UpdateTrain();
 		}
 
 		private void OnTrainsChanged(object sender, NotifyCollectionChangedEventArgs e) {
-			Train = (TCObject.Trains.Count != 0) ? TCObject.Trains[0] : null;
+			UpdateTrain();
+		}
+
+		private void UpdateTrain() {
+			if (TCObject != null) {
+				Train = (TCObject.Trains.Count != 0) ? TCObject.Trains[0] : null;
+			} else {
+				TrainData data = default(TrainData);
+				data.BlockID = -1;
+				data.LocoNumber = 9999;
+				Train = new Train(data, null);
+			}
 		}
 	}
 }
