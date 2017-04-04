@@ -79,6 +79,17 @@ namespace Iecc8.World {
 		public readonly Region Region;
 
 		/// <summary>
+		/// The type of the TrainEntered event.
+		/// </summary>
+		/// <param name="train">The new train.</param>
+		public delegate void TrainEnteredEvent(Train train);
+
+		/// <summary>
+		/// Issued when a train is spawned into the world.
+		/// </summary>
+		public event TrainEnteredEvent TrainEntered;
+
+		/// <summary>
 		/// The type of the Radio event.
 		/// </summary>
 		/// <param name="message">The message received.</param>
@@ -190,9 +201,16 @@ namespace Iecc8.World {
 					}
 				}
 
-				// Add a new train if one was not found.
 				if (!found) {
-					Trains.Add(new Train(pMessage.Train, this));
+					// No existing train found; add a new one.
+					Train t = new Train(pMessage.Train, this);
+					Trains.Add(t);
+					if (ShouldEmitTrainEntered) {
+						TrainEntered?.Invoke(t);
+					}
+				} else {
+					// This is the second or subsequent update of a particular train. Under the assumption that Run8 always sends updates for trains in the same order, that means we must have seen every train that was in the area. So any train we see in future which we haven't seen already must be a newly entered train, not just one that was in the area when IECC8 booted.
+					ShouldEmitTrainEntered = true;
 				}
 			}, null);
 		}
@@ -327,6 +345,14 @@ namespace Iecc8.World {
 		private readonly Timer ClearExpiredTrainsTimer;
 
 		/// <summary>
+		/// Whether to emit a train entered event on seeing a train that isn't in the database yet.
+		/// </summary>
+		/// <remarks>
+		/// This is initially false at startup in order to avoid spamming the signaller with all the trains that are already in the section.
+		/// </remarks>
+		private volatile bool ShouldEmitTrainEntered;
+
+		/// <summary>
 		/// Pings Run8 if no message has been received for a while.
 		/// </summary>
 		private void PingTimerTick(object state) {
@@ -340,6 +366,9 @@ namespace Iecc8.World {
 					SyncContext.Post((object param) => LinkError = true, null);
 				}
 			}
+
+			// Normally this variable would be set to true as a side effect of receiving train update packets from Run8. However, if there are no trains in the area when IECC8 boots, then we will never see any train update packets and so the variable will stay clear forever. That's clearly undesirable as it would then squelch notification of the first train entering the world. So, instead, if nobody else has done so yet, set it after one ping timeout.
+			ShouldEmitTrainEntered = true;
 		}
 
 		/// <summary>
