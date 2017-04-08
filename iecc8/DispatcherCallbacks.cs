@@ -53,7 +53,7 @@ namespace Iecc8 {
 				}
 				lastSignals[msg.Route] = msg.Signals;
 			} else {
-				Console.WriteLine("Initializing signals for route " + msg.Route);
+				Console.WriteLine("Initializing " + msg.Signals.Count + " signals for route " + msg.Route);
 				lastSignals[msg.Route] = msg.Signals;
 			}
 		}
