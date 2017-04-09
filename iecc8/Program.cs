@@ -33,6 +33,10 @@ namespace Iecc8 {
 							await obj.ChangeSignalAsync(defaultSubArea, target, (action == 's') ? ESignalIndication.Stop : (action == 'p') ? ESignalIndication.Proceed : (action == 'f') ? ESignalIndication.Fleet : ESignalIndication.FlagBy);
 						} else if (targetOK && (objectType == 'p') && ((action == 'n') || (action == 'r') || (action == 'u') || (action == 'l'))) {
 							await obj.ThrowSwitchAsync(defaultSubArea, target, (action == 'n') ? ESwitchState.Normal : (action == 'r') ? ESwitchState.Reversed : (action == 'u') ? ESwitchState.Unlocked : ESwitchState.Locked);
+						} else if (targetOK && (objectType == 't') && (action == 'b')) {
+							await obj.TransportPlayerToBlockAsync(defaultSubArea, target);
+						} else if (targetOK && (objectType == 't') && (action == 'p')) {
+							await obj.TransportPlayerAsync(defaultSubArea, target);
 						} else {
 							Console.WriteLine("Usage:");
 							Console.WriteLine("S123 - set subsequent commands to target sub-area 123");
@@ -44,6 +48,8 @@ namespace Iecc8 {
 							Console.WriteLine("s123p - set signal 123 to proceed");
 							Console.WriteLine("s123f - set signal 123 to fleet");
 							Console.WriteLine("s123F - set signal 123 to flag-by");
+							Console.WriteLine("t123b - teleport to block 123");
+							Console.WriteLine("t123p - teleport to points 123");
 						}
 					}
 				}
