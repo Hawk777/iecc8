@@ -67,9 +67,14 @@ namespace Iecc8.World {
 			Name = schema.Name ?? string.Empty;
 
 			{
-				TrackCircuit[] trackCircuits = new TrackCircuit[schema.TrackCircuits.Count];
-				for (ushort i = 0; i != schema.TrackCircuits.Count; ++i) {
-					trackCircuits[i] = new TrackCircuit(schema.TrackCircuits[i], ID, i);
+				ushort maxID = 0;
+				foreach (Schema.TrackCircuit i in schema.TrackCircuits) {
+					maxID = Math.Max(maxID, i.ID);
+				}
+				TrackCircuit[] trackCircuits = new TrackCircuit[maxID + 1];
+				foreach (Schema.TrackCircuit i in schema.TrackCircuits) {
+					Debug.Assert(trackCircuits[i.ID] == null);
+					trackCircuits[i.ID] = new TrackCircuit(i, ID, i.ID);
 				}
 				TrackCircuits = Array.AsReadOnly(trackCircuits);
 			}

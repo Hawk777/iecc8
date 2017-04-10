@@ -64,7 +64,9 @@ namespace Iecc8.World {
 				subAreaID = (ushort) (id / 1000);
 				id %= 1000;
 			}
-			return SubAreas[subAreaID].TrackCircuits[(ushort) id];
+			TrackCircuit tc = SubAreas[subAreaID].TrackCircuits[(ushort) id];
+			Debug.Assert(tc != null);
+			return tc;
 		}
 		#endregion
 

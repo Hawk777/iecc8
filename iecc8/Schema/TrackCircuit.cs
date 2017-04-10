@@ -4,6 +4,14 @@
 	/// </summary>
 	public struct TrackCircuit {
 		/// <summary>
+		/// The ID number of the track circuit.
+		/// </summary>
+		public ushort ID {
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// Whether to ignore reversed hand points in this track circuit.
 		/// </summary>
 		/// <remarks>
