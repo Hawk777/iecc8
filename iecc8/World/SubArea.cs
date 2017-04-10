@@ -137,12 +137,16 @@ namespace Iecc8.World {
 			for (int i = 0; i != tcs.Count; ++i) {
 				bool occupied = occupiedEnum != null && occupiedEnum.Current == i;
 				bool reversed = reversedEnum != null && reversedEnum.Current == i;
-				tcs[i].UpdateFromRun8(occupied, reversed);
-				if (occupied) {
-					occupiedEnum = occupiedEnum.MoveNext() ? occupiedEnum : null;
-				}
-				if (reversed) {
-					reversedEnum = reversedEnum.MoveNext() ? reversedEnum : null;
+				if (tcs[i] != null) {
+					tcs[i].UpdateFromRun8(occupied, reversed);
+					if (occupied) {
+						occupiedEnum = occupiedEnum.MoveNext() ? occupiedEnum : null;
+					}
+					if (reversed) {
+						reversedEnum = reversedEnum.MoveNext() ? reversedEnum : null;
+					}
+				} else {
+					Debug.Assert(!occupied && !reversed);
 				}
 			}
 			if (occupiedEnum != null) {
