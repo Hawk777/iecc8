@@ -142,8 +142,9 @@ namespace Iecc8.World {
 		/// Computes the aspects object shown in rear of this one, assuming an unblocked diverging route.
 		/// </summary>
 		/// <param name="divergenceNumber">What number of diverging route is taken from this signal.</param>
+		/// <param name="divergenceDistanceStraightOnly">Whether only straight available blocks ahead are considered.</param>
 		/// <returns>The aspects in rear of this one.</returns>
-		public Aspects NextInRearDiverging(byte divergenceNumber) {
+		public Aspects NextInRearDiverging(byte divergenceNumber, bool divergenceDistanceStraightOnly) {
 			switch (Type) {
 				case EAspectsType.Red:
 				case EAspectsType.AllLunar:
@@ -151,16 +152,20 @@ namespace Iecc8.World {
 					return new Aspects(EAspectsType.RedOverYellow, divergenceNumber);
 
 				case EAspectsType.Yellow:
-				case EAspectsType.RedOverYellow:
 					return new Aspects(EAspectsType.RedOverFlashingYellow, divergenceNumber);
+
+				case EAspectsType.RedOverYellow:
+					return new Aspects(divergenceDistanceStraightOnly ? EAspectsType.RedOverYellow : EAspectsType.RedOverFlashingYellow, divergenceNumber);
 
 				case EAspectsType.FlashingYellow:
 				case EAspectsType.Green:
-				case EAspectsType.RedOverFlashingYellow:
-				case EAspectsType.RedOverGreen:
 				case EAspectsType.YellowOverYellow:
 				case EAspectsType.YellowOverGreen:
 					return new Aspects(EAspectsType.RedOverGreen, divergenceNumber);
+
+				case EAspectsType.RedOverFlashingYellow:
+				case EAspectsType.RedOverGreen:
+					return new Aspects(divergenceDistanceStraightOnly ? EAspectsType.RedOverYellow : EAspectsType.RedOverGreen, divergenceNumber);
 			}
 			return new Aspects(EAspectsType.Red, 0);
 		}

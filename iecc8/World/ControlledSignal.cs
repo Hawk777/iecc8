@@ -361,7 +361,7 @@ namespace Iecc8.World {
 					} else if (route.Divergence == 0) {
 						Aspects = route.Exit.Aspects.NextInRear(DivergenceLookahead);
 					} else {
-						Aspects = route.Exit.Aspects.NextInRearDiverging(route.Divergence);
+						Aspects = route.Exit.Aspects.NextInRearDiverging(route.Divergence, route.DivergenceDistanceStraightOnly);
 					}
 				}
 			}

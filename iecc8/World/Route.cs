@@ -30,6 +30,14 @@ namespace Iecc8.World {
 		public readonly bool Restricting;
 
 		/// <summary>
+		/// How this route, if diverging, calculates its aspect in terms of routes ahead.
+		/// </summary>
+		/// <remarks>
+		/// If this field is <c>false</c> (the default), the lower aspect is calculated based on the total number of blocks ahead that are available up to the next signal at stop; for example, if the next signal shows red over yellow, then this signal will show red over flashing yellow. If this field is <c>true</c>, the lower aspect is calculated based only on the number of blocksare available up to the next signal at stop or diverging; for example, if the next signal shows red over yellow, then this signal will also show red over yellow because only one block is available until the next divergence.
+		/// </remarks>
+		public readonly bool DivergenceDistanceStraightOnly;
+
+		/// <summary>
 		/// The track circuits along this route.
 		/// </summary>
 		public readonly IReadOnlyList<RouteElement> Elements;
@@ -131,6 +139,7 @@ namespace Iecc8.World {
 			Exit = region.GetSignal(schema.Exit, entrance.SubArea);
 			Divergence = schema.Divergence;
 			Restricting = schema.Restricting;
+			DivergenceDistanceStraightOnly = schema.DivergenceDistanceStraightOnly;
 			{
 				RouteElement[] elts = new RouteElement[schema.TCs.Count];
 				for (int i = 0; i != schema.TCs.Count; ++i) {

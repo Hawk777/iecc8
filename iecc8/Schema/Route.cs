@@ -63,12 +63,26 @@ namespace Iecc8.Schema {
 		}
 
 		/// <summary>
+		/// How this route, if diverging, calculates its aspect in terms of routes ahead.
+		/// </summary>
+		/// <remarks>
+		/// If this field is <c>false</c> (the default), the lower aspect is calculated based on the total number of blocks ahead that are available up to the next signal at stop; for example, if the next signal shows red over yellow, then this signal will show red over flashing yellow. If this field is <c>true</c>, the lower aspect is calculated based only on the number of blocksare available up to the next signal at stop or diverging; for example, if the next signal shows red over yellow, then this signal will also show red over yellow because only one block is available until the next divergence.
+		///
+		/// This field is ignored unless this is a non-restricting diverging route.
+		/// </remarks>
+		public bool DivergenceDistanceStraightOnly {
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// Constructs a new Route.
 		/// </summary>
 		public Route() {
 			Points = new List<RoutePointPosition>();
 			TCs = new List<RouteTC>();
 			FreeTCs = new List<ushort>();
+			DivergenceDistanceStraightOnly = false;
 		}
 	}
 }
