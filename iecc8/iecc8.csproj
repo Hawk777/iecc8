@@ -90,6 +90,9 @@
     <Compile Include="Schema\RouteTC.cs" />
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
+    <Compile Include="UI\AutoButton.xaml.cs">
+      <DependentUpon>AutoButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\BlinkClockSource.cs" />
     <Compile Include="UI\ChannelGrid.cs" />
     <Compile Include="UI\ChannelMask.cs" />
@@ -182,6 +185,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UI\AutoButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\Crossing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

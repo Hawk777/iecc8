@@ -35,6 +35,7 @@
 	<SolidColorBrush x:Key="SignalYellow" Color="Yellow"/>
 	<SolidColorBrush x:Key="SignalGreen" Color="LawnGreen"/>
 	<SolidColorBrush x:Key="SignalLunar" Color="LightCyan"/>
+	<SolidColorBrush x:Key="SignalAutoButton" Color="DodgerBlue"/>
 	<PathFigureCollection x:Key="SignalStemControlled">
 		<PathFigure>
 			<PathFigure.StartPoint>
