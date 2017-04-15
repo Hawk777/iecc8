@@ -116,6 +116,22 @@ namespace Iecc8.World {
 			// Change the signal. This will eventually trickle back through an update packet to cause "TORR" (not actually train-operated) and drop the route.
 			return World.ChangeSignalAsync(SubArea, ID, ESignalIndication.Stop);
 		}
+
+		/// <summary>
+		/// Enables or disables automatic working.
+		/// </summary>
+		/// <remarks>
+		/// Automatic working must be available before calling this function with a <c>true</c> parameter.
+		/// </remarks>
+		/// <param name="enabled"><c>true</c> to enable automatic working, or <c>false</c> to disable it.</param>
+		public async Task SetAutoWorkingAsync(bool enabled) {
+			if (enabled) {
+				Debug.Assert(AutoWorkingAvailable);
+				await World.ChangeSignalAsync(SubArea, ID, ESignalIndication.Fleet);
+			} else if (AutoWorking) {
+				await World.ChangeSignalAsync(SubArea, ID, ESignalIndication.Proceed);
+			}
+		}
 		#endregion
 
 		#region Data Initialization API
