@@ -119,6 +119,12 @@
     <Compile Include="UI\Message.cs" />
     <Compile Include="UI\MessageTypeToColour.cs" />
     <Compile Include="UI\NonNullToVisibility.cs" />
+    <Compile Include="UI\NonTCDiagonalSection.xaml.cs">
+      <DependentUpon>NonTCDiagonalSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NonTCHSection.xaml.cs">
+      <DependentUpon>NonTCHSection.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\NullCommand.cs" />
     <Compile Include="UI\PermissionWaiter.cs" />
     <Compile Include="UI\Points.xaml.cs">
@@ -206,6 +212,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\NonTCDiagonalSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\NonTCHSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
