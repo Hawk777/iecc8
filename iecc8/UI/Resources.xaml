@@ -11,21 +11,10 @@
 
 	<PathGeometry x:Key="Triangle">
 		<PathGeometry.Figures>
-			<PathFigure>
-				<PathFigure.StartPoint>
-					<Point X="0" Y="2"/>
-				</PathFigure.StartPoint>
+			<PathFigure StartPoint="0 2">
 				<PathFigure.Segments>
-					<LineSegment>
-						<LineSegment.Point>
-							<Point X="6" Y="8"/>
-						</LineSegment.Point>
-					</LineSegment>
-					<LineSegment>
-						<LineSegment.Point>
-							<Point X="0" Y="14"/>
-						</LineSegment.Point>
-					</LineSegment>
+					<LineSegment Point="6 8"/>
+					<LineSegment Point="0 14"/>
 				</PathFigure.Segments>
 			</PathFigure>
 		</PathGeometry.Figures>
@@ -37,198 +26,63 @@
 	<SolidColorBrush x:Key="SignalLunar" Color="LightCyan"/>
 	<SolidColorBrush x:Key="SignalAutoButton" Color="DodgerBlue"/>
 	<PathFigureCollection x:Key="SignalStemControlled">
-		<PathFigure>
-			<PathFigure.StartPoint>
-				<Point X="0" Y="0.4375"/>
-			</PathFigure.StartPoint>
+		<PathFigure StartPoint="0 0.4375">
 			<PathFigure.Segments>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.625" Y="0.4375"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.625" Y="1"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="1"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
+				<LineSegment Point="0.625 0.4375"/>
+				<LineSegment Point="0.625 1"/>
+				<LineSegment Point="0.375 1"/>
+				<LineSegment Point="0.375 0.5625"/>
+				<LineSegment Point="0 0.5625"/>
 			</PathFigure.Segments>
 		</PathFigure>
 	</PathFigureCollection>
 	<PathFigureCollection x:Key="SignalStemAutomatic">
-		<PathFigure>
-			<PathFigure.StartPoint>
-				<Point X="0" Y="0.4375"/>
-			</PathFigure.StartPoint>
+		<PathFigure StartPoint="0 0.4375">
 			<PathFigure.Segments>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.125" Y="0.4375"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.125" Y="0.3125"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.3125"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.4375"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.75" Y="0.4375"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.75" Y="1"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.5" Y="1"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.5" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.125" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.125" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0" Y="0.5625"/>
-					</LineSegment.Point>
-				</LineSegment>
+				<LineSegment Point="0.125 0.4375"/>
+				<LineSegment Point="0.125 0.3125"/>
+				<LineSegment Point="0.375 0.3125"/>
+				<LineSegment Point="0.375 0.4375"/>
+				<LineSegment Point="0.75 0.4375"/>
+				<LineSegment Point="0.75 1"/>
+				<LineSegment Point="0.5 1"/>
+				<LineSegment Point="0.5 0.5625"/>
+				<LineSegment Point="0.375 0.5625"/>
+				<LineSegment Point="0.375 0.6875"/>
+				<LineSegment Point="0.125 0.6875"/>
+				<LineSegment Point="0.125 0.5625"/>
+				<LineSegment Point="0 0.5625"/>
 			</PathFigure.Segments>
 		</PathFigure>
 	</PathFigureCollection>
 
 	<PathFigureCollection x:Key="PointsNormal">
-		<PathFigure>
-			<PathFigure.StartPoint>
-				<Point X="0.0" Y="0.3125"/>
-			</PathFigure.StartPoint>
+		<PathFigure StartPoint="0 0.3125">
 			<PathFigure.Segments>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="1.0" Y="0.3125"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="1.0" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.0" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
+				<LineSegment Point="1 0.3125"/>
+				<LineSegment Point="1 0.6875"/>
+				<LineSegment Point="0 0.6875"/>
 			</PathFigure.Segments>
 		</PathFigure>
 	</PathFigureCollection>
 	<PathFigureCollection x:Key="PointsReverse">
-		<PathFigure>
-			<PathFigure.StartPoint>
-				<Point X="0.0" Y="0.3125"/>
-			</PathFigure.StartPoint>
+		<PathFigure StartPoint="0 0.3125">
 			<PathFigure.Segments>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.6875" Y="1.0"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.3125" Y="1.0"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.0" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
+				<LineSegment Point="0.6875 1"/>
+				<LineSegment Point="0.3125 1"/>
+				<LineSegment Point="0 0.6875"/>
 			</PathFigure.Segments>
 		</PathFigure>
 	</PathFigureCollection>
 	<PathFigureCollection x:Key="PointsBoth">
-		<PathFigure>
-			<PathFigure.StartPoint>
-				<Point X="0" Y="0.3125"/>
-			</PathFigure.StartPoint>
+		<PathFigure StartPoint="0 0.3125">
 			<PathFigure.Segments>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="1.0" Y="0.3125"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="1.0" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.375" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.6875" Y="1.0"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.3125" Y="1.0"/>
-					</LineSegment.Point>
-				</LineSegment>
-				<LineSegment>
-					<LineSegment.Point>
-						<Point X="0.0" Y="0.6875"/>
-					</LineSegment.Point>
-				</LineSegment>
+				<LineSegment Point="1 0.3125"/>
+				<LineSegment Point="1 0.6875"/>
+				<LineSegment Point="0.375 0.6875"/>
+				<LineSegment Point="0.6875 1"/>
+				<LineSegment Point="0.3125 1"/>
+				<LineSegment Point="0 0.6875"/>
 			</PathFigure.Segments>
 		</PathFigure>
 	</PathFigureCollection>

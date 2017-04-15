@@ -18,26 +18,11 @@
 						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
 					</PathGeometry.Transform>
 					<PathGeometry.Figures>
-						<PathFigure>
-							<PathFigure.StartPoint>
-								<Point X="0.3125" Y="0"/>
-							</PathFigure.StartPoint>
+						<PathFigure StartPoint="0.3125 0">
 							<PathFigure.Segments>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="0.6875" Y="0"/>
-									</LineSegment.Point>
-								</LineSegment>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="1" Y="0.3125"/>
-									</LineSegment.Point>
-								</LineSegment>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="1" Y="0.6875"/>
-									</LineSegment.Point>
-								</LineSegment>
+								<LineSegment Point="0.6875 0"/>
+								<LineSegment Point="1 0.3125"/>
+								<LineSegment Point="1 0.6875"/>
 							</PathFigure.Segments>
 						</PathFigure>
 					</PathGeometry.Figures>
@@ -51,26 +36,11 @@
 						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
 					</PathGeometry.Transform>
 					<PathGeometry.Figures>
-						<PathFigure IsFilled="{Binding TCB, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:DiagonalSection}}}">
-							<PathFigure.StartPoint>
-								<Point X="0.875" Y="0"/>
-							</PathFigure.StartPoint>
+						<PathFigure IsFilled="{Binding TCB, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:DiagonalSection}}}" StartPoint="0.875 0">
 							<PathFigure.Segments>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="0.875" Y="1"/>
-									</LineSegment.Point>
-								</LineSegment>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="1" Y="1"/>
-									</LineSegment.Point>
-								</LineSegment>
-								<LineSegment>
-									<LineSegment.Point>
-										<Point X="1" Y="0"/>
-									</LineSegment.Point>
-								</LineSegment>
+								<LineSegment Point="0.875 1"/>
+								<LineSegment Point="1 1"/>
+								<LineSegment Point="1 0"/>
 							</PathFigure.Segments>
 						</PathFigure>
 					</PathGeometry.Figures>

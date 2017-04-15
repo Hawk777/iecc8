@@ -11,10 +11,7 @@
 	</UserControl.Background>
 	<Path x:Name="Lamp" Fill="{StaticResource IdleGrey}">
 		<Path.Data>
-			<EllipseGeometry RadiusX="0.25" RadiusY="0.25">
-				<EllipseGeometry.Center>
-					<Point X="0.25" Y="0.5"/>
-				</EllipseGeometry.Center>
+			<EllipseGeometry RadiusX="0.25" RadiusY="0.25" Center="0.25 0.5">
 				<EllipseGeometry.Transform>
 					<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}"/>
 				</EllipseGeometry.Transform>
