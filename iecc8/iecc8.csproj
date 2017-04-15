@@ -93,6 +93,9 @@
     <Compile Include="UI\BlinkClockSource.cs" />
     <Compile Include="UI\ChannelGrid.cs" />
     <Compile Include="UI\ChannelMask.cs" />
+    <Compile Include="UI\Crossing.xaml.cs">
+      <DependentUpon>Crossing.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\DiagonalSection.xaml.cs">
       <DependentUpon>DiagonalSection.xaml</DependentUpon>
     </Compile>
@@ -179,6 +182,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UI\Crossing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\DiagonalSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
