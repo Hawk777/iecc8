@@ -101,7 +101,7 @@ namespace Iecc8.UI {
 			} else {
 				TrainData data = default(TrainData);
 				data.BlockID = -1;
-				data.LocoNumber = 9999;
+				data.LocoNumber = TrackCircuitID;
 				Train = new Train(data, null);
 			}
 		}
