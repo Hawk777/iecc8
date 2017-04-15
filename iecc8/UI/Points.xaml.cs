@@ -27,6 +27,23 @@ namespace Iecc8.UI {
 		public static readonly DependencyProperty PointsIDProperty = DependencyProperty.Register(nameof(PointsID), typeof(short), typeof(Points));
 
 		/// <summary>
+		/// Whether the points are drawn in what would normally be the reverse position when they are actually normal and vice versa.
+		/// </summary>
+		public bool Invert {
+			get {
+				return (bool) GetValue(InvertProperty);
+			}
+			set {
+				SetValue(InvertProperty, value);
+			}
+		}
+
+		/// <summary>
+		/// The invert property.
+		/// </summary>
+		public static readonly DependencyProperty InvertProperty = DependencyProperty.Register(nameof(Invert), typeof(bool), typeof(Points));
+
+		/// <summary>
 		/// Constructs a new Points.
 		/// </summary>
 		public Points() {
@@ -66,7 +83,7 @@ namespace Iecc8.UI {
 				} else {
 					SetFilled();
 				}
-				((PathGeometry) Polygon.Data).Figures = (PathFigureCollection) FindResource(PointsObject.Reversed ? "PointsReverse" : "PointsNormal");
+				((PathGeometry) Polygon.Data).Figures = (PathFigureCollection) FindResource((PointsObject.Reversed ^ Invert) ? "PointsReverse" : "PointsNormal");
 			}
 		}
 
