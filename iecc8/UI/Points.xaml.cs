@@ -59,7 +59,6 @@ namespace Iecc8.UI {
 		/// </summary>
 		protected override void Update() {
 			if (PointsObject != null) {
-				PathFigure fig = new PathFigure();
 				if ((!PointsObject.Proved || PointsObject.Inconsistent) && !((MainViewModel) DataContext).BlinkClockSource.Value) {
 					SetNoDraw();
 				} else if (PointsObject.HandCrankable) {
@@ -67,6 +66,7 @@ namespace Iecc8.UI {
 				} else {
 					SetFilled();
 				}
+				PathFigure fig = new PathFigure();
 				if (PointsObject.Reversed) {
 					fig.StartPoint = new Point(0.0, 0.3125);
 					fig.Segments.Add(new LineSegment(new Point(0.6875, 1.0), true));
