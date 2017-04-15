@@ -10,32 +10,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path Fill="{StaticResource IdleGrey}" RenderOptions.EdgeMode="Aliased">
-		<Path.Data>
-			<PathGeometry>
-				<Geometry.Transform>
-					<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}"/>
-				</Geometry.Transform>
-				<PathGeometry.Figures>
-					<PathFigure>
-						<PathFigure.StartPoint>
-							<Point X="0" Y="0.125"/>
-						</PathFigure.StartPoint>
-						<PathFigure.Segments>
-							<LineSegment>
-								<LineSegment.Point>
-									<Point X="0.375" Y="0.5"/>
-								</LineSegment.Point>
-							</LineSegment>
-							<LineSegment>
-								<LineSegment.Point>
-									<Point X="0" Y="0.875"/>
-								</LineSegment.Point>
-							</LineSegment>
-						</PathFigure.Segments>
-					</PathFigure>
-				</PathGeometry.Figures>
-			</PathGeometry>
-		</Path.Data>
-	</Path>
+	<Path Fill="{StaticResource IdleGrey}" RenderOptions.EdgeMode="Aliased" Data="{StaticResource Triangle}"/>
 </ui:SignalBase>

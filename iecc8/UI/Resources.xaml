@@ -9,6 +9,28 @@
 	<SolidColorBrush x:Key="OccupiedRed" Color="Red"/>
 	<SolidColorBrush x:Key="KeyedBlue" Color="DodgerBlue"/>
 
+	<PathGeometry x:Key="Triangle">
+		<PathGeometry.Figures>
+			<PathFigure>
+				<PathFigure.StartPoint>
+					<Point X="0" Y="2"/>
+				</PathFigure.StartPoint>
+				<PathFigure.Segments>
+					<LineSegment>
+						<LineSegment.Point>
+							<Point X="6" Y="8"/>
+						</LineSegment.Point>
+					</LineSegment>
+					<LineSegment>
+						<LineSegment.Point>
+							<Point X="0" Y="14"/>
+						</LineSegment.Point>
+					</LineSegment>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathGeometry.Figures>
+	</PathGeometry>
+
 	<SolidColorBrush x:Key="SignalRed" Color="Red"/>
 	<SolidColorBrush x:Key="SignalYellow" Color="Yellow"/>
 	<SolidColorBrush x:Key="SignalGreen" Color="LawnGreen"/>
