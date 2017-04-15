@@ -2,7 +2,7 @@
 
 namespace Iecc8.UI {
 	/// <summary>
-	/// Interaction logic for CrossoverFragment.xaml
+	/// Interaction logic for DiagonalSection.xaml
 	/// </summary>
 	public partial class DiagonalSection : TrackSection {
 		/// <summary>
@@ -23,7 +23,7 @@ namespace Iecc8.UI {
 		public static readonly DependencyProperty TCBProperty = DependencyProperty.Register(nameof(TCB), typeof(bool), typeof(DiagonalSection));
 
 		/// <summary>
-		/// Constructs a new CrossoverFragment.
+		/// Constructs a new DiagonalSection.
 		/// </summary>
 		public DiagonalSection() {
 			InitializeComponent();
