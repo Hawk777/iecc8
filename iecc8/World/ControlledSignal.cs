@@ -51,7 +51,7 @@ namespace Iecc8.World {
 		public bool AutoWorkingAvailable {
 			get {
 				// This is roughly equivalent to whether or not a route is set. However, to avoid a race condition where Run8 replaces the signal just as the signaller enables automatic working (thus resulting in a fleeted signal without a route), we stop making automatic working available as soon as the replace delay timer starts counting down, even if the route has not yet released.
-				return (CurrentRoute != null) && (ReplaceDelayTimer == ReplaceDelayPeriod);
+				return (CurrentRoute != null) && (ReplaceDelayTimer == ReplaceDelayPeriod) && !SwingingPoints;
 			}
 		}
 
