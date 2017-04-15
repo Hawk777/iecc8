@@ -115,7 +115,7 @@ namespace Iecc8.UI {
 				if ((vm != null) && (BlinkForSignalResolved != null) && (vm.PendingEntrance == BlinkForSignalResolved)) {
 					return (Brush) FindResource(vm.BlinkClockSource.Value ? "LockedWhite" : "BG");
 				} else if (TrackCircuit == null) {
-					return (Brush) FindResource("IdleGrey");
+					return (Brush) FindResource(IsKeyedPoint ? "KeyedBlue" : "IdleGrey");
 				} else if (TrackCircuit.Occupied) {
 					return (Brush) FindResource(ExcludedFromRoute ? "IdleGrey" : "OccupiedRed");
 				} else if (IsKeyedPoint) {
@@ -150,7 +150,7 @@ namespace Iecc8.UI {
 		/// </remarks>
 		private bool ExcludedFromRoute {
 			get {
-				if (TrackCircuit.RouteLocked) {
+				if ((TrackCircuit != null) && TrackCircuit.RouteLocked) {
 					SubArea sub = ((MainViewModel) DataContext).World.Region.SubAreas[SubAreaID];
 					foreach (SectionPointPositionResolved i in PointPositionsResolved) {
 						if (i.Points.Reversed != i.Reversed) {
@@ -172,8 +172,10 @@ namespace Iecc8.UI {
 		private void OnLoaded(object sender, EventArgs e) {
 			MainViewModel vm = DataContext as MainViewModel;
 			if (vm != null) {
-				TrackCircuit = vm.World.Region.SubAreas[SubAreaID].TrackCircuits[TrackCircuitID];
-				TrackCircuit.PropertyChanged += OnTCPropChanged;
+				if (TrackCircuitID >= 0) {
+					TrackCircuit = vm.World.Region.SubAreas[SubAreaID].TrackCircuits[TrackCircuitID];
+					TrackCircuit.PropertyChanged += OnTCPropChanged;
+				}
 
 				PointPositionsResolved = new SectionPointPositionResolved[PointPositions.Count];
 				for (int i = 0; i != PointPositions.Count; ++i) {
