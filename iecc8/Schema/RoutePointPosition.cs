@@ -18,5 +18,13 @@
 			get;
 			set;
 		}
+
+		/// <summary>
+		/// Whether the positions of these points are ignored when determining whether this route matches the lay of lineside equipment for aspect calculation purposes.
+		/// </summary>
+		public bool IgnoredForAspectCalculation {
+			get;
+			set;
+		}
 	}
 }

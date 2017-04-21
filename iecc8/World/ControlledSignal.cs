@@ -356,7 +356,7 @@ namespace Iecc8.World {
 				foreach (KeyValuePair<Signal, Route> i in RoutesFrom) {
 					bool matches = true;
 					foreach (RoutePointPosition j in i.Value.PointPositions) {
-						matches = matches && (j.Points.Reversed == j.Reverse);
+						matches = matches && (j.IgnoredForAspectCalculation || (j.Points.Reversed == j.Reverse));
 					}
 					if (matches) {
 						route = i.Value;

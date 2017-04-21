@@ -13,6 +13,11 @@
 		/// Which position the points need to be in.
 		/// </summary>
 		public readonly bool Reverse;
+
+		/// <summary>
+		/// Whether the positions of these points are ignored when determining whether this route matches the lay of lineside equipment for aspect calculation purposes.
+		/// </summary>
+		public readonly bool IgnoredForAspectCalculation;
 		#endregion
 
 		#region Data Initialization API
@@ -25,6 +30,7 @@
 		public RoutePointPosition(Schema.RoutePointPosition schema, Region region, ushort subArea) {
 			Points = region.GetPowerPoints(schema.Points, subArea);
 			Reverse = schema.Reversed;
+			IgnoredForAspectCalculation = schema.IgnoredForAspectCalculation;
 		}
 		#endregion
 	}
