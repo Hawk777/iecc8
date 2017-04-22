@@ -22,7 +22,7 @@
 
 	<SolidColorBrush x:Key="SignalRed" Color="Red"/>
 	<SolidColorBrush x:Key="SignalYellow" Color="Yellow"/>
-	<SolidColorBrush x:Key="SignalGreen" Color="LawnGreen"/>
+	<SolidColorBrush x:Key="SignalGreen" Color="Lime"/>
 	<SolidColorBrush x:Key="SignalLunar" Color="LightCyan"/>
 	<SolidColorBrush x:Key="SignalAutoButton" Color="DodgerBlue"/>
 	<PathGeometry x:Key="SignalStemControlled">
