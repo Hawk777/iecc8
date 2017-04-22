@@ -1,0 +1,1588 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:e="clr-namespace:Iecc8.UI.Equipment"
+		x:Class="Iecc8.UI.Region.California.Cajon.WestColtonToSeventhStreet"
+		Grid.RowSpan="5" Grid.ColumnSpan="12">
+	<Grid.Resources>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+	</Grid.Resources>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+	</Grid.ColumnDefinitions>
+	<Grid.RowDefinitions>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+	</Grid.RowDefinitions>
+	<!-- TC 98 -->
+	<e:Signal Grid.Row="9" Grid.Column="5" SubAreaID="120" SignalID="105" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:ExitTriangle Grid.Row="10" SubAreaID="120" SignalID="-1" Grid.Column="0" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:HSection Grid.Row="10" SubAreaID="120" TrackCircuitID="98" TCBLeft="True" Grid.ColumnSpan="6" Grid.Column="1"/>
+	<e:TDBerth Grid.Row="10" Grid.Column="2" SubAreaID="120" TrackCircuitID="98"/>
+
+	<!-- TC 99 -->
+	<e:Signal Grid.Row="13" Grid.Column="5" SubAreaID="120" SignalID="106" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:ExitTriangle Grid.Row="12" SubAreaID="120" SignalID="-2" Grid.Column="0" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:HSection Grid.Row="12" SubAreaID="120" TrackCircuitID="99" TCBLeft="True" Grid.ColumnSpan="6" Grid.Column="1"/>
+	<e:TDBerth Grid.Row="12" Grid.Column="2" SubAreaID="120" TrackCircuitID="99"/>
+
+	<!-- TC 94 -->
+	<TextBlock Grid.Row="8" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="6" Text="BNSF W COLTON" TextWrapping="Wrap" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:HSection Grid.Row="10" Grid.Column="7" SubAreaID="120" TrackCircuitID="94" TCBLeft="True">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="8" SubAreaID="120" TrackCircuitID="94" BlinkForSignal="105">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="9" SubAreaID="120" TrackCircuitID="94" PointsID="55">
+		<e:Points.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:Points.PointPositions>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="9" SubAreaID="120" TrackCircuitID="94" TCB="True">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="True"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="3" SubAreaID="120" TrackCircuitID="94">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="13" SubAreaID="120" TrackCircuitID="94" TCB="True" LayoutTransform="-1 0 0 1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="True"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:Points Grid.Row="10" Grid.Column="13" SubAreaID="120" TrackCircuitID="94" PointsID="54" LayoutTransform="-1 0 0 1 0 0">
+		<e:Points.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:Points.PointPositions>
+	</e:Points>
+	<e:HSection Grid.Row="10" Grid.Column="14" SubAreaID="120" TrackCircuitID="94">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="15" SubAreaID="120" TrackCircuitID="94" BlinkForSignal="107">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 93 -->
+	<e:HSection Grid.Row="12" Grid.Column="7" SubAreaID="120" TrackCircuitID="93" TCBLeft="True">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="8" SubAreaID="120" TrackCircuitID="93" BlinkForSignal="106">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="9" SubAreaID="120" TrackCircuitID="93">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="10" SubAreaID="120" TrackCircuitID="93" TCB="True" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="55" Reversed="True"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:Points Grid.Row="12" Grid.Column="10" SubAreaID="120" TrackCircuitID="93" PointsID="55" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="12" Grid.Column="11" SubAreaID="120" TrackCircuitID="93"/>
+	<e:Points Grid.Row="12" Grid.Column="12" SubAreaID="120" TrackCircuitID="93" PointsID="54" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="12" SubAreaID="120" TrackCircuitID="93" TCB="True" LayoutTransform="1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="True"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="13" SubAreaID="120" TrackCircuitID="93">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="14" SubAreaID="120" TrackCircuitID="93" PointsID="53">
+		<e:Points.PointPositions>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:Points.PointPositions>
+	</e:Points>
+	<e:HSection Grid.Row="12" Grid.Column="15" SubAreaID="120" TrackCircuitID="93" BlinkForSignal="109">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="False"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="14" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="15" SubAreaID="120" TrackCircuitID="93" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="15" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="16" SubAreaID="120" TrackCircuitID="93" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="15" Grid.Column="16" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="15" Grid.Column="17" SubAreaID="120" TrackCircuitID="93" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="16" Grid.Column="17" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="16" Grid.Column="18" SubAreaID="120" TrackCircuitID="93" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="17" Grid.Column="18" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="17" Grid.Column="19" SubAreaID="120" TrackCircuitID="93" LayoutTransform="-1 0 0 -1 0 0">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="18" Grid.Column="19" SubAreaID="120" TrackCircuitID="93">
+		<e:DiagonalSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:DiagonalSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="18" Grid.Column="20" SubAreaID="120" TrackCircuitID="93" BlinkForSignal="110">
+		<e:HSection.PointPositions>
+			<e:SectionPointPosition Points="53" Reversed="True"/>
+			<e:SectionPointPosition Points="54" Reversed="False"/>
+		</e:HSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 95 -->
+	<e:Signal Grid.Row="9" Grid.Column="15" SubAreaID="120" SignalID="107"/>
+	<e:HSection Grid.Row="10" Grid.Column="16" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="95" TCBLeft="True" TCBRight="True"/>
+	<e:TDBerth Grid.Row="10" Grid.Column="17" SubAreaID="120" TrackCircuitID="95"/>
+	<e:Signal Grid.Row="9" Grid.Column="19" SubAreaID="120" SignalID="104" LayoutTransform="-1 0 0 1 0 0"/>
+
+	<!-- TC 96 -->
+	<e:Signal Grid.Row="11" Grid.Column="15" SubAreaID="120" SignalID="109"/>
+	<e:HSection Grid.Row="12" Grid.Column="16" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="96" TCBLeft="True" TCBRight="True"/>
+	<e:TDBerth Grid.Row="12" Grid.Column="17" SubAreaID="120" TrackCircuitID="96"/>
+	<e:Signal Grid.Row="13" Grid.Column="19" SubAreaID="120" SignalID="103" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 79 -->
+	<e:DiagonalSection Grid.Row="3" Grid.Column="11" SubAreaID="120" TrackCircuitID="79" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="11" SubAreaID="120" TrackCircuitID="79">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="12" SubAreaID="120" TrackCircuitID="79" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="12" SubAreaID="120" TrackCircuitID="79">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="13" SubAreaID="120" TrackCircuitID="79" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="13" SubAreaID="120" TrackCircuitID="79">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="6" Grid.Column="14" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="79">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="42" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:TDBerth Grid.Row="6" Grid.Column="15" SubAreaID="120" TrackCircuitID="79"/>
+
+	<!-- TC 78 -->
+	<e:HSection Grid.Row="1" Grid.Column="10" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:TDBerth Grid.Row="1" Grid.Column="11" SubAreaID="120" TrackCircuitID="78"/>
+	<e:Points Grid.Row="1" Grid.Column="14" SubAreaID="120" TrackCircuitID="78" PointsID="44" Invert="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="2" Grid.Column="14" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="2" Grid.Column="15" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="3" Grid.Column="15" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="3" Grid.Column="16" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="16" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="1" Grid.Column="20" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="2" Grid.Column="20" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="2" Grid.Column="21" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="3" Grid.Column="21" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="3" Grid.Column="22" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="22" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="23" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="23" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="24" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="24" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="25" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="25" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="26" SubAreaID="120" TrackCircuitID="78" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="26" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="8" Grid.Column="27" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="78">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="31" SubAreaID="120" TrackCircuitID="78" BlinkForSignal="95">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="32" SubAreaID="120" TrackCircuitID="78" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="43" Reversed="False"/>
+			<e:SectionPointPosition Points="44" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 74 and part of 76/77 -->
+	<e:HSection Grid.Row="10" Grid.Column="21" SubAreaID="120" TrackCircuitID="74" BlinkForSignal="104"/>
+	<e:HSection Grid.Row="10" Grid.Column="22" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="74"/>
+	<e:Crossing Grid.Row="10" Grid.Column="24" SubAreaID="120" NormalTrackCircuitID="74" ReverseTrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Crossing Grid.Row="10" Grid.Column="25" SubAreaID="120" NormalTrackCircuitID="74" ReverseTrackCircuitID="77"/>
+	<e:Crossing Grid.Row="10" Grid.Column="26" SubAreaID="120" NormalTrackCircuitID="74" ReverseTrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Crossing Grid.Row="10" Grid.Column="27" SubAreaID="120" NormalTrackCircuitID="74" ReverseTrackCircuitID="76"/>
+	<e:HSection Grid.Row="10" Grid.Column="28" Grid.ColumnSpan="3" SubAreaID="120" TrackCircuitID="74"/>
+	<e:HSection Grid.Row="10" Grid.Column="31" SubAreaID="120" TrackCircuitID="74" BlinkForSignal="108"/>
+	<e:HSection Grid.Row="10" Grid.Column="32" SubAreaID="120" TrackCircuitID="74" TCBRight="True"/>
+
+	<!-- TC 75 and part of 76/77 -->
+	<e:HSection Grid.Row="12" Grid.Column="21" SubAreaID="120" TrackCircuitID="75" BlinkForSignal="103"/>
+	<e:HSection Grid.Row="12" Grid.Column="22" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="75"/>
+	<e:Crossing Grid.Row="12" Grid.Column="26" SubAreaID="120" NormalTrackCircuitID="75" ReverseTrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Crossing Grid.Row="12" Grid.Column="27" SubAreaID="120" NormalTrackCircuitID="75" ReverseTrackCircuitID="77"/>
+	<e:Crossing Grid.Row="12" Grid.Column="28" SubAreaID="120" NormalTrackCircuitID="75" ReverseTrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Crossing Grid.Row="12" Grid.Column="29" SubAreaID="120" NormalTrackCircuitID="75" ReverseTrackCircuitID="76"/>
+	<e:HSection Grid.Row="12" Grid.Column="30" SubAreaID="120" TrackCircuitID="75"/>
+	<e:HSection Grid.Row="12" Grid.Column="31" SubAreaID="120" TrackCircuitID="75" BlinkForSignal="111"/>
+	<e:HSection Grid.Row="12" Grid.Column="32" SubAreaID="120" TrackCircuitID="75" TCBRight="True"/>
+
+	<!-- TC 77 -->
+	<e:HSection Grid.Row="16" Grid.Column="32" SubAreaID="120" TrackCircuitID="77" TCBRight="True"/>
+	<e:HSection Grid.Row="16" Grid.Column="31" SubAreaID="120" TrackCircuitID="77" BlinkForSignal="92"/>
+	<e:DiagonalSection Grid.Row="16" Grid.Column="30" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="15" Grid.Column="30" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="15" Grid.Column="29" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="29" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="28" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="28" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="27" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="26" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="25" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="24" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="23" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="23" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="22" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="22" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="21" SubAreaID="120" TrackCircuitID="77"/>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="21" SubAreaID="120" TrackCircuitID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="6" Grid.Column="20" SubAreaID="120" TrackCircuitID="77" BlinkForSignal="93"/>
+	<e:HSection Grid.Row="6" Grid.Column="19" SubAreaID="120" TrackCircuitID="77" TCBLeft="True"/>
+	<e:Signal Grid.Row="7" Grid.Column="18" SubAreaID="120" SignalID="93" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 114 -->
+	<e:Signal Grid.Row="15" Grid.Column="31" SubAreaID="120" SignalID="92"/>
+	<e:HSection Grid.Row="16" Grid.Column="33" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="114" TCBRight="True"/>
+	<e:TDBerth Grid.Row="16" Grid.Column="34" SubAreaID="120" TrackCircuitID="114"/>
+	<e:ExitTriangle Grid.Row="16" Grid.Column="38" SubAreaID="120" SignalID="-5"/>
+
+	<!-- TC 76 -->
+	<e:Signal Grid.Row="3" Grid.Column="18" SubAreaID="120" SignalID="94" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:HSection Grid.Row="4" Grid.Column="19" SubAreaID="120" TrackCircuitID="76" TCBLeft="True"/>
+	<e:HSection Grid.Row="4" Grid.Column="20" SubAreaID="120" TrackCircuitID="76" BlinkForSignal="94"/>
+	<e:DiagonalSection Grid.Row="4" Grid.Column="21" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="21" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="5" Grid.Column="22" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="22" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="23" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="23" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="24" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="24" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="25" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="25" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="26" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="27" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="28" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="29" SubAreaID="120" TrackCircuitID="76"/>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="30" SubAreaID="120" TrackCircuitID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="30" SubAreaID="120" TrackCircuitID="76"/>
+	<e:HSection Grid.Row="14" Grid.Column="31" SubAreaID="120" TrackCircuitID="76" BlinkForSignal="91"/>
+	<e:HSection Grid.Row="14" Grid.Column="32" SubAreaID="120" TrackCircuitID="76" TCBRight="True"/>
+
+	<!-- TC 115 -->
+	<e:Signal Grid.Row="13" Grid.Column="31" SubAreaID="120" SignalID="91"/>
+	<e:HSection Grid.Row="14" Grid.Column="33" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="115" TCBRight="True"/>
+	<e:TDBerth Grid.Row="14" Grid.Column="34" SubAreaID="120" TrackCircuitID="115"/>
+	<e:ExitTriangle Grid.Row="14" Grid.Column="38" SubAreaID="120" SignalID="-4"/>
+	<TextBlock Grid.Row="14" Grid.RowSpan="5" Grid.Column="39" Grid.ColumnSpan="6" TextAlignment="Center" TextWrapping="Wrap" Text="YUMA SUB &amp; OLD COLTON YARD" Foreground="{StaticResource IdleGrey}"/>
+
+	<!-- TC 97 -->
+	<e:HSection Grid.Row="18" Grid.Column="21" Grid.ColumnSpan="17" SubAreaID="120" TrackCircuitID="97" TCBLeft="True" TCBRight="True"/>
+	<e:TDBerth Grid.Row="18" Grid.Column="28" SubAreaID="120" TrackCircuitID="97"/>
+	<e:Signal Grid.Row="19" Grid.Column="20" SubAreaID="120" SignalID="110" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:ExitTriangle Grid.Row="18" Grid.Column="38" SubAreaID="120" SignalID="-3"/>
+
+	<!-- TC 82 -->
+	<e:Signal Grid.Row="7" Grid.Column="31" SubAreaID="120" SignalID="95"/>
+	<e:HSection Grid.Row="8" Grid.Column="33" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="82"/>
+	<e:TDBerth Grid.Row="8" Grid.Column="34" SubAreaID="120" TrackCircuitID="82"/>
+	<e:Signal Grid.Row="9" Grid.Column="37" SubAreaID="120" SignalID="80" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 81 -->
+	<e:Signal Grid.Row="9" Grid.Column="31" SubAreaID="120" SignalID="108"/>
+	<e:HSection Grid.Row="10" Grid.Column="33" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="81"/>
+	<e:TDBerth Grid.Row="10" Grid.Column="34" SubAreaID="120" TrackCircuitID="81"/>
+	<e:Signal Grid.Row="11" Grid.Column="37" SubAreaID="120" SignalID="79" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 80 -->
+	<e:Signal Grid.Row="11" Grid.Column="31" SubAreaID="120" SignalID="111"/>
+	<e:HSection Grid.Row="12" Grid.Column="33" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="80"/>
+	<e:TDBerth Grid.Row="12" Grid.Column="34" SubAreaID="120" TrackCircuitID="80"/>
+	<e:Signal Grid.Row="13" Grid.Column="37" SubAreaID="120" SignalID="78" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 68 -->
+	<TextBlock Grid.Row="7" Grid.Column="38" Grid.ColumnSpan="12" Text="RANA" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:HSection Grid.Row="8" Grid.Column="38" SubAreaID="120" TrackCircuitID="68" TCBLeft="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="39" SubAreaID="120" TrackCircuitID="68" BlinkForSignal="80">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="40" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="68">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="8" Grid.Column="42" SubAreaID="120" TrackCircuitID="68" PointsID="38">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="42" SubAreaID="120" TrackCircuitID="68" TCB="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="8" Grid.Column="43" Grid.ColumnSpan="3" SubAreaID="120" TrackCircuitID="68">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="8" Grid.Column="46" SubAreaID="120" TrackCircuitID="68" PointsID="37" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="46" SubAreaID="120" TrackCircuitID="68" TCB="True" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="8" Grid.Column="47" Grid.ColumnSpan="3" SubAreaID="120" TrackCircuitID="68">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="8" Grid.Column="50" SubAreaID="120" TrackCircuitID="68" PointsID="34" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-106"/>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="81" Exit="95"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="50" SubAreaID="120" TrackCircuitID="68" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="34" Reversed="True"/>
+			<e:SectionPointPosition Points="38" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="51" SubAreaID="120" TrackCircuitID="68" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="34" Reversed="True"/>
+			<e:SectionPointPosition Points="38" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="51" SubAreaID="120" TrackCircuitID="68" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="34" Reversed="True"/>
+			<e:SectionPointPosition Points="38" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="6" Grid.Column="52" SubAreaID="120" TrackCircuitID="68" BlinkForSignal="81">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="34" Reversed="True"/>
+			<e:SectionPointPosition Points="38" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="6" Grid.Column="53" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="68" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="34" Reversed="True"/>
+			<e:SectionPointPosition Points="38" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:ExitTriangle Grid.Row="6" Grid.Column="55" SubAreaID="120" SignalID="-106"/>
+	<e:Signal Grid.Row="5" Grid.Column="52" SubAreaID="120" SignalID="81"/>
+	<e:HSection Grid.Row="8" Grid.Column="51" SubAreaID="120" TrackCircuitID="68">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="52" SubAreaID="120" TrackCircuitID="68" BlinkForSignal="70">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="53" SubAreaID="120" TrackCircuitID="68" TCBRight="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="70" Exit="95"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+
+	<!-- TC 67 -->
+	<e:HSection Grid.Row="10" Grid.Column="38" SubAreaID="120" TrackCircuitID="67" TCBLeft="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="39" SubAreaID="120" TrackCircuitID="67" BlinkForSignal="79">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="40" SubAreaID="120" TrackCircuitID="67">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="41" SubAreaID="120" TrackCircuitID="67" PointsID="39" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="41" SubAreaID="120" TrackCircuitID="67" LayoutTransform="-1 0 0 1 0 0" TCB="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="42" SubAreaID="120" TrackCircuitID="67">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="79" Exit="-106"/>
+			<e:RouteID Entrance="79" Exit="73"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="108"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="43" SubAreaID="120" TrackCircuitID="67" PointsID="38" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="43" SubAreaID="120" TrackCircuitID="67" TCB="True" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="38" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="44" SubAreaID="120" TrackCircuitID="67"/>
+	<e:Points Grid.Row="10" Grid.Column="45" SubAreaID="120" TrackCircuitID="67" PointsID="37"  LayoutTransform="1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="45" SubAreaID="120" TrackCircuitID="67" TCB="True" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="37" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="46" SubAreaID="120" TrackCircuitID="67">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="47" SubAreaID="120" TrackCircuitID="67" PointsID="36">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="47" SubAreaID="120" TrackCircuitID="67" TCB="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="48" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="67">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="48" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="67">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="52" SubAreaID="120" TrackCircuitID="67" BlinkForSignal="69">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="53" SubAreaID="120" TrackCircuitID="67" TCBRight="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="72"/>
+			<e:RouteID Entrance="79" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="69" Exit="95"/>
+			<e:RouteID Entrance="69" Exit="108"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+
+	<!-- TC 66 -->
+	<e:HSection Grid.Row="12" Grid.Column="38" SubAreaID="120" TrackCircuitID="66" TCBLeft="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="39" SubAreaID="120" TrackCircuitID="66" BlinkForSignal="78">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="40" SubAreaID="120" TrackCircuitID="66" PointsID="39" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="40" SubAreaID="120" TrackCircuitID="66" TCB="True" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="-106"/>
+			<e:RouteID Entrance="78" Exit="73"/>
+			<e:RouteID Entrance="78" Exit="72"/>
+			<e:RouteID Entrance="81" Exit="111"/>
+			<e:RouteID Entrance="70" Exit="111"/>
+			<e:RouteID Entrance="69" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="41" Grid.ColumnSpan="7" SubAreaID="120" TrackCircuitID="66">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="48" SubAreaID="120" TrackCircuitID="66" PointsID="36" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="48" SubAreaID="120" TrackCircuitID="66" TCB="True" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="49" SubAreaID="120" TrackCircuitID="66">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="50" SubAreaID="120" TrackCircuitID="66" PointsID="35">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="50" SubAreaID="120" TrackCircuitID="66">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="51" SubAreaID="120" TrackCircuitID="66" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="51" SubAreaID="120" TrackCircuitID="66">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="14" Grid.Column="52" SubAreaID="120" TrackCircuitID="66" BlinkForSignal="82">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="14" Grid.Column="53" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="66" TCBRight="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="-108"/>
+			<e:RouteID Entrance="79" Exit="-108"/>
+			<e:RouteID Entrance="78" Exit="-108"/>
+			<e:RouteID Entrance="82" Exit="95"/>
+			<e:RouteID Entrance="82" Exit="108"/>
+			<e:RouteID Entrance="82" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:ExitTriangle Grid.Row="14" Grid.Column="55" SubAreaID="120" SignalID="-108"/>
+	<e:Signal Grid.Row="13" Grid.Column="52" SubAreaID="120" SignalID="82"/>
+	<e:HSection Grid.Row="12" Grid.Column="51" SubAreaID="120" TrackCircuitID="66">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="52" SubAreaID="120" TrackCircuitID="66" BlinkForSignal="68">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="53" SubAreaID="120" TrackCircuitID="66" TCBRight="True">
+		<e:TrackSection.Routes>
+			<e:RouteID Entrance="80" Exit="71"/>
+			<e:RouteID Entrance="79" Exit="71"/>
+			<e:RouteID Entrance="78" Exit="71"/>
+			<e:RouteID Entrance="68" Exit="95"/>
+			<e:RouteID Entrance="68" Exit="108"/>
+			<e:RouteID Entrance="68" Exit="111"/>
+		</e:TrackSection.Routes>
+	</e:HSection>
+
+	<!-- TC 64 -->
+	<e:HSection Grid.Row="8" Grid.Column="54" Grid.ColumnSpan="12" SubAreaID="120" TrackCircuitID="64"/>
+	<e:TDBerth Grid.Row="8" Grid.Column="58" SubAreaID="120" TrackCircuitID="64"/>
+	<e:Signal Grid.Row="7" Grid.Column="52" SubAreaID="120" SignalID="70"/>
+	<e:Signal Grid.Row="9" Grid.Column="65" SubAreaID="120" SignalID="73" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 63 -->
+	<e:HSection Grid.Row="10" Grid.Column="54" Grid.ColumnSpan="12" SubAreaID="120" TrackCircuitID="63"/>
+	<e:TDBerth Grid.Row="10" Grid.Column="58" SubAreaID="120" TrackCircuitID="63"/>
+	<e:Signal Grid.Row="9" Grid.Column="52" SubAreaID="120" SignalID="69"/>
+	<e:Signal Grid.Row="11" Grid.Column="65" SubAreaID="120" SignalID="72" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 62 -->
+	<e:HSection Grid.Row="12" Grid.Column="54" Grid.ColumnSpan="12" SubAreaID="120" TrackCircuitID="62"/>
+	<e:TDBerth Grid.Row="12" Grid.Column="58" SubAreaID="120" TrackCircuitID="62"/>
+	<e:Signal Grid.Row="11" Grid.Column="52" SubAreaID="120" SignalID="68"/>
+	<e:Signal Grid.Row="13" Grid.Column="65" SubAreaID="120" SignalID="71" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<TextBlock Grid.Row="6" Grid.Column="56" Grid.RowSpan="2" Grid.ColumnSpan="8" Text="BNSF EAST B YARD" TextAlignment="Center" TextWrapping="Wrap" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="14" Grid.Column="56" Grid.RowSpan="2" Grid.ColumnSpan="8" Text="GM AUTO YARD" TextAlignment="Center" TextWrapping="Wrap" Foreground="{StaticResource IdleGrey}"/>
+
+	<!-- TC 65 -->
+	<e:ExitTriangle Grid.Row="6" Grid.Column="64" SubAreaID="120" SignalID="-105" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Signal Grid.Row="7" Grid.Column="65" SubAreaID="120" SignalID="77" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="6" Grid.Column="65" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="65" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="6" Grid.Column="67" SubAreaID="120" TrackCircuitID="65" BlinkForSignal="77">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="68" SubAreaID="120" TrackCircuitID="65" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="68" SubAreaID="120" TrackCircuitID="65">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="69" SubAreaID="120" TrackCircuitID="65" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="8" Grid.Column="66" SubAreaID="120" TrackCircuitID="65" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="67" SubAreaID="120" TrackCircuitID="65" BlinkForSignal="73">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="68" SubAreaID="120" TrackCircuitID="65">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="32" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="8" Grid.Column="69" SubAreaID="120" TrackCircuitID="65" PointsID="32" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="8" Grid.Column="70" SubAreaID="120" TrackCircuitID="65"/>
+	<e:Points Grid.Row="8" Grid.Column="71" SubAreaID="120" TrackCircuitID="65" PointsID="33" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="71" SubAreaID="120" TrackCircuitID="65" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="7" Grid.Column="72" SubAreaID="120" TrackCircuitID="65" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="6" Grid.Column="72" SubAreaID="120" TrackCircuitID="65" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="6" Grid.Column="73" SubAreaID="120" TrackCircuitID="65" BlinkForSignal="75">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="6" Grid.Column="74" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="65" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:ExitTriangle Grid.Row="6" Grid.Column="76" SubAreaID="120" SignalID="-104"/>
+	<e:Signal Grid.Row="5" Grid.Column="73" SubAreaID="120" SignalID="75"/>
+	<TextBlock Grid.Row="6" Grid.Column="77" Grid.ColumnSpan="7" Text="BNSF SBD" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:HSection Grid.Row="8" Grid.Column="72" SubAreaID="120" TrackCircuitID="65">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="73" SubAreaID="120" TrackCircuitID="65" BlinkForSignal="67">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="74" SubAreaID="120" TrackCircuitID="65" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="33" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 61 -->
+	<e:Signal Grid.Row="7" Grid.Column="73" SubAreaID="120" SignalID="67"/>
+	<e:HSection Grid.Row="8" Grid.Column="75" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="61"/>
+	<e:TDBerth Grid.Row="8" Grid.Column="76" SubAreaID="120" TrackCircuitID="61"/>
+
+	<!-- TC 59 -->
+	<e:HSection Grid.Row="10" Grid.Column="66" SubAreaID="120" TrackCircuitID="59" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="67" SubAreaID="120" TrackCircuitID="59" BlinkForSignal="72">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="68" Grid.ColumnSpan="4" SubAreaID="120" TrackCircuitID="59">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="72" SubAreaID="120" TrackCircuitID="59" PointsID="30" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="72" SubAreaID="120" TrackCircuitID="59" LayoutTransform="-1 0 0 1 0 0" TCB="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="73" SubAreaID="120" TrackCircuitID="59"/>
+	<e:Points Grid.Row="10" Grid.Column="74" SubAreaID="120" TrackCircuitID="59" PointsID="29"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="74" SubAreaID="120" TrackCircuitID="59" TCB="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="75" SubAreaID="120" TrackCircuitID="59">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="76" SubAreaID="120" TrackCircuitID="59" BlinkForSignal="63">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="10" Grid.Column="77" SubAreaID="120" TrackCircuitID="59" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 60 -->
+	<TextBlock Grid.Row="13" Grid.Column="70" Grid.RowSpan="2" Grid.ColumnSpan="10" Text="SAN BERNARDINO" TextAlignment="Center" TextWrapping="Wrap" Foreground="{StaticResource IdleGrey}"/>
+	<e:ExitTriangle Grid.Row="14" Grid.Column="64" SubAreaID="120" SignalID="-107" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Signal Grid.Row="15" Grid.Column="65" SubAreaID="120" SignalID="76" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="14" Grid.Column="65" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="60" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="14" Grid.Column="67" SubAreaID="120" TrackCircuitID="60" BlinkForSignal="76">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="14" Grid.Column="68" SubAreaID="120" TrackCircuitID="60" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="68" SubAreaID="120" TrackCircuitID="60" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="13" Grid.Column="69" SubAreaID="120" TrackCircuitID="60" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="66" SubAreaID="120" TrackCircuitID="60" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="67" SubAreaID="120" TrackCircuitID="60" BlinkForSignal="71">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="68" SubAreaID="120" TrackCircuitID="60">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="31" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="69" SubAreaID="120" TrackCircuitID="60" PointsID="31" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:Points>
+	<e:HSection Grid.Row="12" Grid.Column="70" SubAreaID="120" TrackCircuitID="60">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="71" SubAreaID="120" TrackCircuitID="60" PointsID="30" LayoutTransform="1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="71" SubAreaID="120" TrackCircuitID="60" LayoutTransform="1 0 0 -1 0 0" TCB="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="72" Grid.ColumnSpan="3" SubAreaID="120" TrackCircuitID="60">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="False"/>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="12" Grid.Column="75" SubAreaID="120" TrackCircuitID="60" PointsID="29" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:Points>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="75" SubAreaID="120" TrackCircuitID="60" TCB="True" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="29" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="12" Grid.Column="76" SubAreaID="120" TrackCircuitID="60" BlinkForSignal="64">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="77" SubAreaID="120" TrackCircuitID="60" TCBRight="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="30" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 56 -->
+	<e:Signal Grid.Row="7" Grid.Column="79" SubAreaID="120" SignalID="74" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:HSection Grid.Row="8" Grid.Column="80" SubAreaID="120" TrackCircuitID="56" TCBLeft="True"/>
+	<e:HSection Grid.Row="8" Grid.Column="81" SubAreaID="120" TrackCircuitID="56" BlinkForSignal="74"/>
+	<e:HSection Grid.Row="8" Grid.Column="82" Grid.ColumnSpan="5" SubAreaID="120" TrackCircuitID="56" TCBRight="True"/>
+	<e:TDBerth Grid.Row="8" Grid.Column="83" SubAreaID="120" TrackCircuitID="56"/>
+	<e:Signal Grid.Row="7" Grid.Column="86" SubAreaID="120" SignalID="60" LayoutTransform="-1 0 0 1 0 0"/>
+
+	<!-- TC 57 -->
+	<e:Signal Grid.Row="9" Grid.Column="76" SubAreaID="120" SignalID="63"/>
+	<e:HSection Grid.Row="10" Grid.Column="78" Grid.ColumnSpan="9" SubAreaID="120" TrackCircuitID="57" TCBRight="True"/>
+	<e:TDBerth Grid.Row="10" Grid.Column="81" SubAreaID="120" TrackCircuitID="57"/>
+	<e:Signal Grid.Row="11" Grid.Column="86" SubAreaID="120" SignalID="61" LayoutTransform="-1 0 0 -1 0 0"/>
+
+	<!-- TC 58 -->
+	<e:Signal Grid.Row="11" Grid.Column="76" SubAreaID="120" SignalID="64"/>
+	<e:HSection Grid.Row="12" Grid.Column="78" Grid.ColumnSpan="9" SubAreaID="120" TrackCircuitID="58" TCBRight="True"/>
+	<e:TDBerth Grid.Row="12" Grid.Column="81" SubAreaID="120" TrackCircuitID="58"/>
+	<e:Signal Grid.Row="13" Grid.Column="86" SubAreaID="120" SignalID="62" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Rectangle Grid.Row="13" Grid.Column="79" Grid.ColumnSpan="6" Fill="{StaticResource Platform}"/>
+
+	<!-- TC 53 -->
+	<TextBlock Grid.Row="6" Grid.Column="89" Grid.RowSpan="2" Grid.ColumnSpan="5" Text="7TH STREET" TextAlignment="Center" TextWrapping="Wrap" Foreground="{StaticResource IdleGrey}"/>
+	<e:HSection Grid.Row="8" Grid.Column="87" SubAreaID="120" TrackCircuitID="53">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="88" SubAreaID="120" TrackCircuitID="53" BlinkForSignal="60">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="8" Grid.Column="89" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="53">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="8" Grid.Column="91" SubAreaID="120" TrackCircuitID="53" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="91" SubAreaID="120" TrackCircuitID="53">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:DiagonalSection Grid.Row="9" Grid.Column="92" SubAreaID="120" TrackCircuitID="53" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="91" SubAreaID="120" TrackCircuitID="53" TCBLeft="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="28" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:Points Grid.Row="10" Grid.Column="92" SubAreaID="120" TrackCircuitID="53" PointsID="28" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="10" Grid.Column="93" SubAreaID="120" TrackCircuitID="53" BlinkForSignal="66"/>
+	<e:HSection Grid.Row="10" Grid.Column="94" SubAreaID="120" TrackCircuitID="53" TCBRight="True"/>
+	<e:Signal Grid.Row="9" Grid.Column="93" SubAreaID="120" SignalID="66"/>
+
+	<!-- TC 55 -->
+	<e:HSection Grid.Row="10" Grid.Column="87" SubAreaID="120" TrackCircuitID="55"/>
+	<e:HSection Grid.Row="10" Grid.Column="88" SubAreaID="120" TrackCircuitID="55" BlinkForSignal="61"/>
+	<e:Points Grid.Row="10" Grid.Column="89" SubAreaID="120" TrackCircuitID="55" PointsID="27"/>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="89" SubAreaID="120" TrackCircuitID="55" TCB="True">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:HSection Grid.Row="10" Grid.Column="90" SubAreaID="120" TrackCircuitID="55">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+
+	<!-- TC 54 -->
+	<e:HSection Grid.Row="12" Grid.Column="87" SubAreaID="120" TrackCircuitID="54">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="88" SubAreaID="120" TrackCircuitID="54" BlinkForSignal="62">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:HSection Grid.Row="12" Grid.Column="89" SubAreaID="120" TrackCircuitID="54">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="False"/>
+		</e:TrackSection.PointPositions>
+	</e:HSection>
+	<e:DiagonalSection Grid.Row="11" Grid.Column="90" SubAreaID="120" TrackCircuitID="54" TCB="True" LayoutTransform="-1 0 0 -1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="27" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:DiagonalSection>
+	<e:Points Grid.Row="12" Grid.Column="90" SubAreaID="120" TrackCircuitID="54" PointsID="27" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:HSection Grid.Row="12" Grid.Column="91" Grid.ColumnSpan="2" SubAreaID="120" TrackCircuitID="54"/>
+	<e:HSection Grid.Row="12" Grid.Column="93" SubAreaID="120" TrackCircuitID="54" BlinkForSignal="65"/>
+	<e:HSection Grid.Row="12" Grid.Column="94" SubAreaID="120" TrackCircuitID="54" TCBRight="True"/>
+	<e:Signal Grid.Row="11" Grid.Column="93" SubAreaID="120" SignalID="65"/>
+</Grid>

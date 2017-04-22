@@ -147,6 +147,33 @@
     <Compile Include="UI\Equipment\Wye.xaml.cs">
       <DependentUpon>Wye.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Region\California\Cajon\BaselineToSilverwood.xaml.cs">
+      <DependentUpon>BaselineToSilverwood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\GuastiToRancho.xaml.cs">
+      <DependentUpon>GuastiToRancho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\OroGrandeToHodge.xaml.cs">
+      <DependentUpon>OroGrandeToHodge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\SilverwoodToVictorville.xaml.cs">
+      <DependentUpon>SilverwoodToVictorville.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\SloverToSilverwood.xaml.cs">
+      <DependentUpon>SloverToSilverwood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\UPWestColton.xaml.cs">
+      <DependentUpon>UPWestColton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\WestColtonToSeventhStreet.xaml.cs">
+      <DependentUpon>WestColtonToSeventhStreet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Region.xaml.cs">
+      <DependentUpon>Region.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Region\California\Cajon\Subdivision.xaml.cs">
+      <DependentUpon>Subdivision.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\TopLevel\ChannelGrid.cs" />
     <Compile Include="UI\TopLevel\ChannelMask.cs" />
     <Compile Include="UI\TopLevel\HScrollViewer.cs" />
@@ -274,6 +301,42 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\Region\California\Cajon\BaselineToSilverwood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\GuastiToRancho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\OroGrandeToHodge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\SilverwoodToVictorville.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\SloverToSilverwood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\UPWestColton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\WestColtonToSeventhStreet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Region.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Region\California\Cajon\Subdivision.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\TopLevel\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -295,6 +358,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

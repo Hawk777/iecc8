@@ -1,5 +1,6 @@
 ﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:california="clr-namespace:Iecc8.UI.Region.California"
 		xmlns:tl="clr-namespace:Iecc8.UI.TopLevel"
 		x:Class="Iecc8.UI.TopLevel.MainWindow">
 	<Window.Resources>
@@ -23,7 +24,11 @@
 			<ColumnDefinition/>
 		</Grid.ColumnDefinitions>
 		<GridSplitter Grid.Column="1" HorizontalAlignment="Center" Grid.RowSpan="2" Width="2"/>
-		<Rectangle Fill="Blue" Grid.RowSpan="2"/>
+		<tl:HScrollViewer Grid.RowSpan="2">
+			<Viewbox UseLayoutRounding="True">
+				<california:Region/>
+			</Viewbox>
+		</tl:HScrollViewer>
 		<ListBox Grid.Column="2" ItemsSource="{Binding Messages, Mode=OneWay}" Background="{StaticResource BG}" PreviewMouseDown="MessageListPreviewMouseDown">
 			<ListBox.ItemTemplate>
 				<DataTemplate>

@@ -1,0 +1,566 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		x:Class="Iecc8.UI.Region.California.Cajon.UPWestColton"
+		xmlns:e="clr-namespace:Iecc8.UI.Equipment"
+		xmlns:a="clr-namespace:Iecc8.UI.Assembly"
+		Grid.RowSpan="7" Grid.ColumnSpan="16">
+	<Grid.Resources>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+	</Grid.Resources>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
+	</Grid.ColumnDefinitions>
+	<Grid.RowDefinitions>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+		<RowDefinition Height="16"/>
+	</Grid.RowDefinitions>
+	<!-- UP West Colton receiving yard -->
+	<TextBlock Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="4" Text="REC" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<Path Grid.Row="1" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="3" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="5" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="7" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="9" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="11" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="13" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="15" Grid.Column="10" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="11" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<TextBlock Grid.Row="1" Grid.Column="13" Grid.ColumnSpan="3" Text="102" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="3" Grid.Column="13" Grid.ColumnSpan="3" Text="103" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="5" Grid.Column="13" Grid.ColumnSpan="3" Text="104" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="7" Grid.Column="13" Grid.ColumnSpan="3" Text="105" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="9" Grid.Column="13" Grid.ColumnSpan="3" Text="106" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="11" Grid.Column="13" Grid.ColumnSpan="3" Text="107" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="13" Grid.Column="13" Grid.ColumnSpan="3" Text="108" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="15" Grid.Column="13" Grid.ColumnSpan="3" Text="109" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="16" Grid.ColumnSpan="15"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="16" Grid.ColumnSpan="9"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="16" Grid.ColumnSpan="8"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="16" Grid.ColumnSpan="10"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="16" Grid.ColumnSpan="8"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="16" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="16" Grid.ColumnSpan="3"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="16" Grid.ColumnSpan="2"/>
+	<e:Points Grid.Row="15" Grid.Column="18" SubAreaID="120" TrackCircuitID="-1" PointsID="111" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="18" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="19" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="13" Grid.Column="19" SubAreaID="120" TrackCircuitID="-1" PointsID="111" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="20"/>
+	<e:Points Grid.Row="13" Grid.Column="21" SubAreaID="120" TrackCircuitID="-1" PointsID="112" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="21" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="22" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="11" Grid.Column="22" SubAreaID="120" TrackCircuitID="-1" PointsID="106" Invert="True" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="11" Grid.Column="23" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="23" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="24" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="9" Grid.Column="24" SubAreaID="120" TrackCircuitID="-1" PointsID="105" Invert="True" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="25" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="25" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="26" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="26" SubAreaID="120" TrackCircuitID="-1" PointsID="104" Invert="True" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="7" Grid.Column="27" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="27" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="28" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="5" Grid.Column="28" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="5" Grid.Column="29" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="29" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="30" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="5" Grid.Column="24" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="24" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="25" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="3" Grid.Column="25" SubAreaID="120" TrackCircuitID="-1" PointsID="108" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="26" Grid.ColumnSpan="4"/>
+	<e:Points Grid.Row="3" Grid.Column="30" SubAreaID="120" TrackCircuitID="-1" PointsID="103" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="31"/>
+	<e:Points Grid.Row="3" Grid.Column="32" SubAreaID="120" TrackCircuitID="-1" PointsID="107" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="33"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="32" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="31"/>
+	<e:Points Grid.Row="1" Grid.Column="31" SubAreaID="120" TrackCircuitID="-1" PointsID="107"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="32" Grid.ColumnSpan="5"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="22" Grid.ColumnSpan="3"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="25" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="25" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="26" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="11" Grid.Column="26" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="11" Grid.Column="27" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="27" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="28" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="28" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="29" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="29" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="30" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="7" Grid.Column="30" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="7" Grid.Column="31" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="31" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="32" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="5" Grid.Column="32" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="5" Grid.Column="33" SubAreaID="120" TrackCircuitID="-1" PointsID="109" Invert="True" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="33" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="34" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="3" Grid.Column="34" SubAreaID="120" TrackCircuitID="-1" PointsID="102" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="35"/>
+	<e:Points Grid.Row="3" Grid.Column="36" SubAreaID="120" TrackCircuitID="-1" PointsID="101" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="36" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="37" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="1" Grid.Column="37" SubAreaID="120" TrackCircuitID="-1" PointsID="101" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="38"/>
+	<e:Points Grid.Row="1" Grid.Column="39" SubAreaID="120" TrackCircuitID="-1" PointsID="60" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Column="39" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="8"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="27" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="27" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="28" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="28" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="29" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="29" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="30" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="11" Grid.Column="30" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="11" Grid.Column="31" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="31" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="32" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="32" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="33" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="33" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="34" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="7" Grid.Column="34" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="35"/>
+	<e:Points Grid.Row="7" Grid.Column="36" SubAreaID="120" TrackCircuitID="-1" PointsID="70" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="36" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="37" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="34" Grid.ColumnSpan="3"/>
+	<e:Points Grid.Row="5" Grid.Column="37" SubAreaID="120" TrackCircuitID="-1" PointsID="70" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="37"/>
+	<e:Points Grid.Row="3" Grid.Column="38" SubAreaID="120" TrackCircuitID="-1" PointsID="110"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="38"/>
+	<e:Points Grid.Row="5" Grid.Column="39" SubAreaID="120" TrackCircuitID="-1" PointsID="110" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="38"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="39" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="40"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="37" Grid.ColumnSpan="5"/>
+	<e:Points Grid.Row="5" Grid.Column="41" SubAreaID="120" TrackCircuitID="-1" PointsID="71"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="41"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="42" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="42" SubAreaID="120" TrackCircuitID="-1" PointsID="71" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="40" Grid.ColumnSpan="5" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="39" Grid.ColumnSpan="6" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="42" Grid.ColumnSpan="3" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="43" Grid.ColumnSpan="2" TCBRight="True"/>
+	<TextBlock Grid.Row="1" Grid.Column="45" Grid.ColumnSpan="3" Text="114" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="3" Grid.Column="45" Grid.ColumnSpan="3" Text="099" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="5" Grid.Column="45" Grid.ColumnSpan="3" Text="115" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="7" Grid.Column="45" Grid.ColumnSpan="3" Text="116" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="48" Grid.ColumnSpan="2" TCBLeft="True" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="48" Grid.ColumnSpan="2" TCBLeft="True" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="48" Grid.ColumnSpan="2" TCBLeft="True" TCBRight="True"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="48" Grid.ColumnSpan="2" TCBLeft="True" TCBRight="True"/>
+	<Path Grid.Row="1" Grid.Column="50" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}"/>
+	<Path Grid.Row="3" Grid.Column="50" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}"/>
+	<Path Grid.Row="5" Grid.Column="50" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}"/>
+	<Path Grid.Row="7" Grid.Column="50" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}"/>
+	<TextBlock Grid.Row="1" Grid.Column="51" Grid.ColumnSpan="5" Text="HUMP" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="3" Grid.Column="51" Grid.ColumnSpan="5" Text="HUMP" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="5" Grid.Column="51" Grid.ColumnSpan="7" Text="STORAGE" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="7" Grid.Column="51" Grid.ColumnSpan="7" Text="SERVICE" Foreground="{StaticResource IdleGrey}"/>
+
+	<!-- UP West Colton departure yard -->
+	<TextBlock Grid.Row="3" Grid.Column="63" Grid.ColumnSpan="3" Text="CLS" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<Path Grid.Row="3" Grid.Column="66" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="5" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="7" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="9" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="11" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="13" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Grid.Row="15" Grid.Column="62" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="67" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="63" Grid.ColumnSpan="3" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="63" Grid.ColumnSpan="3" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="63" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="63" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="63" Grid.ColumnSpan="3" TCBLeft="True"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="63" Grid.ColumnSpan="3" TCBLeft="True"/>
+	<TextBlock Grid.Row="3" Grid.Column="68" Grid.ColumnSpan="3" Text="201" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="5" Grid.Column="66" Grid.ColumnSpan="3" Text="202" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="7" Grid.Column="66" Grid.ColumnSpan="3" Text="203" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="9" Grid.Column="64" Grid.ColumnSpan="6" Text="204-209" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="11" Grid.Column="64" Grid.ColumnSpan="6" Text="210-215" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="13" Grid.Column="66" Grid.ColumnSpan="3" Text="215" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="15" Grid.Column="66" Grid.ColumnSpan="6" Text="216-219" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="69" Grid.ColumnSpan="2"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="69" Grid.ColumnSpan="3"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="70" Grid.ColumnSpan="2"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="70"/>
+	<e:Points Grid.Row="5" Grid.Column="71" SubAreaID="120" TrackCircuitID="-1" PointsID="68"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="71"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="72" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="72" SubAreaID="120" TrackCircuitID="-1" PointsID="68" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="9" Grid.Column="72" SubAreaID="120" TrackCircuitID="-1" PointsID="69" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="72" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="71" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="11" Grid.Column="71" SubAreaID="120" TrackCircuitID="-1" PointsID="69" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="72"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="69" Grid.ColumnSpan="3"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="72" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="72" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="73" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="11" Grid.Column="73" SubAreaID="120" TrackCircuitID="-1" PointsID="77" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="73"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="73"/>
+	<Path Grid.Row="8" Grid.Column="74" Stroke="{StaticResource IdleGrey}" Data="{StaticResource Scissors}"/>
+	<Path Grid.Row="8" Grid.Column="75" Stroke="{StaticResource IdleGrey}" Data="{StaticResource Scissors}" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="74" SubAreaID="120" TrackCircuitID="-1" PointsID="67"/>
+	<e:Points Grid.Row="9" Grid.Column="74" SubAreaID="120" TrackCircuitID="-1" PointsID="72" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="75" SubAreaID="120" TrackCircuitID="-1" PointsID="72" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="9" Grid.Column="75" SubAreaID="120" TrackCircuitID="-1" PointsID="67" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="72" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="76"/>
+	<e:Points Grid.Row="5" Grid.Column="78" SubAreaID="120" TrackCircuitID="-1" PointsID="75" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="77" SubAreaID="120" TrackCircuitID="-1" PointsID="75" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="77" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="78" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="76"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="74" Grid.ColumnSpan="4"/>
+	<e:Points Grid.Row="9" Grid.Column="77" SubAreaID="120" TrackCircuitID="-1" PointsID="74"/>
+	<e:Points Grid.Row="11" Grid.Column="78" SubAreaID="120" TrackCircuitID="-1" PointsID="74" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="77"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="78" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="72" Grid.ColumnSpan="4"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="76" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="76" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="77" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="77" LayoutTransform="1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="78" Grid.ColumnSpan="3"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="79"/>
+	<e:Points Grid.Row="11" Grid.Column="80" SubAreaID="120" TrackCircuitID="-1" PointsID="95"/>
+	<e:Points Grid.Row="13" Grid.Column="81" SubAreaID="120" TrackCircuitID="-1" PointsID="95" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="80"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="81" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="82"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="79"/>
+	<e:Points Grid.Row="5" Grid.Column="80" SubAreaID="120" TrackCircuitID="-1" PointsID="96" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="80" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="81" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="71" Grid.ColumnSpan="10"/>
+	<e:Points Grid.Row="3" Grid.Column="81" SubAreaID="120" TrackCircuitID="-1" PointsID="90" LayoutTransform="-1 0 0 1 0 0" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="3" Grid.Column="82" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="82" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="83" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="77" Grid.ColumnSpan="6"/>
+	<e:Points Grid.Row="1" Grid.Column="83" SubAreaID="120" TrackCircuitID="106" PointsID="89" LayoutTransform="-1 0 0 1 0 0">
+		<e:TrackSection.PointPositions>
+			<e:SectionPointPosition Points="64" Reversed="True"/>
+		</e:TrackSection.PointPositions>
+	</e:Points>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="84"/>
+	<e:Points Grid.Row="1" Grid.Column="85" SubAreaID="120" TrackCircuitID="-1" PointsID="88"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="85"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="86" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="3" Grid.Column="86"/>
+	<e:Points Grid.Row="13" Grid.Column="83" SubAreaID="120" PointsID="91"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="83"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="84" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="84"/>
+	<e:Points Grid.Row="15" Grid.Column="85" SubAreaID="120" PointsID="92" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="85"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="86" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="17" Grid.Column="86"/>
+	<e:Points Grid.Row="17" Grid.Column="87" SubAreaID="120" PointsID="93" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="87"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="88" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="19" Grid.Column="88"/>
+	<e:Points Grid.Row="19" Grid.Column="89" SubAreaID="120" PointsID="94" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="20" Grid.Column="89"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="20" Grid.Column="90" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="21" Grid.Column="90"/>
+	<e:Points Grid.Row="21" Grid.Column="91" SubAreaID="120" PointsID="100" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="22" Grid.Column="91"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="22" Grid.Column="92" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="23" Grid.Column="92"/>
+	<e:Points Grid.Row="23" Grid.Column="93" SubAreaID="120" PointsID="99" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="24" Grid.Column="93"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="24" Grid.Column="94" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="25" Grid.Column="94"/>
+	<e:Points Grid.Row="25" Grid.Column="95" SubAreaID="120" PointsID="98" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="26" Grid.Column="95"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="26" Grid.Column="96" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="27" Grid.Column="96" SubAreaID="120" PointsID="97" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="27" Grid.Column="94" Grid.ColumnSpan="2" TCBLeft="True"/>
+	<Path Grid.Row="27" Grid.Column="93" Fill="{StaticResource IdleGrey}" Data="{StaticResource Triangle}" LayoutTransform="-1 0 0 1 0 0"/>
+	<TextBlock Grid.Row="27" Grid.Column="86" Grid.ColumnSpan="7" Text="STORAGE" TextAlignment="Right" Foreground="{StaticResource IdleGrey}"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="86" Grid.ColumnSpan="4"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="87" Grid.ColumnSpan="4"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="81" Grid.ColumnSpan="8"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="78" Grid.ColumnSpan="11"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="78" Grid.ColumnSpan="11"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="81" Grid.ColumnSpan="10"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="84" Grid.ColumnSpan="7"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="86" Grid.ColumnSpan="7"/>
+	<e:NonTCHSection Grid.Row="17" Grid.Column="88" Grid.ColumnSpan="7"/>
+	<e:NonTCHSection Grid.Row="19" Grid.Column="90" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="21" Grid.Column="92" Grid.ColumnSpan="7"/>
+	<e:NonTCHSection Grid.Row="23" Grid.Column="94" Grid.ColumnSpan="5"/>
+	<e:NonTCHSection Grid.Row="25" Grid.Column="96" Grid.ColumnSpan="3"/>
+	<e:NonTCHSection Grid.Row="27" Grid.Column="97" Grid.ColumnSpan="2"/>
+	<TextBlock Grid.Row="1" Grid.Column="90" Grid.ColumnSpan="3" Text="501" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="3" Grid.Column="91" Grid.ColumnSpan="3" Text="502" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="5" Grid.Column="89" Grid.ColumnSpan="3" Text="411" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="7" Grid.Column="89" Grid.ColumnSpan="3" Text="412" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="9" Grid.Column="89" Grid.ColumnSpan="3" Text="413" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="11" Grid.Column="91" Grid.ColumnSpan="3" Text="414" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="13" Grid.Column="91" Grid.ColumnSpan="3" Text="415" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="15" Grid.Column="93" Grid.ColumnSpan="3" Text="435" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="17" Grid.Column="95" Grid.ColumnSpan="3" Text="436" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="19" Grid.Column="96" Grid.ColumnSpan="3" Text="437" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="21" Grid.Column="99" Grid.ColumnSpan="3" Text="438" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="23" Grid.Column="99" Grid.ColumnSpan="3" Text="439" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="25" Grid.Column="99" Grid.ColumnSpan="3" Text="904" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<TextBlock Grid.Row="27" Grid.Column="99" Grid.ColumnSpan="3" Text="905" TextAlignment="Center" Foreground="{StaticResource IdleGrey}"/>
+	<e:NonTCHSection Grid.Row="1" Grid.Column="93" Grid.ColumnSpan="4"/>
+	<e:NonTCHSection Grid.Row="3" Grid.Column="94" Grid.ColumnSpan="4"/>
+	<e:NonTCHSection Grid.Row="5" Grid.Column="92" Grid.ColumnSpan="8"/>
+	<e:NonTCHSection Grid.Row="7" Grid.Column="92" Grid.ColumnSpan="10"/>
+	<e:NonTCHSection Grid.Row="9" Grid.Column="92" Grid.ColumnSpan="12"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="94" Grid.ColumnSpan="10"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="94" Grid.ColumnSpan="7"/>
+	<e:NonTCHSection Grid.Row="15" Grid.Column="96" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="17" Grid.Column="98" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="19" Grid.Column="99" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="21" Grid.Column="102" Grid.ColumnSpan="6"/>
+	<e:NonTCHSection Grid.Row="23" Grid.Column="102" Grid.ColumnSpan="4"/>
+	<e:NonTCHSection Grid.Row="25" Grid.Column="102" Grid.ColumnSpan="2"/>
+	<e:NonTCHSection Grid.Row="27" Grid.Column="102"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="27" Grid.Column="103" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="26" Grid.Column="103" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="26" Grid.Column="104" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="25" Grid.Column="104" SubAreaID="120" TrackCircuitID="-1" PointsID="78" LayoutTransform="-1 0 0 1 0 0" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="25" Grid.Column="105" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="24" Grid.Column="105" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="24" Grid.Column="106" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="23" Grid.Column="106" SubAreaID="120" TrackCircuitID="-1" PointsID="82" LayoutTransform="-1 0 0 1 0 0" Invert="True"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="23" Grid.Column="107" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="22" Grid.Column="107" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="22" Grid.Column="108" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="21" Grid.Column="108" SubAreaID="120" TrackCircuitID="-1" PointsID="81" LayoutTransform="-1 0 0 1 0 0" Invert="True"/>
+	<e:Points Grid.Row="13" Grid.Column="101" SubAreaID="120" TrackCircuitID="-1" PointsID="65"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="101"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="102" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="15" Grid.Column="102" SubAreaID="120" TrackCircuitID="-1" PointsID="66" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="103" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="103"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="104" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="17" Grid.Column="104" SubAreaID="120" TrackCircuitID="-1" PointsID="73" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:NonTCHSection Grid.Row="17" Grid.Column="105"/>
+	<e:Points Grid.Row="17" Grid.Column="106" SubAreaID="120" TrackCircuitID="-1" PointsID="80" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="19" Grid.Column="105" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="105" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="106" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="21" Grid.Column="109" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="20" Grid.Column="109" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="20" Grid.Column="110" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="19" Grid.Column="110" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="19" Grid.Column="111" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="111" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="18" Grid.Column="112" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="17" Grid.Column="107" Grid.ColumnSpan="5"/>
+	<e:Points Grid.Row="17" Grid.Column="112" SubAreaID="120" TrackCircuitID="-1" PointsID="76" LayoutTransform="-1 0 0 1 0 0" Invert="True"/>
+	<e:NonTCHSection Grid.Row="13" Grid.Column="102"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="103" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="103" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="104" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:Points Grid.Row="11" Grid.Column="104" SubAreaID="120" TrackCircuitID="-1" PointsID="79" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="105"/>
+	<e:Points Grid.Row="11" Grid.Column="106" SubAreaID="120" TrackCircuitID="-1" PointsID="83" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="106" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="10" Grid.Column="105"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="9" Grid.Column="105" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="9" Grid.Column="104" SubAreaID="120" TrackCircuitID="-1" PointsID="84" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="104" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="8" Grid.Column="103"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="7" Grid.Column="103" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="7" Grid.Column="102" SubAreaID="120" TrackCircuitID="-1" PointsID="85" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="102" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="6" Grid.Column="101"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="5" Grid.Column="101" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="5" Grid.Column="100" SubAreaID="120" TrackCircuitID="-1" PointsID="86" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="100" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="4" Grid.Column="99"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="3" Grid.Column="99" LayoutTransform="-1 0 0 -1 0 0"/>
+	<e:Points Grid.Row="3" Grid.Column="98" SubAreaID="120" TrackCircuitID="-1" PointsID="87" Invert="True" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="98" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="2" Grid.Column="97"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="1" Grid.Column="97" LayoutTransform="-1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="17" Grid.Column="113" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="113" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="16" Grid.Column="114" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="114" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="15" Grid.Column="115" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="115" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="14" Grid.Column="116" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="116" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="13" Grid.Column="117" LayoutTransform="-1 0 0 1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="117" LayoutTransform="1 0 0 -1 0 0"/>
+	<Path Stroke="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}" Grid.Row="12" Grid.Column="118" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="107" Grid.ColumnSpan="11"/>
+	<e:Points Grid.Row="11" Grid.Column="118" SubAreaID="120" TrackCircuitID="-1" PointsID="50" LayoutTransform="-1 0 0 1 0 0"/>
+	<e:NonTCHSection Grid.Row="11" Grid.Column="119"/>
+</Grid>
