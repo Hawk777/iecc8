@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		x:Class="Iecc8.UI.TopLevel.RadioTransmitBar">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="ChannelBox" Text="{Binding Channel, Mode=TwoWay, ValidatesOnExceptions=True}" MinWidth="50"/>
+		<TextBox x:Name="MessageBox" Grid.Column="1" Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		<Button Content="Send" Grid.Column="2" MinWidth="50" IsDefault="True" Command="{Binding Mode=OneTime}" Click="HideAfterSending"/>
+	</Grid>
+</UserControl>

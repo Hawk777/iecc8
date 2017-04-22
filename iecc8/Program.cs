@@ -7,7 +7,7 @@ namespace Iecc8 {
 		public static void Main() {
 			Application app = new Application();
 			app.ShutdownMode = ShutdownMode.OnMainWindowClose;
-			app.StartupUri = new Uri("UI/WelcomeWindow.xaml", UriKind.Relative);
+			app.StartupUri = new Uri("UI/TopLevel/WelcomeWindow.xaml", UriKind.Relative);
 			app.Run();
 		}
 	}

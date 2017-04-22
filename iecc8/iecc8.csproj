@@ -90,76 +90,76 @@
     <Compile Include="Schema\RouteTC.cs" />
     <Compile Include="Schema\SubArea.cs" />
     <Compile Include="Schema\TrackCircuit.cs" />
-    <Compile Include="UI\AutoButton.xaml.cs">
+    <Compile Include="UI\Common\BlinkClockSource.cs" />
+    <Compile Include="UI\Common\EngineerTypeToFontStyle.cs" />
+    <Compile Include="UI\Common\EngineerTypeToIsAI.cs" />
+    <Compile Include="UI\Common\LocationCurrentToFontStyle.cs" />
+    <Compile Include="UI\Common\MainViewModel.cs" />
+    <Compile Include="UI\Common\Message.cs" />
+    <Compile Include="UI\Common\MessageTypeToColour.cs" />
+    <Compile Include="UI\Common\NonNullToVisibility.cs" />
+    <Compile Include="UI\Common\NullCommand.cs" />
+    <Compile Include="UI\Equipment\AutoButton.xaml.cs">
       <DependentUpon>AutoButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\BlinkClockSource.cs" />
-    <Compile Include="UI\ChannelGrid.cs" />
-    <Compile Include="UI\ChannelMask.cs" />
-    <Compile Include="UI\Crossing.xaml.cs">
+    <Compile Include="UI\Equipment\Crossing.xaml.cs">
       <DependentUpon>Crossing.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\DiagonalSection.xaml.cs">
+    <Compile Include="UI\Equipment\DiagonalSection.xaml.cs">
       <DependentUpon>DiagonalSection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\EngineerTypeToFontStyle.cs" />
-    <Compile Include="UI\EngineerTypeToIsAI.cs" />
-    <Compile Include="UI\ExitTriangle.xaml.cs">
+    <Compile Include="UI\Equipment\ExitTriangle.xaml.cs">
       <DependentUpon>ExitTriangle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\HScrollViewer.cs" />
-    <Compile Include="UI\HSection.xaml.cs">
+    <Compile Include="UI\Equipment\HSection.xaml.cs">
       <DependentUpon>HSection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\LocationCurrentToFontStyle.cs" />
-    <Compile Include="UI\MainViewModel.cs" />
-    <Compile Include="UI\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Message.cs" />
-    <Compile Include="UI\MessageTypeToColour.cs" />
-    <Compile Include="UI\NonNullToVisibility.cs" />
-    <Compile Include="UI\NonTCHSection.xaml.cs">
+    <Compile Include="UI\Equipment\NonTCHSection.xaml.cs">
       <DependentUpon>NonTCHSection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\NullCommand.cs" />
-    <Compile Include="UI\PermissionWaiter.cs" />
-    <Compile Include="UI\Points.xaml.cs">
+    <Compile Include="UI\Equipment\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\RadioTransmitBar.xaml.cs">
-      <DependentUpon>RadioTransmitBar.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\RadioTransmitViewModel.cs" />
-    <Compile Include="UI\SectionPointPosition.cs" />
-    <Compile Include="UI\SectionPointPositionResolved.cs" />
-    <Compile Include="UI\Signal.cs" />
-    <Compile Include="UI\SignalBase.cs" />
-    <Compile Include="UI\SignalHead.xaml.cs">
+    <Compile Include="UI\Equipment\SectionPointPosition.cs" />
+    <Compile Include="UI\Equipment\SectionPointPositionResolved.cs" />
+    <Compile Include="UI\Equipment\Signal.cs" />
+    <Compile Include="UI\Equipment\SignalBase.cs" />
+    <Compile Include="UI\Equipment\SignalHead.xaml.cs">
       <DependentUpon>SignalHead.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SignalStem.xaml.cs">
+    <Compile Include="UI\Equipment\SignalStem.xaml.cs">
       <DependentUpon>SignalStem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\SubAreaNumberWaiter.cs" />
-    <Compile Include="UI\TDBerth.xaml.cs">
+    <Compile Include="UI\Equipment\TDBerth.xaml.cs">
       <DependentUpon>TDBerth.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\TrackSection.cs" />
-    <Compile Include="UI\TrainDetail.xaml.cs">
-      <DependentUpon>TrainDetail.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\TrainDetailViewModel.cs" />
-    <Compile Include="UI\TrainList.xaml.cs">
-      <DependentUpon>TrainList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\VSection.xaml.cs">
+    <Compile Include="UI\Equipment\TrackSection.cs" />
+    <Compile Include="UI\Equipment\VSection.xaml.cs">
       <DependentUpon>VSection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\WelcomeWindow.xaml.cs">
+    <Compile Include="UI\TopLevel\ChannelGrid.cs" />
+    <Compile Include="UI\TopLevel\ChannelMask.cs" />
+    <Compile Include="UI\TopLevel\HScrollViewer.cs" />
+    <Compile Include="UI\TopLevel\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TopLevel\PermissionWaiter.cs" />
+    <Compile Include="UI\TopLevel\RadioTransmitBar.xaml.cs">
+      <DependentUpon>RadioTransmitBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TopLevel\RadioTransmitViewModel.cs" />
+    <Compile Include="UI\TopLevel\SubAreaNumberWaiter.cs" />
+    <Compile Include="UI\TopLevel\TrainDetail.xaml.cs">
+      <DependentUpon>TrainDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TopLevel\TrainDetailViewModel.cs" />
+    <Compile Include="UI\TopLevel\TrainList.xaml.cs">
+      <DependentUpon>TrainList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TopLevel\WelcomeWindow.xaml.cs">
       <DependentUpon>WelcomeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\WelcomeWindowViewModel.cs" />
+    <Compile Include="UI\TopLevel\WelcomeWindowViewModel.cs" />
     <Compile Include="World\Aspects.cs" />
     <Compile Include="World\AutomaticSignal.cs" />
     <Compile Include="World\CALExemption.cs" />
@@ -188,71 +188,71 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UI\AutoButton.xaml">
+    <Page Include="UI\Common\Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Crossing.xaml">
+    <Page Include="UI\Equipment\AutoButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\DiagonalSection.xaml">
+    <Page Include="UI\Equipment\Crossing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\ExitTriangle.xaml">
+    <Page Include="UI\Equipment\DiagonalSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\HSection.xaml">
+    <Page Include="UI\Equipment\ExitTriangle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\MainWindow.xaml">
+    <Page Include="UI\Equipment\HSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\NonTCHSection.xaml">
+    <Page Include="UI\Equipment\NonTCHSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Resources.xaml">
+    <Page Include="UI\Equipment\Points.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Points.xaml">
+    <Page Include="UI\Equipment\SignalHead.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SignalHead.xaml">
+    <Page Include="UI\Equipment\SignalStem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\SignalStem.xaml">
+    <Page Include="UI\Equipment\TDBerth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\TDBerth.xaml">
+    <Page Include="UI\Equipment\VSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\TrainDetail.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UI\TrainList.xaml">
+    <Page Include="UI\TopLevel\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\VSection.xaml">
+    <Page Include="UI\TopLevel\RadioTransmitBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\WelcomeWindow.xaml">
+    <Page Include="UI\TopLevel\TrainDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\TopLevel\TrainList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\RadioTransmitBar.xaml">
+    <Page Include="UI\TopLevel\WelcomeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

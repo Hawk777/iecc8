@@ -1,0 +1,39 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:tl="clr-namespace:Iecc8.UI.TopLevel"
+		x:Name="window"
+		x:Class="Iecc8.UI.TopLevel.WelcomeWindow"
+		ResizeMode="CanMinimize"
+		Title="Welcome - IECC8"
+		WindowStartupLocation="CenterScreen"
+		SizeToContent="WidthAndHeight">
+	<Window.DataContext>
+		<tl:WelcomeWindowViewModel/>
+	</Window.DataContext>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<RadioButton Content="Connect to _Local Computer" Grid.ColumnSpan="2" IsChecked="{Binding ConnectToLocal, Mode=TwoWay}" IsEnabled="{Binding CanEditSettings, Mode=OneWay}"/>
+		<RadioButton Content="Connect to _Remote Computer:" Grid.Row="1" IsChecked="{Binding ConnectToRemote, Mode=TwoWay}" IsEnabled="{Binding CanEditSettings, Mode=OneWay}"/>
+		<TextBox Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Disabled" ToolTip="Hostname or IP Address" MinWidth="200" IsEnabled="{Binding CanEditRemoteHostname, Mode=OneWay}" Text="{Binding RemoteHostname, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=True}"/>
+		<TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding ConnectionProgressString, Mode=OneWay}" MinHeight="50" TextWrapping="Wrap" MaxWidth="500" TextAlignment="Center" />
+		<Button Content="Connect" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="75" IsDefault="True" Margin="5,5,5,20" Command="{Binding ConnectCommand, Mode=OneTime}" CommandParameter="{Binding ElementName=window, Mode=OneTime}"/>
+		<Button Content="Cancel" Grid.Column="2" HorizontalAlignment="Center" Margin="5,5,5,20" Grid.Row="3" VerticalAlignment="Center" Width="75" Command="{Binding CancelCommand, Mode=OneTime}"/>
+		<Grid.Resources>
+			<Style TargetType="FrameworkElement" x:Key="Padding">
+				<Setter Property="Margin" Value="5"/>
+			</Style>
+			<Style TargetType="RadioButton" BasedOn="{StaticResource Padding}"/>
+			<Style TargetType="TextBox" BasedOn="{StaticResource Padding}"/>
+			<Style TargetType="TextBlock" BasedOn="{StaticResource Padding}"/>
+		</Grid.Resources>
+	</Grid>
+</Window>

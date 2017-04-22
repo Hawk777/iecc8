@@ -1,0 +1,107 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		x:Class="Iecc8.UI.TopLevel.TrainDetail"
+		Background="{StaticResource {x:Static SystemColors.AppWorkspaceBrushKey}}"
+		Foreground="{StaticResource {x:Static SystemColors.ControlTextBrushKey}}">
+	<UserControl.Resources>
+		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
+	</UserControl.Resources>
+	<Grid>
+		<Grid.Resources>
+			<Style TargetType="TextBlock">
+				<Setter Property="Padding" Value="3"/>
+			</Style>
+		</Grid.Resources>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Button Content="&lt;" Padding="3" Command="{Binding PrevCommand, Mode=OneTime}"/>
+		<Button Content="&gt;" Grid.Column="2" Padding="3" Command="{Binding NextCommand, Mode=OneTime}"/>
+		<Grid Grid.Column="1" DataContext="{Binding SelectedTrain, Mode=OneWay}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Grid.ColumnSpan="4" TextAlignment="Center">
+				<TextBlock.Text>
+					<MultiBinding StringFormat="{}{0}{1}">
+						<Binding Path="Company" Mode="OneTime"/>
+						<Binding Path="LocoNumber" Mode="OneTime"/>
+					</MultiBinding>
+				</TextBlock.Text>
+			</TextBlock>
+			<TextBlock Grid.ColumnSpan="4" Grid.Row="1" TextAlignment="Center" Text="{Binding Tag, Mode=OneWay}"/>
+			<TextBlock Grid.ColumnSpan="4" Grid.Row="2" TextAlignment="Center" FontStyle="{Binding LocationCurrent, Mode=OneWay, Converter={StaticResource LocationCurrentToFontStyle}}">
+				<TextBlock.Text>
+					<MultiBinding StringFormat="{}{0} : {1}">
+						<Binding Path="SubArea" Mode="OneWay"/>
+						<Binding Path="Location" Mode="OneWay"/>
+					</MultiBinding>
+				</TextBlock.Text>
+			</TextBlock>
+			<TextBlock Grid.ColumnSpan="4" Grid.Row="3" TextAlignment="Center" FontStyle="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToFontStyle}}" Text="{Binding EngineerName, Mode=OneWay}"/>
+
+			<TextBlock Grid.Row="4" Grid.Column="1" Text="Length:" TextAlignment="Right"/>
+			<TextBlock Grid.Row="4" Grid.Column="2">
+				<TextBlock.Text>
+					<Binding Path="Length" Mode="OneWay" StringFormat="{}{0}′"/>
+				</TextBlock.Text>
+			</TextBlock>
+			<TextBlock Grid.Row="5" Grid.Column="1" Text="Weight:" TextAlignment="Right"/>
+			<TextBlock Grid.Row="5" Grid.Column="2">
+				<TextBlock.Text>
+					<Binding Path="Weight" Mode="OneWay" StringFormat="{}{0}&#160;T"/>
+				</TextBlock.Text>
+			</TextBlock>
+			<TextBlock Grid.Row="6" Grid.Column="1" Text="HP/t:" TextAlignment="Right"/>
+			<TextBlock Grid.Row="6" Grid.Column="2" Text="{Binding HPt, Mode=OneWay}"/>
+			<TextBlock Grid.Row="7" Grid.Column="1" Text="Speed:" TextAlignment="Right"/>
+			<TextBlock Grid.Row="7" Grid.Column="2">
+				<TextBlock.Text>
+					<Binding Path="Speed" Mode="OneWay" StringFormat="{}{0}&#160;mph"/>
+				</TextBlock.Text>
+			</TextBlock>
+			<TextBlock Grid.Row="8" Grid.Column="1" Text="Limit:" TextAlignment="Right"/>
+			<TextBlock Grid.Row="8" Grid.Column="2">
+				<TextBlock.Text>
+					<Binding Path="SpeedLimit" Mode="OneWay" StringFormat="{}{0}&#160;mph"/>
+				</TextBlock.Text>
+			</TextBlock>
+			<GroupBox Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Header="AI">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="1*"/>
+						<ColumnDefinition Width="1*"/>
+					</Grid.ColumnDefinitions>
+					<Button Grid.Row="0" Grid.Column="0" Content="Recrew" Command="{Binding AIRecrew, Mode=OneTime, FallbackValue={StaticResource NullCommand}}" ToolTip="Order an AI crew to board the train"/>
+					<CheckBox Grid.Row="0" Grid.Column="1" Content="Hold" IsChecked="{Binding AIHold, Mode=TwoWay}" IsEnabled="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToIsAI}, FallbackValue=False}" ToolTip="Order the AI crew to hold the train's position"/>
+					<Button Grid.Row="1" Grid.Column="0" Content="EStop" Command="{Binding AIEStop, Mode=OneTime, FallbackValue={StaticResource NullCommand}}" ToolTip="Instantly stop the train"/>
+					<CheckBox Grid.Row="1" Grid.Column="1" Content="Relinquish" IsChecked="{Binding AIRelinquish, Mode=TwoWay}" IsEnabled="{Binding EngineerType, Mode=OneWay, Converter={StaticResource EngineerTypeToIsAI}, FallbackValue=False}" ToolTip="Order the AI crew to disembark once the train is stationary"/>
+				</Grid>
+			</GroupBox>
+		</Grid>
+	</Grid>
+</UserControl>
