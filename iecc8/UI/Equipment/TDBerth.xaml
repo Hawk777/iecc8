@@ -2,7 +2,8 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:e="clr-namespace:Iecc8.UI.Equipment"
 		x:Class="Iecc8.UI.Equipment.TDBerth"
-		FontSize="11">
+		FontSize="11"
+		Grid.ColumnSpan="3">
 	<TextBlock.Resources>
 		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
 	</TextBlock.Resources>
