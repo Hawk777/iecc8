@@ -1,6 +1,5 @@
 ﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:ui="clr-namespace:Iecc8.UI"
 		x:Class="Iecc8.UI.AutoButton"
 		Width="16"
 		Height="16">
@@ -8,23 +7,15 @@
 		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Resources.xaml"/>
 	</Grid.Resources>
 	<Grid.ColumnDefinitions>
-		<ColumnDefinition Width="Auto"/>
-		<ColumnDefinition Width="Auto"/>
+		<ColumnDefinition Width="8"/>
+		<ColumnDefinition Width="8"/>
 	</Grid.ColumnDefinitions>
 	<Grid.RowDefinitions>
-		<RowDefinition Height="Auto"/>
+		<RowDefinition Height="16"/>
 	</Grid.RowDefinitions>
 	<Grid.Background>
 		<StaticResource ResourceKey="BG"/>
 	</Grid.Background>
 	<TextBlock Text="A" Foreground="{StaticResource SignalAutoButton}" TextAlignment="Center"/>
-	<Path x:Name="Roundel" Grid.Column="1" Fill="{StaticResource SignalAutoButton}">
-		<Path.Data>
-			<EllipseGeometry RadiusX="0.25" RadiusY="0.25" Center="0.25 0.5">
-				<EllipseGeometry.Transform>
-					<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}"/>
-				</EllipseGeometry.Transform>
-			</EllipseGeometry>
-		</Path.Data>
-	</Path>
+	<Ellipse x:Name="Roundel" Grid.Column="1" Fill="{StaticResource SignalAutoButton}" Width="8" Height="8"/>
 </Grid>

@@ -83,7 +83,7 @@ namespace Iecc8.UI {
 				} else {
 					SetFilled();
 				}
-				((PathGeometry) Polygon.Data).Figures = (PathFigureCollection) FindResource((PointsObject.Reversed ^ Invert) ? "PointsReverse" : "PointsNormal");
+				Polygon.Data = (PathGeometry) FindResource((PointsObject.Reversed ^ Invert) ? "PointsReverse" : "PointsNormal");
 			}
 		}
 

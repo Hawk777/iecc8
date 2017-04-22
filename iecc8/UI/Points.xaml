@@ -10,13 +10,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}" StrokeThickness="0.125">
-		<Path.Data>
-			<PathGeometry Figures="{StaticResource PointsBoth}">
-				<PathGeometry.Transform>
-					<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-				</PathGeometry.Transform>
-			</PathGeometry>
-		</Path.Data>
-	</Path>
+	<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}" StrokeThickness="1" Data="{StaticResource PointsBoth}"/>
 </ui:TrackSection>

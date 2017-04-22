@@ -9,15 +9,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Canvas RenderOptions.EdgeMode="Aliased">
-		<Path x:Name="StemPath" Fill="{StaticResource IdleGrey}">
-			<Path.Data>
-				<PathGeometry Figures="{StaticResource SignalStemAutomatic}">
-					<PathGeometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Canvas}}}"/>
-					</PathGeometry.Transform>
-				</PathGeometry>
-			</Path.Data>
-		</Path>
-	</Canvas>
+	<Path x:Name="StemPath" Fill="{StaticResource IdleGrey}" Data="{StaticResource SignalStemAutomatic}"/>
 </UserControl>

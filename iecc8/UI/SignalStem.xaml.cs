@@ -23,9 +23,9 @@ namespace Iecc8.UI {
 			ControlledSignal cs = signal as ControlledSignal;
 			if (cs != null) {
 				signal.PropertyChanged += OnSignalPropChanged;
-				((PathGeometry) StemPath.Data).Figures = (PathFigureCollection) FindResource("SignalStemControlled");
+				StemPath.Data = (PathGeometry) FindResource("SignalStemControlled");
 			} else {
-				((PathGeometry) StemPath.Data).Figures = (PathFigureCollection) FindResource("SignalStemAutomatic");
+				StemPath.Data = (PathGeometry) FindResource("SignalStemAutomatic");
 			}
 			UpdateRectangles(signal);
 		}

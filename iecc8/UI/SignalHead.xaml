@@ -9,13 +9,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path x:Name="Lamp" Fill="{StaticResource IdleGrey}">
-		<Path.Data>
-			<EllipseGeometry RadiusX="0.25" RadiusY="0.25" Center="0.25 0.5">
-				<EllipseGeometry.Transform>
-					<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Path}}}"/>
-				</EllipseGeometry.Transform>
-			</EllipseGeometry>
-		</Path.Data>
-	</Path>
+	<Ellipse x:Name="Lamp" Fill="{StaticResource IdleGrey}" Width="8" Height="8"/>
 </UserControl>

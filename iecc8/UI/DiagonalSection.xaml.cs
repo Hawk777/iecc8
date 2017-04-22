@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media;
 
 namespace Iecc8.UI {
 	/// <summary>
@@ -20,7 +21,7 @@ namespace Iecc8.UI {
 		/// <summary>
 		/// The track-circuit break property.
 		/// </summary>
-		public static readonly DependencyProperty TCBProperty = DependencyProperty.Register(nameof(TCB), typeof(bool), typeof(DiagonalSection));
+		public static readonly DependencyProperty TCBProperty = DependencyProperty.Register(nameof(TCB), typeof(bool), typeof(DiagonalSection), new PropertyMetadata(false, OnTCBPropertyChanged));
 
 		/// <summary>
 		/// Constructs a new DiagonalSection.
@@ -42,6 +43,22 @@ namespace Iecc8.UI {
 		/// </summary>
 		protected override void Update() {
 			Polygon.Fill = RenderColour;
+		}
+
+		/// <summary>
+		/// Refreshes the shape of this object based on changes to its properties.
+		/// </summary>
+		private void UpdateShape() {
+			Polygon.Data = (PathGeometry) FindResource(TCB ? "DiagonalSectionTCB" : "DiagonalSectionNoTCB");
+		}
+
+		/// <summary>
+		/// Invoked when the TCB property changes on an object.
+		/// </summary>
+		/// <param name="d">The object whose value changed.</param>
+		/// <param name="e">Details about the change.</param>
+		private static void OnTCBPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+			((DiagonalSection) d).UpdateShape();
 		}
 	}
 }

@@ -9,46 +9,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Canvas>
-		<Path x:Name="Rectangle" Fill="{StaticResource IdleGrey}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0" Y="0.3125" Width="1" Height="0.375"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBLeft, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource BoolToVis}}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0" Y="0" Width="0.125" Height="1"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBRight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:HSection}}, Converter={StaticResource BoolToVis}}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<TransformGroup>
-							<TranslateTransform X="-0.125"/>
-							<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-							<TranslateTransform X="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-						</TransformGroup>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0" Y="0" Width="0.125" Height="1"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-	</Canvas>
+	<Rectangle x:Name="Rectangle" Fill="{StaticResource IdleGrey}" Height="6"/>
 </ui:TrackSection>

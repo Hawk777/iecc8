@@ -9,50 +9,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Canvas>
-		<Path Stroke="{StaticResource IdleGrey}">
-			<Path.Data>
-				<PathGeometry>
-					<Geometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}"/>
-					</Geometry.Transform>
-					<PathGeometry.Figures>
-						<PathFigure StartPoint="0 0.3125">
-							<LineSegment IsStroked="True" Point="1 0.3125"/>
-							<LineSegment IsStroked="False" Point="1 0.6875"/>
-							<LineSegment IsStroked="True" Point="0 0.6875"/>
-						</PathFigure>
-					</PathGeometry.Figures>
-				</PathGeometry>
-			</Path.Data>
-		</Path>
-		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBLeft, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}, Converter={StaticResource BoolToVis}}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}"/>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0" Y="0" Width="0.125" Height="1"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-		<Path Fill="{StaticResource BG}" Visibility="{Binding TCBRight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}, Converter={StaticResource BoolToVis}}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<TransformGroup>
-							<TranslateTransform X="-0.125"/>
-							<ScaleTransform ScaleX="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}"/>
-							<TranslateTransform X="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:NonTCHSection}}}"/>
-						</TransformGroup>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0" Y="0" Width="0.125" Height="1"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-	</Canvas>
+	<Border x:Name="Rectangle" BorderBrush="{StaticResource IdleGrey}" Height="6" BorderThickness="0 1 0 1"/>
 </UserControl>

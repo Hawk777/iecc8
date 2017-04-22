@@ -86,7 +86,7 @@ namespace Iecc8.UI {
 			} else {
 				key = "PointsBoth";
 			}
-			((PathGeometry) Polygon.Data).Figures = (PathFigureCollection) FindResource(key);
+			Polygon.Data = (PathGeometry) FindResource(key);
 			Polygon.Fill = RenderColour;
 		}
 

@@ -2,6 +2,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:ui="clr-namespace:Iecc8.UI"
 		x:Class="Iecc8.UI.VSection"
+		Width="8"
 		Height="16">
 	<UserControl.Resources>
 		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Resources.xaml"/>
@@ -9,18 +10,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Canvas>
-		<Path x:Name="Rectangle" Fill="{StaticResource IdleGrey}">
-			<Path.Data>
-				<RectangleGeometry>
-					<Geometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-					</Geometry.Transform>
-					<RectangleGeometry.Rect>
-						<Rect X="0.3125" Y="0" Width="0.375" Height="1"/>
-					</RectangleGeometry.Rect>
-				</RectangleGeometry>
-			</Path.Data>
-		</Path>
-	</Canvas>
+	<Rectangle x:Name="Rectangle" Fill="{StaticResource IdleGrey}" HorizontalAlignment="Center" Width="4"/>
 </ui:TrackSection>

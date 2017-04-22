@@ -10,42 +10,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Canvas>
-		<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}">
-			<Path.Data>
-				<PathGeometry>
-					<PathGeometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-					</PathGeometry.Transform>
-					<PathGeometry.Figures>
-						<PathFigure StartPoint="0.3125 0">
-							<PathFigure.Segments>
-								<LineSegment Point="0.6875 0"/>
-								<LineSegment Point="1 0.3125"/>
-								<LineSegment Point="1 0.6875"/>
-							</PathFigure.Segments>
-						</PathFigure>
-					</PathGeometry.Figures>
-				</PathGeometry>
-			</Path.Data>
-		</Path>
-		<Path Fill="{StaticResource BG}">
-			<Path.Data>
-				<PathGeometry>
-					<PathGeometry.Transform>
-						<ScaleTransform ScaleX="{Binding ActualWidth, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}" ScaleY="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:TrackSection}}}"/>
-					</PathGeometry.Transform>
-					<PathGeometry.Figures>
-						<PathFigure IsFilled="{Binding TCB, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ui:DiagonalSection}}}" StartPoint="0.875 0">
-							<PathFigure.Segments>
-								<LineSegment Point="0.875 1"/>
-								<LineSegment Point="1 1"/>
-								<LineSegment Point="1 0"/>
-							</PathFigure.Segments>
-						</PathFigure>
-					</PathGeometry.Figures>
-				</PathGeometry>
-			</Path.Data>
-		</Path>
-	</Canvas>
+	<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}" Data="{StaticResource DiagonalSectionNoTCB}"/>
 </ui:TrackSection>
