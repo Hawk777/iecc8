@@ -93,6 +93,9 @@
     <Compile Include="UI\Assembly\DoubleTrackCrossoverPair.xaml.cs">
       <DependentUpon>DoubleTrackCrossoverPair.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Assembly\SingleTrackSiding.xaml.cs">
+      <DependentUpon>SingleTrackSiding.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Common\BlinkClockSource.cs" />
     <Compile Include="UI\Common\EngineerTypeToFontStyle.cs" />
     <Compile Include="UI\Common\EngineerTypeToIsAI.cs" />
@@ -192,6 +195,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="UI\Assembly\DoubleTrackCrossoverPair.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Assembly\SingleTrackSiding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
