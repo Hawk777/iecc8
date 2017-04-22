@@ -18,5 +18,15 @@
 			get;
 			set;
 		}
+
+		/// <summary>
+		/// Constructs a new SectionPointPosition with all values filled in.
+		/// </summary>
+		/// <param name="points">The points ID.</param>
+		/// <param name="reversed">The position.</param>
+		public SectionPointPosition(int points, bool reversed) {
+			Points = points;
+			Reversed = reversed;
+		}
 	}
 }
