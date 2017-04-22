@@ -2,7 +2,8 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		x:Class="Iecc8.UI.Equipment.AutoButton"
 		Width="16"
-		Height="16">
+		Height="16"
+		Grid.ColumnSpan="2">
 	<Grid.Resources>
 		<ResourceDictionary Source="pack://application:,,,/iecc8;component/UI/Common/Resources.xaml"/>
 	</Grid.Resources>

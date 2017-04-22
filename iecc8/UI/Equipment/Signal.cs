@@ -14,6 +14,7 @@ namespace Iecc8.UI.Equipment {
 		public Signal() {
 			Stem = new SignalStem();
 			HeadObjects = new List<SignalHead>();
+			Grid.SetColumnSpan(this, 2);
 		}
 
 		/// <summary>
@@ -52,6 +53,8 @@ namespace Iecc8.UI.Equipment {
 			g.Children.Add(Stem);
 			Grid.SetColumn(Stem, HeadObjects.Count);
 			Content = g;
+
+			Grid.SetColumnSpan(this, HeadObjects.Count + 1);
 		}
 
 		/// <summary>
