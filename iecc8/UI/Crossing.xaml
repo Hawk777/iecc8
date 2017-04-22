@@ -9,5 +9,5 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}" StrokeThickness="0.125" Data="{StaticResource PointsBoth}"/>
+	<Path x:Name="Polygon" Fill="{StaticResource IdleGrey}" Data="{StaticResource PointsBoth}"/>
 </UserControl>
