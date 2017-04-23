@@ -172,6 +172,31 @@
 		</PathFigureCollection>
 	</PathGeometry>
 
+	<PathGeometry x:Key="TunnelMiddle">
+		<PathFigureCollection>
+			<PathFigure StartPoint="3 0">
+				<PathFigure.Segments>
+					<LineSegment Point="5 0"/>
+					<LineSegment Point="5 16"/>
+					<LineSegment Point="3 16"/>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathFigureCollection>
+	</PathGeometry>
+	<PathGeometry x:Key="TunnelEnd">
+		<PathFigureCollection>
+			<PathFigure StartPoint="3 0">
+				<PathFigure.Segments>
+					<LineSegment Point="5 0"/>
+					<LineSegment Point="5 7"/>
+					<LineSegment Point="8 7"/>
+					<LineSegment Point="8 9"/>
+					<LineSegment Point="3 9"/>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathFigureCollection>
+	</PathGeometry>
+
 	<SolidColorBrush x:Key="TD" Color="Cyan"/>
 
 	<SolidColorBrush x:Key="BottomBarHighlightBG" Color="Orange"/>
