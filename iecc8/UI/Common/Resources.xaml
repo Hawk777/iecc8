@@ -120,6 +120,43 @@
 		</PathFigureCollection>
 	</PathGeometry>
 
+	<PathGeometry x:Key="WyeNormal">
+		<PathFigureCollection>
+			<PathFigure StartPoint="0 5">
+				<PathFigure.Segments>
+					<LineSegment Point="5.5 16"/>
+					<LineSegment Point="2.5 16"/>
+					<LineSegment Point="0 11"/>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathFigureCollection>
+	</PathGeometry>
+	<PathGeometry x:Key="WyeReverse">
+		<PathFigureCollection>
+			<PathFigure StartPoint="8 11">
+				<PathFigure.Segments>
+					<LineSegment Point="5.5 16"/>
+					<LineSegment Point="2.5 16"/>
+					<LineSegment Point="8 5"/>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathFigureCollection>
+	</PathGeometry>
+	<PathGeometry x:Key="WyeBoth">
+		<PathFigureCollection>
+			<PathFigure StartPoint="0 5">
+				<PathFigure.Segments>
+					<LineSegment Point="4 13"/>
+					<LineSegment Point="8 5"/>
+					<LineSegment Point="8 11"/>
+					<LineSegment Point="5.5 16"/>
+					<LineSegment Point="2.5 16"/>
+					<LineSegment Point="0 11"/>
+				</PathFigure.Segments>
+			</PathFigure>
+		</PathFigureCollection>
+	</PathGeometry>
+
 	<PathGeometry x:Key="Scissors">
 		<PathFigureCollection>
 			<PathFigure StartPoint="2.5 0">

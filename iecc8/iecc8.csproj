@@ -143,6 +143,9 @@
     <Compile Include="UI\Equipment\VSection.xaml.cs">
       <DependentUpon>VSection.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Equipment\Wye.xaml.cs">
+      <DependentUpon>Wye.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\TopLevel\ChannelGrid.cs" />
     <Compile Include="UI\TopLevel\ChannelMask.cs" />
     <Compile Include="UI\TopLevel\HScrollViewer.cs" />
@@ -247,6 +250,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Equipment\VSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Equipment\Wye.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
