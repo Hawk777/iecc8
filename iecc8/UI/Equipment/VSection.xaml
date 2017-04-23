@@ -10,5 +10,15 @@
 	<UserControl.Background>
 		<StaticResource ResourceKey="BG"/>
 	</UserControl.Background>
-	<Rectangle x:Name="Rectangle" Fill="{StaticResource IdleGrey}" HorizontalAlignment="Center" Width="4"/>
+	<Path x:Name="Rectangle" Fill="{StaticResource IdleGrey}">
+		<Path.Data>
+			<PathGeometry>
+				<PathFigure StartPoint="2.5 0">
+					<LineSegment Point="5.5 0"/>
+					<LineSegment Point="5.5 16"/>
+					<LineSegment Point="2.5 16"/>
+				</PathFigure>
+			</PathGeometry>
+		</Path.Data>
+	</Path>
 </e:TrackSection>
