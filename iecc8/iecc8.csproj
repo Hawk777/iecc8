@@ -126,6 +126,7 @@
     <Compile Include="UI\Equipment\Points.xaml.cs">
       <DependentUpon>Points.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Equipment\RouteID.cs" />
     <Compile Include="UI\Equipment\SectionPointPosition.cs" />
     <Compile Include="UI\Equipment\SectionPointPositionResolved.cs" />
     <Compile Include="UI\Equipment\Signal.cs" />

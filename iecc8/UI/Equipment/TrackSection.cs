@@ -3,6 +3,7 @@ using Iecc8.World;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -52,6 +53,9 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The list of points and the positions they must be in in order for this section to be part of the current route.
 		/// </summary>
+		/// <remarks>
+		/// Either this property or Routes should be populated, but not both.
+		/// </remarks>
 		public List<SectionPointPosition> PointPositions {
 			get {
 				return (List<SectionPointPosition>) GetValue(PointPositionsProperty);
@@ -65,6 +69,26 @@ namespace Iecc8.UI.Equipment {
 		/// The point positions property.
 		/// </summary>
 		public static readonly DependencyProperty PointPositionsProperty = DependencyProperty.Register(nameof(PointPositions), typeof(List<SectionPointPosition>), typeof(TrackSection));
+
+		/// <summary>
+		/// The list of routes that this section is part of.
+		/// </summary>
+		/// <remarks>
+		/// Either this property or PointPositions should be populated, but not both.
+		/// </remarks>
+		public List<RouteID> Routes {
+			get {
+				return (List<RouteID>) GetValue(RoutesProperty);
+			}
+			set {
+				SetValue(RoutesProperty, value);
+			}
+		}
+
+		/// <summary>
+		/// The Routes property.
+		/// </summary>
+		public static readonly DependencyProperty RoutesProperty = DependencyProperty.Register(nameof(Routes), typeof(List<RouteID>), typeof(TrackSection));
 
 		/// <summary>
 		/// For which signal this track circuit blinks when selected as a pending entrance.
@@ -89,6 +113,11 @@ namespace Iecc8.UI.Equipment {
 		private SectionPointPositionResolved[] PointPositionsResolved;
 
 		/// <summary>
+		/// The list of routes that contain this section.
+		/// </summary>
+		private Route[] RoutesResolved;
+
+		/// <summary>
 		/// For which signal this track circuit blinks when selected as a pending entrance.
 		/// </summary>
 		private World.Signal BlinkForSignalResolved;
@@ -98,6 +127,7 @@ namespace Iecc8.UI.Equipment {
 		/// </summary>
 		protected TrackSection() {
 			PointPositions = new List<SectionPointPosition>();
+			Routes = new List<RouteID>();
 			Loaded += OnLoaded;
 			RenderOptions.SetEdgeMode(this, EdgeMode.Aliased);
 		}
@@ -153,12 +183,28 @@ namespace Iecc8.UI.Equipment {
 			get {
 				if ((TrackCircuit != null) && TrackCircuit.RouteLocked) {
 					SubArea sub = ((MainViewModel) DataContext).World.Region.SubAreas[SubAreaID];
-					foreach (SectionPointPositionResolved i in PointPositionsResolved) {
-						if (i.Points.Reversed != i.Reversed) {
-							return true;
+					if (PointPositionsResolved.Length != 0) {
+						foreach (SectionPointPositionResolved i in PointPositionsResolved) {
+							if (i.Points.Reversed != i.Reversed) {
+								return true;
+							}
 						}
+						return false;
+					} else if (RoutesResolved.Length != 0) {
+						Route locked = TrackCircuit.LockedRoute;
+						Debug.Print("Compute ExcludedFromRoute for section based on locked route (" + locked.Entrance.ID + ", " + locked.Exit.ID + ')');
+						foreach (Route i in RoutesResolved) {
+							Debug.Print("Consider (" + i.Entrance.ID + ", " + i.Exit.ID + ')');
+							if (i == locked) {
+								Debug.Print("Match!");
+								return false;
+							}
+						}
+						Debug.Print("No match.");
+						return true;
+					} else {
+						return false;
 					}
-					return false;
 				} else {
 					return false;
 				}
@@ -173,6 +219,9 @@ namespace Iecc8.UI.Equipment {
 		private void OnLoaded(object sender, EventArgs e) {
 			MainViewModel vm = DataContext as MainViewModel;
 			if (vm != null) {
+				// You can't populate both PointPositions and Routes.
+				Debug.Assert((PointPositions == null) || (PointPositions.Count == 0) || (Routes == null) || (Routes.Count == 0));
+
 				if (TrackCircuitID >= 0) {
 					TrackCircuit = vm.World.Region.SubAreas[SubAreaID].TrackCircuits[TrackCircuitID];
 					TrackCircuit.PropertyChanged += OnTCPropChanged;
@@ -186,6 +235,14 @@ namespace Iecc8.UI.Equipment {
 					PointPositionsResolved[i].Points.PropertyChanged += OnConditionalPointsPropChanged;
 				}
 				PointPositions = null;
+
+				RoutesResolved = new Route[Routes.Count];
+				for (int i = 0; i != Routes.Count; ++i) {
+					ControlledSignal entrance = (ControlledSignal) vm.World.Region.GetSignal(Routes[i].Entrance, SubAreaID);
+					World.Signal exit = vm.World.Region.GetSignal(Routes[i].Exit, SubAreaID);
+					RoutesResolved[i] = entrance.RoutesFrom[exit];
+				}
+				Routes = null;
 
 				if (BlinkForSignal.HasValue) {
 					BlinkForSignalResolved = vm.World.Region.SubAreas[SubAreaID].Signals[BlinkForSignal.Value];
