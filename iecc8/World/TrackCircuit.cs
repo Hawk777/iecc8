@@ -32,20 +32,33 @@ namespace Iecc8.World {
 		}
 
 		/// <summary>
-		/// Whether the track circuit is locked by a route set from a signal.
+		/// Whether the track circuit is locked by a route set from this signal.
 		/// </summary>
 		public bool RouteLocked {
 			get {
-				return RouteLockedImpl;
+				return LockedRoute != null;
+			}
+		}
+
+		/// <summary>
+		/// The route currently set over this track circuit, or null if no route is set.
+		/// </summary>
+		public Route LockedRoute {
+			get {
+				return LockedRouteImpl;
 			}
 			private set {
-				if (SetProperty(ref RouteLockedImpl, value) && !value) {
+				bool oldLocked = RouteLocked;
+				if (SetProperty(ref LockedRouteImpl, value) && (value == null)) {
 					RouteLockedDirection = '\0';
 					if (NextInRoute != null) {
 						TrackCircuit next = NextInRoute;
 						NextInRoute = null;
 						next.RouteLockCascaded = false;
 					}
+				}
+				if (RouteLocked != oldLocked) {
+					EmitPropertyChanged(nameof(RouteLocked));
 				}
 			}
 		}
@@ -159,11 +172,13 @@ namespace Iecc8.World {
 		/// </summary>
 		/// <param name="direction">The direction in which the track circuit is to be locked.</param>
 		/// <param name="next">The next track circuit in the route, <c>null</c> if this is the last track circuit.</param>
-		public void RouteLock(char direction, TrackCircuit next) {
+		/// <param name="route">The route being locked.</param>
+		public void RouteLock(char direction, TrackCircuit next, Route route) {
 			Debug.Assert(!RouteLocked || RouteLockedDirection == direction);
+			Debug.Assert(route != null);
 			RouteLockedDirection = direction;
 			NextInRoute = next;
-			RouteLocked = true;
+			LockedRoute = route;
 			RouteLockCascaded = true;
 		}
 
@@ -198,9 +213,9 @@ namespace Iecc8.World {
 		private bool OccupiedImpl = true;
 
 		/// <summary>
-		/// Storage for the RouteLocked property.
+		/// Storage for the LockedRoute property.
 		/// </summary>
-		private bool RouteLockedImpl = false;
+		private Route LockedRouteImpl = null;
 
 		/// <summary>
 		/// Storage for the RouteLockCascaded property.
@@ -225,7 +240,7 @@ namespace Iecc8.World {
 		/// </summary>
 		private void MaybeUnlock() {
 			if (!RouteLockCascaded && !Occupied) {
-				RouteLocked = false;
+				LockedRoute = null;
 			}
 		}
 

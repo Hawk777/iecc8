@@ -110,7 +110,7 @@ namespace Iecc8.World {
 			for (int i = 0; i != Elements.Count; ++i) {
 				TrackCircuit current = Elements[i].TrackCircuit;
 				TrackCircuit next = i + 1 < Elements.Count ? Elements[i + 1].TrackCircuit : null;
-				current.RouteLock(Elements[i].Direction, next);
+				current.RouteLock(Elements[i].Direction, next, this);
 			}
 
 			// Set the signal's route.
