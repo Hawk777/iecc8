@@ -46,7 +46,7 @@ namespace Iecc8.UI.Assembly {
 		public static readonly DependencyProperty SubAreaIDProperty = DependencyProperty.Register(nameof(SubAreaID), typeof(ushort), typeof(DoubleTrackCrossoverPair));
 
 		/// <summary>
-		/// The ID number of the signal in the bottom-left corner.
+		/// The ID number of the signal in the top-left corner.
 		/// </summary>
 		[Category("Track"), Description("Gets or sets the ID number of the signal in the top-left corner.")]
 		public short TopLeftSignal {
