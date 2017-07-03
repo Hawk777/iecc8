@@ -19,6 +19,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Which sub-area this section is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing the track circuit.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -36,6 +37,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The track circuit that this section is part of.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit.")]
 		public int TrackCircuitID {
 			get {
 				return (int) GetValue(TrackCircuitIDProperty);
@@ -56,6 +58,7 @@ namespace Iecc8.UI.Equipment {
 		/// <remarks>
 		/// Either this property or Routes should be populated, but not both.
 		/// </remarks>
+		[Category("Track"), Description("Gets or sets the list of points and the positions they must be in in order for this section to be part of the current route.")]
 		public List<SectionPointPosition> PointPositions {
 			get {
 				return (List<SectionPointPosition>) GetValue(PointPositionsProperty);
@@ -76,6 +79,7 @@ namespace Iecc8.UI.Equipment {
 		/// <remarks>
 		/// Either this property or PointPositions should be populated, but not both.
 		/// </remarks>
+		[Category("Track"), Description("Gets or sets the list of routes that this section is part of.")]
 		public List<RouteID> Routes {
 			get {
 				return (List<RouteID>) GetValue(RoutesProperty);
@@ -93,6 +97,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// For which signal this track circuit blinks when selected as a pending entrance.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal for which this section blinks.")]
 		public short? BlinkForSignal {
 			get {
 				return (short?) GetValue(BlinkForSignalProperty);

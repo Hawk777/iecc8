@@ -1,5 +1,6 @@
 ﻿using Iecc8.UI.Equipment;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -29,6 +30,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Which sub-area this signal is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing all the track elements in this crossover pair.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -46,6 +48,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal in the bottom-left corner.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal in the top-left corner.")]
 		public short TopLeftSignal {
 			get {
 				return (short) GetValue(TopLeftSignalProperty);
@@ -63,6 +66,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal in the top-right corner.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal in the top-right corner.")]
 		public short TopRightSignal {
 			get {
 				return (short) GetValue(TopRightSignalProperty);
@@ -80,6 +84,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal in the bottom-left corner.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal in the bottom-left corner.")]
 		public short BottomLeftSignal {
 			get {
 				return (short) GetValue(BottomLeftSignalProperty);
@@ -97,6 +102,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal in the bottom-right corner.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal in the bottom-right corner.")]
 		public short BottomRightSignal {
 			get {
 				return (short) GetValue(BottomRightSignalProperty);
@@ -114,6 +120,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit that the top part of the assembly is part of.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit between the signals on the top line.")]
 		public int TopTrackCircuit {
 			get {
 				return (int) GetValue(TopTrackCircuitProperty);
@@ -131,6 +138,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit that the bottom part of the assembly is part of.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit between the signals on the bottom line.")]
 		public int BottomTrackCircuit {
 			get {
 				return (int) GetValue(BottomTrackCircuitProperty);
@@ -148,6 +156,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the left crossover points.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the crossover points at the left side.")]
 		public short LeftPoints {
 			get {
 				return (short) GetValue(LeftPointsProperty);
@@ -165,6 +174,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the right crossover points.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the crossover points at the right side.")]
 		public short RightPoints {
 			get {
 				return (short) GetValue(RightPointsProperty);
@@ -182,6 +192,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Whether to flip the control point upside-down (to make an A instead of a V).
 		/// </summary>
+		[Category("Track"), Description("Gets or sets whether the entire assembly is flipped upside-down.")]
 		public bool Invert {
 			get {
 				return (bool) GetValue(InvertProperty);
@@ -199,6 +210,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the left points being normal.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> LeftNormalSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(LeftNormalSPPProperty);
@@ -216,6 +228,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the left points being reversed.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> LeftReverseSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(LeftReverseSPPProperty);
@@ -233,6 +246,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the right points being normal.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> RightNormalSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(RightNormalSPPProperty);
@@ -250,6 +264,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the right points being reversed.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> RightReverseSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(RightReverseSPPProperty);
@@ -267,6 +282,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the both points being normal.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> BothNormalSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(BothNormalSPPProperty);
@@ -284,6 +300,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The transform to apply based on the Invert property.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public ScaleTransform InvertTransform {
 			get {
 				return (ScaleTransform) GetValue(InvertTransformProperty);
@@ -301,6 +318,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The transform to apply based on the Invert property for objects that need to be horizontally flipped.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public ScaleTransform HFlipInvertTransform {
 			get {
 				return (ScaleTransform) GetValue(HFlipInvertTransformProperty);

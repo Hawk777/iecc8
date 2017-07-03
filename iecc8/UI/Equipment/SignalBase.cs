@@ -1,5 +1,6 @@
 ﻿using Iecc8.UI.Common;
 using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -12,6 +13,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Which sub-area this signal is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing the signal.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -29,6 +31,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The ID number of the signal.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal.")]
 		public short SignalID {
 			get {
 				return (short) GetValue(SignalIDProperty);

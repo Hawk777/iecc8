@@ -13,6 +13,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The ID number of the wye.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the points.")]
 		public short PointsID {
 			get {
 				return (short) GetValue(PointsIDProperty);

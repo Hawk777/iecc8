@@ -13,6 +13,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The ID number of the points.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the points.")]
 		public short PointsID {
 			get {
 				return (short) GetValue(PointsIDProperty);
@@ -30,6 +31,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Whether the points are drawn in what would normally be the reverse position when they are actually normal and vice versa.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets whether the points are diagonal when normal rather than when reversed.")]
 		public bool Invert {
 			get {
 				return (bool) GetValue(InvertProperty);

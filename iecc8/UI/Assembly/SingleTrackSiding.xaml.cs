@@ -1,5 +1,6 @@
 ﻿using Iecc8.UI.Equipment;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -12,6 +13,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The name of this siding.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the name shown above the assemhly.")]
 		public string SidingName {
 			get {
 				return (string) GetValue(SidingNameProperty);
@@ -29,6 +31,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Which sub-area this signal is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing all the track elements in this siding and its turnouts.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -46,6 +49,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the single track at the left end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the single track at the left end.")]
 		public short LeftSingleSignal {
 			get {
 				return (short) GetValue(LeftSignalSignalProperty);
@@ -63,6 +67,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the mainline at the left end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the mainline at the left end.")]
 		public short LeftMainSignal {
 			get {
 				return (short) GetValue(LeftMainSignalProperty);
@@ -80,6 +85,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the siding at the left end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the siding at the left end.")]
 		public short LeftSidingSignal {
 			get {
 				return (short) GetValue(LeftSidingSignalProperty);
@@ -97,6 +103,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the single track at the right end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the single track at the right end.")]
 		public short RightSingleSignal {
 			get {
 				return (short) GetValue(RightSingleSignalProperty);
@@ -114,6 +121,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the mainline at the right end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the mainline at the right end.")]
 		public short RightMainSignal {
 			get {
 				return (short) GetValue(RightMainSignalProperty);
@@ -131,6 +139,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the signal on the siding at the right end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the signal on the siding at the right end.")]
 		public short RightSidingSignal {
 			get {
 				return (short) GetValue(RightSidingSignalProperty);
@@ -148,6 +157,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit covering the left points.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit covering the left points.")]
 		public int LeftTrackCircuit {
 			get {
 				return (int) GetValue(LeftTrackCircuitProperty);
@@ -165,6 +175,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit covering the right points.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit covering the right points.")]
 		public int RightTrackCircuit {
 			get {
 				return (int) GetValue(RightTrackCircuitProperty);
@@ -182,6 +193,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit covering the mainline.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit covering the mainline.")]
 		public int MainTrackCircuit {
 			get {
 				return (int) GetValue(MainTrackCircuitProperty);
@@ -199,6 +211,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The track circuit covering the siding.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit covering the siding.")]
 		public int SidingTrackCircuit {
 			get {
 				return (int) GetValue(SidingTrackCircuitProperty);
@@ -216,6 +229,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the points at the left end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the points at the left end.")]
 		public short LeftPoints {
 			get {
 				return (short) GetValue(LeftPointsProperty);
@@ -233,6 +247,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The ID number of the points at the right end.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the points at the right end.")]
 		public short RightPoints {
 			get {
 				return (short) GetValue(RightPointsProperty);
@@ -250,6 +265,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Whether to flip the siding upside-down (to make an A instead of a V).
 		/// </summary>
+		[Category("Track"), Description("Gets or sets whether the entire assembly is flipped upside-down.")]
 		public bool Invert {
 			get {
 				return (bool) GetValue(InvertProperty);
@@ -267,6 +283,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the left points being normal.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> LeftNormalSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(LeftNormalSPPProperty);
@@ -284,6 +301,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the left points being reversed.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> LeftReverseSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(LeftReverseSPPProperty);
@@ -301,6 +319,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the right points being normal.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> RightNormalSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(RightNormalSPPProperty);
@@ -318,6 +337,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// A SectionPointPosition list for the right points being reversed.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public List<SectionPointPosition> RightReverseSPP {
 			get {
 				return (List<SectionPointPosition>) GetValue(RightReverseSPPProperty);
@@ -335,6 +355,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The transform to apply based on the Invert property.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public ScaleTransform InvertTransform {
 			get {
 				return (ScaleTransform) GetValue(InvertTransformProperty);
@@ -352,6 +373,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The transform to apply based on the Invert property for objects that need to be horizontally flipped.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public ScaleTransform HFlipInvertTransform {
 			get {
 				return (ScaleTransform) GetValue(HFlipInvertTransformProperty);
@@ -369,6 +391,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// The transform to apply based on the Invert property for objects that need to be horizontally and vertically flipped.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public ScaleTransform HFlipVFlipInvertTransform {
 			get {
 				return (ScaleTransform) GetValue(HFlipVFlipInvertTransformProperty);
@@ -386,6 +409,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Which grid row the left single signal appears on.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public int LeftSingleSignalGridRow {
 			get {
 				return (int) GetValue(LeftSingleSignalGridRowProperty);
@@ -403,6 +427,7 @@ namespace Iecc8.UI.Assembly {
 		/// <summary>
 		/// Which grid row the right single signal appears on.
 		/// </summary>
+		[Category("Internal"), Description("This property is used internally; do not set it.")]
 		public int RightSingleSignalGridRow {
 			get {
 				return (int) GetValue(RightSingleSignalGridRowProperty);

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 
 namespace Iecc8.UI.Equipment {
 	/// <summary>
@@ -8,6 +9,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Whether there is a TCB at the left end of this section.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets whether there is a track circuit break at the left side of this section.")]
 		public bool TCBLeft {
 			get {
 				return (bool) GetValue(TCBLeftProperty);
@@ -25,6 +27,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Whether there is a TCB at the right end of this section.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets whether there is a track circuit break at the right side of this section.")]
 		public bool TCBRight {
 			get {
 				return (bool) GetValue(TCBRightProperty);

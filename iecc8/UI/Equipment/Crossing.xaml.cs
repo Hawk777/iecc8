@@ -14,6 +14,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Which sub-area this crossing is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing the track.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -31,6 +32,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The track circuit that the normal part of this crossing is part of.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit that passes horizontally.")]
 		public int NormalTrackCircuitID {
 			get {
 				return (int) GetValue(NormalTrackCircuitIDProperty);
@@ -48,6 +50,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The track circuit that the reverse part of this crossing is part of.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit that passes diagonally.")]
 		public int ReverseTrackCircuitID {
 			get {
 				return (int) GetValue(ReverseTrackCircuitIDProperty);

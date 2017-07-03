@@ -4,6 +4,7 @@ using Iecc8.World;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -16,6 +17,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// Which sub-area this berth is in.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing the track circuit.")]
 		public ushort SubAreaID {
 			get {
 				return (ushort) GetValue(SubAreaIDProperty);
@@ -33,6 +35,7 @@ namespace Iecc8.UI.Equipment {
 		/// <summary>
 		/// The track circuit that this bert is associated with.
 		/// </summary>
+		[Category("Track"), Description("Gets or sets the ID number of the track circuit.")]
 		public int TrackCircuitID {
 			get {
 				return (int) GetValue(TrackCircuitIDProperty);
