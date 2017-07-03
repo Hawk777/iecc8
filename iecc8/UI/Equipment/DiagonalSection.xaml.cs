@@ -7,7 +7,7 @@ namespace Iecc8.UI.Equipment {
 	/// </summary>
 	public partial class DiagonalSection : TrackSection {
 		/// <summary>
-		/// Whether or not there is a track-circuit break on the right side of this section.
+		/// Whether or not there is a track-circuit break at the right side of this section.
 		/// </summary>
 		public bool TCB {
 			get {
