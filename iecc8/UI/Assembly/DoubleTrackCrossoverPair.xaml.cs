@@ -11,23 +11,6 @@ namespace Iecc8.UI.Assembly {
 	/// </summary>
 	public partial class DoubleTrackCrossoverPair : Grid {
 		/// <summary>
-		/// The name of this control point.
-		/// </summary>
-		public string CPName {
-			get {
-				return (string) GetValue(CPNameProperty);
-			}
-			set {
-				SetValue(CPNameProperty, value);
-			}
-		}
-
-		/// <summary>
-		/// The control point name property.
-		/// </summary>
-		public static readonly DependencyProperty CPNameProperty = DependencyProperty.Register(nameof(CPName), typeof(string), typeof(DoubleTrackCrossoverPair));
-
-		/// <summary>
 		/// Which sub-area this signal is in.
 		/// </summary>
 		[Category("Track"), Description("Gets or sets the ID number of the subdivision containing all the track elements in this crossover pair.")]
