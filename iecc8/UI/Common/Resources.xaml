@@ -199,6 +199,8 @@
 
 	<SolidColorBrush x:Key="TD" Color="Cyan"/>
 
+	<SolidColorBrush x:Key="Platform" Color="Orange"/>
+
 	<SolidColorBrush x:Key="BottomBarHighlightBG" Color="Orange"/>
 	<SolidColorBrush x:Key="BottomBarHighlightFG" Color="Black"/>
 
